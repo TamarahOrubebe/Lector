@@ -80,25 +80,25 @@
                 <p>Download free materials for the different sections for your <span class="lector">IELTS</span> preparation</p>
                 <ul class="nav nav-tabs nav-justified" style="border-bottom:0px">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Listening</a>
+                        <a class="nav-link active test-link" aria-current="page"  onclick="handleClick()" href="#listening">Listening</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reading</a>
+                        <a class="nav-link test-link" onclick="handleClick()" href="#reading">Reading</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Writing</a>
+                        <a class="nav-link test-link" onclick="handleClick()" href="#writing">Writing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Speaking</a>
+                        <a class="nav-link test-link"  onclick="handleClick()" href="#speaking">Speaking</a>
                     </li>
                 </ul>
-                <div class="test1">
+                <div id="listening"  class="">
                     <h5>Listening practice tests</h5>
                     <p>The Listening test is the same for both Academic and General Training tests. During the listening exam, you will hear
                     several recordings which may have Australian, British, or North-American accents. Please note that when you transfer
                     your answers you are mindful of spelling as incorrect spelling will be marked wrong.</p>
                     <p>The listening test lasts for 30 minutes with an extra 10 minutes to transfer answers and contains 4 sections with 4 different recordings</p>
-                    <table class="table responsive">
+                    <table class="table table1">
                         <thead style="border-bottom:0px">
                         <tr>
                             <th clas="first">Sections</th>
@@ -142,93 +142,445 @@
                         </tbody>
                     </table>
                     <h5>Download free Listening tests</h5>
-                    <table>
+                    <table  class="table table2">
                         <thead>
                             <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
+                                <th class="first">Sections</th>
+                                <th class="second">Descriptions</th>
+                                <th class="third">tasksheet</th>
+                                <th class="fourth">audiofile</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td class="first"><strong>Section 1</strong></td>
+                                <td class="second">Listening Example Task
+                                 <br> Form Completion
+                                </td>
+                                <td class="third">
+                                    <a href="/test files/listening/section-1-listening-sample-task-form-completion.pdf" download="section-1-listening-example-task-form-completion.pdf">
+                                    <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                                <td class="fourth"><a href="/test files/listening/section-1-ielts-listening-recording-1.mp3">
+                                    Recording (mp3, 402kb)
+                                </a></td>
+                            </tr>
+                            <tr>
+                                <td class="first"><strong>Section 2</strong><br> Sample A</td>
+                                <td class="second">Multiple Choice</td>
+                                <td class="third">
+                                    <a href="/test files/listening/section-2-sample-a-listening-sample-task-multiple-choice.pdf">
+                                    <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                                <td class="fourth"><a href="/test files/listening/section-2-sample-a-ielts-listening-recording.mp3">
+                                        Recording (mp3, 402kb)
+                                    </a></td>
+                            </tr>
+                            <tr>
+                                <td class="first"><strong>Section 2</strong><br> Sample B</td>
+                                <td class="second">Listening Sample B Questions</td>
+                                <td class="third">
+                                    <a href="/test files/listening/section-2-sample-b-listening-sample-task-questions.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                                <td class="fourth"><a href="/test files/listening/section-2-sample-b-ielts-listening-recording.mp3">
+                                        Recording (mp3, 402kb)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first"><strong>Section 2</strong><br> Sample B</td>
+                                <td class="second">Listening Sample B Answers</td>
+                            <td class="third">
+                                <a href="/test files/listening/section-2-sample-b-listening-sample-task-answers.pdf">
+                                    <i class="far fa-file-pdf fa-2x"></i>
+                                </a>
+                            </td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td class="first"><strong>Section 3</strong><br> Sample A</td>
+                                <td class="second">Listening Sample Task <br> Short Answer</td>
+                                <td class="third">
+                                    <a href="/test files/listening/section-3-sample-a-listening-sample-task-short-answer.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                                <td class="fourth"><a href="/test files/listening/section-3-sample-a-ielts-listening-recording.mp3">
+                                        Recording (mp3, 574kb)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td class="first"><strong>Section 3</strong><br>Sample B</td>
+                            <td class="second">Listening Sample B Questions</td>
+                            <td class="third">
+                                <a href="/test files/listening/section-3-sample-b-listening-sample-task-questions.pdf">
+                                    <i class="far fa-file-pdf fa-2x"></i>
+                                </a>
+                            </td>
+                            <td class="fourth"><a href="/test files/listening/section-3-sample-b-ielts-listening-recording.mp3">
+                                    Recording (mp3, 549kb)
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td class="first"><strong>Section 3</strong> <br> Sample B</td>
+                                <td class="second">Listening Sample B Answers</td>
+                                <td class="third">
+                                    <a href="/test files/listening/section-3-sample-b-listening-sample-task-answers.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td class="first"><strong>Section 4</strong></td>
+                                <td class="second">Listening Sample Task <br> Sentence Completion</td>
+                                <td class="third">
+                                    <a href="/test files/listening/section-4-listening-sample-task-sentence-completion.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                                <td class="fourth"><a href="/test files/listening/section-4-ielts-listening-recording.mp3">
+                                        Recording (mp3, 549kb)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first"><strong>NEW Samples:</strong></td>
+                                <td class="second">Listening Sample Task <br> Matching (example1)</td>
+                                <td class="third">
+                                    <a href="/test files/listening/new-listening-sample-task-matching-example-1-recording-5.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                                <td class="fourth"><a href="/test files/listening/new-ielts-listening-recording-5.mp3">
+                                        Recording (mp3, 2.7mb)
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td class="second">Listening Sample Task <br> Matching (example2)</td>
+                                <td class="third">
+                                    <a href="/test files/listening/new-listening-sample-task-matching-example-2-recording-6 (1).pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                                <td class="fourth"><a href="/test files/listening/new-ielts-listening-recording-6.mp3">
+                                        Recording (mp3, 2.7mb)
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td class="second">Plan/Map/Diagram/Labelling</td>
+                                <td class="third">
+                                    <a href="/test files/listening/new-listening-sample-task-plan.map_.diagram.labelling-example-3-recording-7_2.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                                <td class="fourth"><a href="/test files/listening/new-ielts-listening-recording-7.mp3">
+                                        Recording (mp3, 2.7mb)
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td class="first"><strong>Answer Sheet</strong></td>
+                                <td class="second">Listening General Answer Sheet</td>
+                                <td class="third">
+                                    <a href="/test files/listening/listening-general-answer-sheet.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
                                 <td></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                
-            <img src="/images/people-2557396_1920.jpg" alt="student holding IELTS test report">
+                <div id="reading">
+                    <h5>Academic Reading Practice Tests</h5>
+                    <p>Texts for the reading section are authentic and are taken from books, journals, magazines and newspapers. Texts range
+                    from descriptive and factual to the conversational and analytical, and may contain non-verbal materials, such as
+                    diagrams, graphs or illustrations. If texts contain technical terms, a simple glossary is provided.</p>
+                    <p>The content of the Reading Section differs for the Academic and General Tests.</p>
+                    <p>The Academic Reading test is 60 minutes long. There are 3 sections, and the total text length is 2,150 – 2,750 words.
+                    Each section of the reading exam contains one long text. A variety of questions are used to evaluate your reading
+                    comprehension. They are chosen from the following types: multiple choice, identifying information, identifying writer’s
+                    views/claims, matching information, matching headings, matching features, matching sentence endings, sentence
+                    completion, summary completion, note completion, table completion, flow-chart completion, diagram label completion,
+                    short-answer questions.</p>
+                    <h5>Download free Reading tests</h5>
+                    <table class="table">
+                        <thead>
+                            <th class="first">Description</th>
+                            <th class="second">Worksheet</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="first">Answer Sheet</td>
+                                <td class="second">
+                                    <a href="/test files/reading/answer-sheet.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">Identifying information</td>
+                                <td class="second">
+                                    <a href="/test files/reading/identifying-information.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">Identifying writer's views</td>
+                                <td class="second">
+                                    <a href="/test files/reading/identifying-writers-views.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">Matching features</td>
+                                <td class="second">
+                                    <a href="/test files/reading/matching-features.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">Matching headings</td>
+                                <td class="second">
+                                    <a href="/test files/reading/matching-headings.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">Multiple choice questions</td>
+                                <td class="second">
+                                    <a href="/test files/reading/multiple-choice-questions.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">Table completion</td>
+                                <td class="second">
+                                    <a href="/test files/reading/table-completion.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">Diagram label completion</td>
+                                <td class="second">
+                                    <a href="/test files/reading/diagram-label-completion.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="writing">
+                    <h5>Academic Writing Practice Tests</h5>
+                    <p>The Writing section of the test includes two tasks and both must be completed. Each task is assessed independently. The
+                    assessment of Task 2 carries more weight in marking than Task 1, so be sure to plan your time accordingly. The content
+                    of the Reading Section will differ for the Academic and General Tests.</p>
+                    <p>The Academic Writing test is 60 minutes long and includes two tasks. Candidates are required to write at least 150 words
+                    for Task 1 and at least 250 words for Task 2. Both responses should be written in a formal style.</p>
+                    <table class="table table1">
+                        <thead>
+                            <th class="first"><strong>Sections</strong></th>
+                            <th class="second"><strong>Descriptions</strong></th>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td class="first">Academic Task 1</td>
+                                    <td class="second">You will be asked to describe some visual information (graph/table/chart/diagram), and to present the description in
+                                    your own words. <br><br> You may be asked to describe and explain data, describe the stages of a process, how something works, or write about an
+                                    object or event. <br><br> You need to write 150 words in about 20 minutes.</td>
+                                </tr>
+                                <tr>
+                                    <td class="first">Academic Task 2</td>
+                                    <td class="second">You will be presented with a point of view, argument or problem. You need to write 250 words in about 40 minutes.</td>
+                                </tr>
+                        </tbody>   
+                    </table>
+                    <h5>Sample Writing Tasks for Download:</h5>
+                    <table class="table table2">
+                        <thead>
+                            <td class="first"><strong>Description</strong></td>
+                            <td class="second"><strong>Worksheet</strong></td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="first">Academic Writing Sample Task 1</td>
+                                <td class="second">
+                                    <a href="/test files/writing/academic-writing-sample-task-1.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">Academic Writing Sample Task 2</td>
+                                <td class="second">
+                                    <a href="/test files/writing/academic-writing-sample-task-2.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">IELTS Writing Answer sheet - Task 1</td>
+                                <td class="second">
+                                    <a href="/test files/writing/ielts-writing-answer-sheet-task-1.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">IELTS Writing Answer sheet - Task 2</td>
+                                <td class="second">
+                                    <a href="/test files/writing/ielts-writing-answer-sheet-task-2.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">IELTS Academic Writing Sample Script</td>
+                                <td class="second">
+                                    <a href="/test files/writing/ielts-academic-writing-sample-script.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="speaking">
+                    <h5>Speaking Practice Tests</h5>
+                    <p>The speaking test is the same for both the Academic and General Training Exam. During the Speaking test, you will have a
+                    discussion with a certified IELTS Examiner. It is interactive and as close to a real-life situation as a test can get.
+                    Be prepared by familiarizing yourself with the format of the test.</p>
+                    <p>The test is 11 to 14 minutes long with three parts.</p>
+                    <table class="table table1">
+                        <thead>
+                            <th class="first"><strong>Sections</strong></th>
+                            <th class="second"><strong>Descriptions</strong></th>
+                        </thead>
+                        <tr>
+                            <td class="first">Part 1</td>
+                            <td class="second">You answer questions about yourself, your family, your work and your interests.</td>
+                        </tr>
+                        <tr>
+                            <td class="first">Part 2</td>
+                            <td class="second">You speak about a topic. You will be given a task card which asks you to speak about a particular topic and includes
+                            points that you can cover in your talk. You will be given 1 minute to prepare your talk. You will then speak for 1-2
+                            minutes.</td>
+                        </tr>
+                        <tr>
+                            <td class="first">Part 3</td>
+                            <td class="second">You have a longer discussion on the topic. The examiner will ask you further questions connected to the topic in Part 2.</td>
+                        </tr>
+                    </table>
+                    <h5>Sample Speaking Tasks for Download:</h5>
+                    <table class="table table2">
+                        <thead>
+                            <th class="first"><strong>Task</strong></th>
+                            <th class="second"><strong>Description</strong></th>
+                            <th class="third"><strong>Files</strong></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="first">Speaking Sample Task Part 1</td>
+                                <td class="second">Prompt</td>
+                                <td class="third">
+                                    <a href="/test files/speaking/speaking-sample-task-part-1-prompt.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first"></td>
+                                <td class="second">Recording</td>
+                                <td class="third">
+                                    <a href="/test files/speaking/speaking-sample-task-part-1-recording.mp3">
+                                        <i class="fas fa-file-audio fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first"></td>
+                                <td class="second">Transcript</td>
+                                <td class="third">
+                                    <a href="/test files/speaking/speaking-sample-task-part-1-transcript.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">Speaking Sample Task Part 2</td>
+                                <td class="second">Prompt</td>
+                            <td class="third">
+                                <a href="/test files/speaking/speaking-sample-task-part-2-prompt.pdf">
+                                    <i class="far fa-file-pdf fa-2x"></i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td class="first"></td>
+                                <td class="second">Recording</td>
+                                <td class="third">
+                                    <a href="/test files/speaking/speaking-sample-task-part-2-recording.mp3">
+                                    <i class="fas fa-file-audio fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first"></td>
+                                <td class="second">Transcript</td>
+                                <td class="third">
+                                    <a href="/test files/speaking/speaking-sample-task-part-2-transcript.pdf">
+                                        <i class="far fa-file-pdf fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">Speaking Sample Task Part 3</td>
+                                <td class="second">Prompt</td>
+                            <td class="third">
+                                <a href="/test files/speaking/speaking-sample-task-part-3-prompt.pdf">
+                                    <i class="far fa-file-pdf fa-2x"></i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td class="first"></td>
+                                <td class="second">Recording</td>
+                                <td class="third">
+                                    <a href="/test files/speaking/speaking-sample-task-part-3-recording.mp3">
+                                        <i class="fas fa-file-audio fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first"></td>
+                                <td class="second">Transcript</td>
+                            <td class="third">
+                                <a href="/test files/speaking/speaking-sample-task-part-3-transcript.pdf">
+                                    <i class="far fa-file-pdf fa-2x"></i>
+                                </a>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         </section>
         <section id="third" class="container-fluid">
             <h6>ULTIMATE SOLUTION FOR YOUR IELTS NEEDS</h6>

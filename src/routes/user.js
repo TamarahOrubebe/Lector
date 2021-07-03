@@ -11,17 +11,17 @@ const router = express.Router();
 //USER ENDPOINTS
 
 //Signup
-router.get('/signup', userController.signupGet);
-router.post('/signup', userController.signupPost);
+router.get('/signup', userController.getSignup);
+router.post('/signup', userController.postSignup);
 
 
 //Login
-router.get('/login', userController.loginGet);
-router.post('/login', userController.loginPost);
+router.get('/login', userController.getLogin);
+router.post('/login', userController.postLogin);
 
 
 //Logout
-router.get('/logout', userController.logoutGet);
+router.get('/logout', userController.getLogout);
 
 
 

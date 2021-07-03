@@ -5,29 +5,35 @@ const userController = {
 
 };
 
-userController.signupGet = (req, res) => {
-res.render('signup')
+userController.getSignup = (req, res) => {
+    res.render("signup", {
+			css: "/css/signup.css",
+			src: "/js/script.js"
+		});
 };
 
 
-userController.signupPost = (req, res) => {
-    res.render('signup');
+userController.postSignup = (req, res) => {
+    res.render("signup" );
 };
 
 
-userController.loginGet = (req, res) => {
-    res.render('login');
+userController.getLogin = (req, res) => {
+    res.render("login", {
+			css: "/css/login.css",
+			src: "/js/script.js"
+		});
 };
 
 
-userController.loginPost = (req, res) => {
+userController.postLogin = (req, res) => {
     
     res.render('login');
 };
 
 
 
-userController.logoutGet = (req, res) => {
+userController.getLogout = (req, res) => {
     req.logout();
     res.redirect('/');
 };

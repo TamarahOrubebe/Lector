@@ -195,16 +195,13 @@ nav{
 
 /* Second section */
 #second {
-    display: flex;
-    padding: 50px;
+    padding: 30px 0px;
 }
 
-
-
-
 .mid{
+   padding: 0px 30px;
     font-family: 'Raleway', sans-serif;
-    margin:30px 30px;
+    margin:30px 0px;
 }
 
 .mid h2{
@@ -214,13 +211,29 @@ nav{
 }
 
 .mid p{
-margin-right: 60px;
 margin-top: 5px;
 }
 
 .mid ul{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
+.mid ul a{
+    background-color:lightgray !important;
+    
+} 
+
+.mid ul a:hover{
+    background-color:#e21737 !important;
+   
+    color: white !important;
+} 
+
+
+
+.mid ul a.active{
+    background-color:#e21737 !important;
+}
+
 #second img{
     margin: 30px 20px 50px;
     width:450px;
@@ -236,14 +249,92 @@ margin-top: 5px;
     color:#e21737;
 }
 
-.mid a {
-    background-color:#e21737;
-    /* border-radius: 10px; */
-    padding: 5px 10px;
-    color: white;
-    text-decoration: none;
-    margin: 30px;
+/*  LISTENING  DIV AND TABLE */
+
+#listening{
+    display: block;
 }
+
+table a{
+    color:#e21737;
+}
+
+table i{
+    color:#e21737;
+}
+
+#listening h5, #reading h5, #writing h5, #speaking h5{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#listening table{ 
+    margin: 30px 0;
+    width: 75%;
+}
+
+.table thead{
+background-color:#e21737;
+color: white;
+}
+
+#listening .table1 .second {
+   padding-left: 35%;
+}
+#listening .table2 .second {
+   padding-left: 15%;
+}
+
+#listening table .third {
+   padding-left: 3%;
+}
+
+/* READING DIV AND  TABLE */
+#reading{
+    display: none;
+}
+
+#reading .table1 .second{
+padding-left: 35%;
+}
+
+#reading table{
+    width: 60%;
+}
+
+/* WRITING DIV AND TABLE */
+#writing{
+    display: none;
+}
+
+#writing table{
+    width: 65%;
+    margin: 30px 0px;
+}
+
+#writing .table1 .second{
+    padding-left: 18%;
+}
+
+/* SPEAKING DIV TABLE */
+#speaking{
+   display: none;
+}
+
+#speaking table{
+    width: 65%;
+    margin: 30px 0px;
+}
+
+#speaking  .table1 .second{
+    padding-left: 25%;
+}
+
+#speaking  .table2 .second{
+    padding-left: 0%;
+}
+
+
 
 /* Third section */
 #third{
