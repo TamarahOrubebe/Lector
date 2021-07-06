@@ -170,9 +170,9 @@ html, body{
     width: 100%;
 background-image: url('../images/thought-catalog-RdmLSJR-tq8-unsplash.jpg');
 background-repeat: no-repeat;
-background-size: 100% 100%;
+background-size: cover;
 background-position: center;
-height: 600px;
+height: 500px;
 /* padding-bottom: 40%;
 object-fit: cover;
 object-position: center; */
@@ -185,13 +185,32 @@ position:relative;
 bottom: 50px;
 } */
 
+#first .logo{
+    position: relative;
+    top: 20px;
 
+}
+
+#first h5.logo{
+    position:relative;
+    top: -15px;
+    left: 45px;
+    color:#0275d8
+}
+
+#first i {
+    color:#e21737;
+}
 
 
 
 nav{
     float:right;
+    position: relative;
+    top: -65px;
+    
 }
+
 
 .navbar-toggler {
     background-color: #0275d8 !important;
@@ -275,7 +294,7 @@ margin-top: 5px;
     color:#0275d8;
 }
 
- .lector{
+ .lektore{
     color:#e21737;
 }
 

@@ -6,10 +6,10 @@ if (process.env.NODE_ENV !== "production") {
 
 // Create database configuration settings
 const config = {
-	user: "AP-SQLadmin",
+	user: process.env.DB_USER,
 	password: process.env.DB_PASSWORD,
-	server: "apsqldelta.database.windows.net",
-	database: "lector",
+	server: process.env.DB_SERVER,
+	database: process.env.DB_DATABASE,
 	port: 1433,
 
 	options: {

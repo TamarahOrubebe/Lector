@@ -8275,8 +8275,7 @@ h1, h2, h3, h4, h5,
     font-size: 16px;
     margin-right: 5px;
     border-radius: 50%; }
-    .social-media .social-icon span {
-      color: #999999; }
+    
     .social-media .social-icon:hover, .social-media .social-icon:focus {
       background: #f35588; }
       .social-media .social-icon:hover span, .social-media .social-icon:focus span {

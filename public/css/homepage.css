@@ -1,11 +1,36 @@
 @media only screen and (max-width: 1024px) {
 
-/* FIRST SECTION */
+    /* FIRST SECTION */
+
     nav{
         position: relative;
         z-index: 1;
     }
 
+    
+     /* .header{
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+    
+.header h1{
+    position: relative;
+    left: -200px;
+    color: #0275d8;
+    font-size: 60px;
+
+}
+    .header h2{
+
+    position:relative;
+    top: 100px;
+    right: 500px;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+} */
 
 /* SECOND SECTION */
 #second{
@@ -27,51 +52,28 @@
 }
 
 /* FOURTH SECTION */
-#fifth{
+#fourth{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     padding: 50px !important;
 }
 
-/* SIXTH SECTION */
-.tutor{
-    padding: 10px !important;
-    width: 380px !important;
+
+#fourth .get-started{
+    margin: 50px 30pxpx !important;
+    background-color:#e21737;
+    display:inline-block;
+    width:380px !important;
+    padding: 30px;
+    height: 300px;
+    text-align: left;
+}
+
+.get-started p{
    
+    margin-bottom: 30px !important;
+        
 }
-
-.tutor-card{
-     display: inline-block;
-     width: 300px !important;
-     margin: 10px 0px 10px 10px !important ;
-     border: 1px solid black;
-     border-radius: 10px;
-    
-}
-
-.tutor-card img{
-    margin: 10px;
-    border-radius: 10px;
-    width: 100px !important;
-    height: 100px !important;
-}
-.tutor-card h5, em{
-  position: relative;
-  left: 120px !important;
-  bottom: 100px !important;
-}
-
-
-
-
-/* #first-card{
-    margin-left: 10px !important;
-} */
-
-/* #last-card{
-    margin-right: -25px !important;
-} */
-
 
 /* FOOTER */
 footer{
@@ -113,20 +115,21 @@ footer{
 }
 
 
-.copyright{
+/* .copyright{
     position: initial !important;
     
-}
+} */
 
 }
 
-html, body{ 
-    width: 100%;
+html, body{
+    width:100%;
 }
+
 
 /*FIRST SECTION */
 #first {
-background-image: url('../images/evaluation-1516644_1920.jpg');
+background-image: url('../images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -165,7 +168,6 @@ nav{
     
 }
 
-
 .navbar-toggler {
     background-color: #0275d8 !important;
     
@@ -179,16 +181,24 @@ nav{
 .nav-link:hover{
     color: blue !important;
 }
+
 /* Header div */
  .header{
     text-align: center;
-    position:relative;
+     position: relative;
     top: 150px;
+    left: 150px;
+    
 }
     
 .header h1{
-     color: #0275d8;
+    /* position: absolute;
+    left: 150px; */
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    color: #0275d8;
     font-size: 60px;
+
 }
 
 .header h2{
@@ -207,46 +217,35 @@ nav{
     width: 120px;
     margin: 35px;
     padding: 2px;
-    border-radius: 12px;
+    border-radius: 5px;
     
 }
 
 /* Second section */
 #second {
     display: flex;
-    padding: 50px;
+    /* padding: 20px; */
+    
 }
 
 
 
 
 .mid{
-    font-family: 'Raleway', sans-serif;
-    margin:30px 30px;
+    margin:30px;
 }
 
 .mid h2{
     font-size: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-weight: 650;
 }
 
-.mid p{
-margin-right: 60px;
-margin-top: 5px;
-}
 
-.mid ul{
-    margin-bottom: 20px;
-}
-
-.mid h4{
-    margin-bottom: 20px;
-}
 #second img{
-    margin: 30px 20px 50px;
+    margin: 90px 20px 10px;
     width:450px;
-    height:280px;
+    height:350px;
     border-radius: 12px;
 }
 
@@ -254,17 +253,13 @@ margin-top: 5px;
     color:#0275d8;
 }
 
- .lektore{
+.lektore{
     color:#e21737;
 }
 
 .mid a {
-    background-color:#e21737;
-    /* border-radius: 10px; */
-    padding: 5px 10px;
-    color: white;
-    text-decoration: none;
-    margin: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
 }
 
 /* Third section */
@@ -294,47 +289,29 @@ margin-top: 5px;
     color: #0275d8;
 }
 
-
-
-/* FOURTH AND FIFTH SECTIONS */
+/* Fourth section */
 #fourth{
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding: 50px;
+    padding-top: 50px;
 }
 
-
-
-
-#fifth{
-    background-color: rgb(238, 237, 237);
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding: 50px;
-}
-
-#fourth h2, #fifth h2{
+#fourth h2{
     font-size: 50px;
     font-weight: 700;
 }
 
-#fourth #cards, #fifth #cards{
-    margin-bottom: 50px;
+#fourth #cards{
+    margin-bottom: 100px;
 }
 
-#fourth div.cards {
+#fourth div.cards{
     display: inline-block;
-    width: 200px;
-    margin: 50px;
+    margin:30px 50px;
+    width: 300px;
 }
 
-#fifth div.cards{
-    display: inline-block;
-    margin:30px 90px;
-    width: 200px;
-}
-
-#fourth div.cards a, #fifth div.cards a{
+#fourth div.cards a{
     border-radius: 13px;
     border:2px solid #0275d8;
     padding: 5px 10px;
@@ -343,27 +320,67 @@ margin-top: 5px;
 }
 
 
-#fourth i, #fifth i{
+#fourth i{
     color:#e21737;
     margin-bottom: 20px;
 }
 
-
-#fourth h5, #fifth h5{
+#fourth h5{
     color:#0275d8;
 }
 
-
-/* SIXTH SECTION */
-#sixth{
-  font-family: 'Raleway', sans-serif;
- 
- 
- 
+#fourth .get-started{
+    margin: 50px 20px;
+    background-color:#e21737;
+    display:inline-block;
+    width:500px;
+    padding: 30px;
+    height: 300px;
+    text-align: left;
 }
 
-#sixth h2{
-    margin: 40px 0px;
+#get-started{
+    margin-bottom: 20px;
+}
+
+.get-started h3{
+    font-weight: 900;
+}
+
+.get-started p{
+    font-size: 13px;
+    color:white;
+    margin-bottom: 50px;
+        
+}
+
+.get-started a{
+    border-radius: 10px;
+    
+}
+/* Success Stories section */
+
+#success-carousel{
+     font-family: 'Raleway', sans-serif;
+     background-color:#e21737;
+     text-align: center;
+     color:white;
+    
+}
+
+.success-image{
+    border-radius:100%;
+    width: 10%;
+    margin: 20px;
+}
+
+.success-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+#success h2{
+    margin-bottom: 40px;
     text-align: center;
     font-size: 50px;
     font-weight: 700;
@@ -371,69 +388,11 @@ margin-top: 5px;
 }
 
 
-.tutor{
-padding: 50px;
-}
-
- .tutor-card{
-     display: inline-block;
-     width: 337px;
-     margin: 23px;
-     border: 1px solid black;
-     border-radius: 10px;
-    
-}
-
-
-/* #first-card{
-    margin-left: 30px;
-} */
-
-#last-card{
-    margin-right: -25px;
-}
-
-.tutor-card img{
-    margin: 10px;
-    border-radius: 10px;
-    width: 130px;
-    height: 130px;
-}
-
-
-.tutor-card h5, em{
-  position: relative;
-  left: 150px;
-  bottom: 120px;
-}
-
-.tutor-card p {
-    margin: 10px;
-    position: relative;
-    bottom: 60px;
-}
-
-.tutor-card a{
-    position: relative;
-    bottom: 30px;
-    background-color:#e21737;
-    border-radius: 10px;
-    padding: 5px 10px;
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-}
-
-
-
-
-/* FOOTER SECTION */
+/* Footer Section */
 
 footer{
-   
     font-family: 'Raleway', sans-serif;
     margin-top: 30px;
-    
     
 }
 
@@ -448,13 +407,13 @@ margin-left: 10px;
 
 #footer{
     float: right;
-    margin-right: 100px;
+    /* margin-right: 100px; */
 }
 
 
 #footer div{
 display: inline-block;
-margin: 0px 50px;
+margin: 0px 30px;
 }
 
 

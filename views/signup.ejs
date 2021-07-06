@@ -20,35 +20,47 @@
                                     </div>
                                     <div class="w-100">
                                         <p class="social-media d-flex justify-content-end">
-                                            <a href="#"
+                                            <a href="/auth/facebook"
                                                 class="social-icon d-flex align-items-center justify-content-center"><span
                                                     class="fa fa-facebook"></span></a>
-                                            <a href="#"
+                                            <a href="/auth/google"
                                                 class="social-icon d-flex align-items-center justify-content-center"><span
                                                     class="fa fa-google"></span></a>
-                                            <a href="#"
+                                            <a href="/auth/twitter"
                                                 class="social-icon d-flex align-items-center justify-content-center"><span
                                                     class="fa fa-twitter"></span></a>
                                         </p>
                                     </div>
                                 </div>
+                                <div>
+                                    <% if(errors !== "") { %>
+
+                                       <% errors.forEach(item => { %>
+                                                <div class="alert alert-danger">
+                                                    <%=item %>
+
+                                                </div>
+                                         
+                                        <% }) %>
+                                   <% } %>
+                                </div>
                                 <form action="/signup" method="POST" class="signin-form">
                                     <div class="form-group mb-3">
-                                        <label class="label" for="name">Username</label>
-                                        <input type="text" class="form-control" placeholder="Username" required>
+                                        <label class="label" for="username">Username</label>
+                                        <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
                                     </div>
                                     <div class="form-group mb-3">
-                                        <label class="label" for="name">Email</label>
-                                        <input type="email" class="form-control" placeholder="Email" required>
+                                        <label class="label" for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
                                     </div>
                                     <div class="form-group mb-3">
                                         <label class="label" for="password">Password</label>
-                                        <input type="password" class="form-control" id="password" placeholder="Password" required >
+                                        <input type="password" class="form-control" id="password" placeholder="Password" name="password" required >
                                        <span  onclick="toggleVisibility()" id="password-link" class="far fa-eye"></span>
                                     </div>
                                     <div class="form-group mb-3">
-                                        <label class="label" for="password">Confirm Password</label>
-                                        <input type="password"  id="confirm-password" class="form-control" placeholder="Confirm Password" required>
+                                        <label class="label" for="confirmationPassword">Confirm Password</label>
+                                        <input type="password"  id="confirmationPassword" class="form-control" placeholder="Confirm Password" name="confirmationPassword" required>
                                           <span onclick="togglePasswordVisibility()" id="confirm-password-link" class="far fa-eye"></span>
                                     </div>
                                     <div class="form-group">

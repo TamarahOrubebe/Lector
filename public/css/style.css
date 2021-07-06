@@ -7,7 +7,7 @@
         z-index: 1;
     }
 
-    
+   
 
 /* SECOND SECTION */
 #second{
@@ -110,7 +110,22 @@ background-position: center;
 height: 600px;
 
 }
+#first .logo{
+    position: relative;
+    top: 20px;
 
+}
+
+#first h5.logo{
+    position:relative;
+    top: -15px;
+    left: 45px;
+    color:#0275d8
+}
+
+#first i {
+    color:#e21737;
+}
 /* Nav section*/
 /* #first ul {
 position:relative;
@@ -141,9 +156,10 @@ nav{
 
 /* Header div */
  .header{
-    text-align: center;
+    text-align: center; 
     position:relative;
     top: 150px;
+    left: 0px;
 }
     
 .header h1{
@@ -202,7 +218,7 @@ nav{
     color:#0275d8;
 }
 
- .lector{
+ .lektore{
     color:#e21737;
 }
 

@@ -1,6 +1,17 @@
 "use strict";
 
+//Dependencies
+const db = require("../db/userOperations");
+const { validationResult } = require("express-validator");
+const bcrypt = require('bcrypt');
+const { user } = require("../db/dbconfig");
+const saltRounds = 10;
 
+
+
+
+
+//Create userController Object.
 const userController = {
 
 };
@@ -8,34 +19,119 @@ const userController = {
 userController.getSignup = (req, res) => {
     res.render("signup", {
 			css: "/css/signup.css",
-			src: "/js/script.js"
+			src: "/js/script.js",
+			errors: req.flash("errors"),
+			title: "Signup",
 		});
+    
 };
 
 
-userController.postSignup = (req, res) => {
-    res.render("signup" );
+userController.createUser = (req, res) => {
+
+    //Validate all required fields
+    let errorsArr = [];
+    let validationErrors = validationResult(req);
+
+    console.log(validationResult(req));
+
+    if (!validationErrors.isEmpty()) {
+
+        let errors = Object.values(validationErrors.mapped());
+
+        errors.forEach(item => {
+            errorsArr.push(item.msg);
+            console.log(item);
+        });
+
+        req.flash("errors", errorsArr);
+      
+        return res.redirect("/signup");
+    
+    }
+
+    const { username, email, password} = req.body;
+
+		db.getUser(email).then((result) => {
+            if (result[0]) { 
+                errorsArr.push(`A user with ${email} already exists. Please use another email.`)
+                req.flash("errors", errorsArr);
+                return res.redirect("/signup"); 
+			} else {
+				bcrypt.hash(password, saltRounds, function (err, hash) {
+					db.createUser(username, email, hash).catch((err) =>
+						console.log(err),
+					);
+				});
+
+                res.redirect("/login");
+			}
+		});
+
+    
 };
 
+
+userController.checkLoggedIn = (req, res, next) => {
+
+    if (!req.isAuthenticated()) {
+        return res.redirect("/login")
+    }
+
+    next();
+};
 
 userController.getLogin = (req, res) => {
-    res.render("login", {
+
+    return res.render("login", {
 			css: "/css/login.css",
-			src: "/js/script.js"
+			src: "/js/script.js",
+			errors: req.flash("errors"),
+			title: "Login",
 		});
 };
 
 
-userController.postLogin = (req, res) => {
+
+
+
+userController.checkLoggedOut = (req, res, next) => {
+    if (req.isAuthenticated()) {
+       return  res.redirect("/homepage");
+    }
+    next();
+};
+
+// userController.getUser = (req, res) => {
     
-    res.render('login');
+//     const { email, password } = req.body;
+
+// 		db.getUser(email).then((result) => {
+// 			if (result[0]) {
+// 				bcrypt.compare(password, result[0].password, function (err, result) {
+// 					if (!err && result == true) {
+// 						res.send({ message: "Authentication complete" });
+// 					} else {
+// 						res.send({ message: "invalid password" });
+// 					}
+// 				});
+// 			} else {
+// 				res.send({ message: "User does not exist" });
+// 			}
+// 		});
+// };
+
+
+userController.postLogout = (req, res) => {
+    req.session.destroy(err => res.redirect("/login"))
+    
 };
 
 
 
-userController.getLogout = (req, res) => {
-    req.logout();
-    res.redirect('/');
-};
+userController.resetPassword = (req, res) => {
+
+}
+
 
 module.exports = userController;
