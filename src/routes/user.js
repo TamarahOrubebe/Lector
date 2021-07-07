@@ -1,5 +1,9 @@
 "use strict";
 
+//configure dotenv
+require('dotenv').config();
+
+
 // Dependencies
 const express = require('express');
 const userController = require("../controllers/userController");
