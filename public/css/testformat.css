@@ -128,9 +128,9 @@ html, body{
 #first {
 background-image: url('../images/test-4481925_1920.jpg');
 background-repeat: no-repeat;
-background-size: cover;
+background-size: 100% 100%;
 background-position: center;
-height: 500px;
+height: 550px;
 
 }
 
@@ -142,15 +142,15 @@ bottom: 50px;
 
 #first .logo{
     position: relative;
-    top: 20px;
+    top: 10px;
 
 }
 
 #first h5.logo{
-    position:relative;
+    /* position:relative;
     top: -15px;
-    left: 45px;
-    color:#0275d8
+    left: 45px; */
+    color:#0275d8;
 }
 
 #first i {
@@ -427,13 +427,21 @@ footer{
     
 }
 
-#logo{
-margin-left: 10px;
+footer .logo{
+    position: relative;
+    top: 10px;
+
 }
 
-#logo p{
-    position: relative;
-    left: 15px;
+footer .logo i {
+    color:#e21737;
+}
+
+footer h5.logo{
+    /* position:relative;
+    top: -15px;
+    left: 45px; */
+    color:#0275d8
 }
 
 #footer{

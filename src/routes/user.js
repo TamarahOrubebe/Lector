@@ -40,7 +40,7 @@ router.get("/auth/google/callback", passport.authenticate("google", { failureRed
 router.get(
 	"/auth/facebook",
 	passport.authenticate("facebook", {
-		scope: ["email"],
+		scope: ["public_profile", "email"],
 	}),
 );
 
