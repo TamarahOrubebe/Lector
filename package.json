@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo testing"
+    "test": "echo testing",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
