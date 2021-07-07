@@ -1,5 +1,7 @@
 "use strict";
-
+//configure dotenv
+require("dotenv").config();
+ 
 //Dependencies
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
