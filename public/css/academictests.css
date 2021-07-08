@@ -63,60 +63,20 @@
 
 
 
-
-/* #first-card{
-    margin-left: 10px !important;
-} */
-
-/* #last-card{
-    margin-right: -25px !important;
-} */
-
-
 /* FOOTER */
 footer{
     display: block !important;
     
 }
 
+
+
 #footer{
-    margin-right: 0px !important; 
-    float: none !important;
-}
-
-
-#footer div{
-    display: inline-block !important;
-    margin: 50px !important;
-}
-
-
-#logo{
-    
-    display: none !important;
-}
-
-#contact{
-    position: relative !important;
-  bottom: 96px !important;
-}
-
-#follow{
-    position: relative !important;
-    bottom: 123px !important;
+     margin-top: -40px;
+    display: flex;
     
 }
 
-#quick{
-    position: initial !important;
-    
-}
-
-
-.copyright{
-    position: initial !important;
-    
-}
 
 }
 
@@ -134,11 +94,7 @@ height: 550px;
 
 }
 
-/* Nav section*/
-/* #first ul {
-position:relative;
-bottom: 50px;
-} */
+
 
 #first .logo{
     position: relative;
@@ -147,10 +103,7 @@ bottom: 50px;
 }
 
 #first h5.logo{
-    /* position:relative;
-    top: -15px;
-    left: 45px; */
-    color:#0275d8
+    color:#0275d8;
 }
 
 #first i {
@@ -512,11 +465,10 @@ padding: 50px;
 
 /* FOOTER SECTION */
 
+
 footer{
-   
     font-family: 'Raleway', sans-serif;
     margin-top: 30px;
-    
     
 }
 
@@ -534,47 +486,22 @@ footer h5.logo{
     /* position:relative;
     top: -15px;
     left: 45px; */
-    color:#0275d8
+    color:#0275d8;
 }
 
 #footer{
-    float: right;
-    margin-right: 100px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 
-
-#footer div{
-display: inline-block;
-margin: 0px 50px;
-}
-
-
-#footer p{
-    position: relative;
-    left: 32px;
-    font-weight: 900;
-    font-size: 18px;
-
-}
 
 #footer ul{
     list-style: none;
 }
 
-#contact{
-    position: relative;
-   bottom: 180px;
-}
 
-#follow{
-    position: relative;
-    bottom: 207px;
-}
-
-#quick{
-    position: relative;
-    bottom: 84px;
-}
 
 #quick a{
     text-decoration: none;
@@ -584,21 +511,12 @@ margin: 0px 50px;
 color:blue;
 }
 
-#follow li{
-    display:inline-block;
-    margin: 10px;
+
+#follow .first{
+    margin-bottom: 5px;
 }
 
 #follow li a{
     color:#0275d8;
-}
-
-#follow .first{
-    margin-left: 0px;
-}
-
-.copyright{
-    position: relative;
-    top: 180px;
 }
 

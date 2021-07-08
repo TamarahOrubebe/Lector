@@ -104,46 +104,16 @@
 
 
 /* FOOTER */
-footer{
-    display: block !important;
-    
+footer span, footer h5{
+    display: none;
 }
 
 #footer{
-    margin-right: 0px !important; 
-    float: none !important;
+     margin-top: 30px !important;
+    display: flex;
+    
 }
 
-
-#footer div{
-    display: inline-block !important;
-    margin: 10px !important;
-}
-
-
-
-
-/* #contact{
-    position: relative !important;
-  bottom: 96px !important;
-} */
-
-/* #follow{
-    position: relative !important;
-    bottom: 123px !important;
-    
-} */
-
-/* #quick{
-    position: initial !important;
-    
-} */
-
-
-/* .copyright{
-    position: initial !important;
-    
-} */
 
   
 }
@@ -269,44 +239,14 @@ footer{
     
 }
 
+
+
 #footer{
-    margin-right: 0px !important; 
-    float: none !important;
-}
-
-
-#footer div{
-    display: inline-block !important;
-    margin: 50px !important;
-}
-
-
-#logo{
-    
-    display: none !important;
-}
-
-#contact{
-    position: relative !important;
-  bottom: 96px !important;
-}
-
-#follow{
-    position: relative !important;
-    bottom: 123px !important;
+     margin-top: -40px;
+    display: flex;
     
 }
 
-#quick{
-    position: initial !important;
-    
-}
-
-
-.copyright{
-    position: initial !important;
-    
-}
 
 }
 
