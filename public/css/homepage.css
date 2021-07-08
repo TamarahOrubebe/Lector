@@ -32,35 +32,13 @@
 
 #second img{
     margin: 30px 0px !important;
-    width:200px !important;
+    width:250px !important;
     height:200px !important;
     border-radius: 12px;
 
 }
 
-/* THIRD SECTION */
-/* #third{
-    text-align: center;
-    background-color: #e21737;
-    padding:20px !important;
-    font-family: 'Raleway', sans-serif;
-}
 
-#third h6, #third h2{
-    margin-top: -10px !important;
-    margin-bottom: 0px !important;
-    color: white;
-    font-weight: 700;
-}
-
-#third h6{
-    
-    font-size: 13px;
-}
-#third h2{
-    font-size: 35px !important;
-    
-} */
 
 
 
@@ -82,7 +60,7 @@
 
 #fourth div.cards{
     display:block !important;
-    margin:50px !important;
+    margin:60px !important;
     width: 200px;
 }
 
@@ -176,30 +154,7 @@ footer span, footer h5{
     border-radius: 12px;
 }
 
-/* THIRD SECTION */
-#third{
-    text-align: center;
-    background-color: #e21737;
-    padding:20px !important;
-    font-family: 'Raleway', sans-serif;
-}
 
-#third h6, #third h2{
-   
-    margin-bottom: 10px !important;
-    color: white;
-    font-weight: 700;
-}
-
-#third h6{
-     margin-top: 10px !important;
-    font-size: 13px;
-}
-
-#third h2{
-    font-size: 35px !important;
-    
-}
 
 /* FOURTH SECTION */
 #fourth{
@@ -382,7 +337,6 @@ nav{
 
 /* Third section */
 #third{
-    height: 350px;
     text-align: center;
     background-color: #e21737;
     padding:70px;

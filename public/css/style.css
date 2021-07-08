@@ -45,34 +45,6 @@
 }
 
 
-/* THIRD SECTION  */
-#third{
-    height: 350px;
-    text-align: center;
-    background-color: #e21737;
-    padding: auto;
-    font-family: 'Raleway', sans-serif;
-}
-
-#third h6, #third h2{
-    margin-bottom: 5px !important;
-    color: white;
-    font-weight: 700;
-}
-
-#third h6{
-    font-size: 13px;
-}
-#third h2{
-    font-size: 35px;
-    
-}
-
-#third i{
-    color: #0275d8;
-}
-
-
 
 /* FOURTH SECTION */
 #fourth{
@@ -182,30 +154,7 @@ footer span, footer h5{
 }
 
 
-/* THIRD SECTION */
-#third{
-    text-align: center;
-    background-color: #e21737;
-    padding:20px !important;
-    font-family: 'Raleway', sans-serif;
-}
 
-#third h6, #third h2{
-   
-    margin-bottom: 10px !important;
-    color: white;
-    font-weight: 700;
-}
-
-#third h6{
-     margin-top: 10px !important;
-    font-size: 13px;
-}
-
-#third h2{
-    font-size: 35px !important;
-    
-}
 
 
 /* FOURTH SECTION */
@@ -383,7 +332,6 @@ nav{
 
 /* Third section */
 #third{
-    height: 300px;
     text-align: center;
     background-color: #e21737;
     padding:70px;
