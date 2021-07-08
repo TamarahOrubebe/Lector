@@ -11,6 +11,13 @@
     }
 
 
+    /* .header h1{
+    position: relative !important;
+    left: 30px !important;
+     color: #0275d8;
+    font-size: 60px;
+}    */
+
 /* SECOND SECTION */
 #second{
     display: block !important;
@@ -18,8 +25,7 @@
   
 
 .mid{
-
-    margin: 0px !important;
+    margin: 30px 0px !important;
 }
 
 
@@ -32,7 +38,7 @@
 
 #second img{
     margin: 30px 0px !important;
-    width:200px !important;
+    width:250px !important;
     height:200px !important;
     border-radius: 12px;
 
@@ -86,7 +92,7 @@
 
 #fourth div.cards{
     display:block !important;
-    margin:50px !important;
+    margin:60px !important;
     width: 200px;
 }
 
@@ -148,7 +154,13 @@ footer span, footer h5{
         z-index: 1;
     }
 
-   
+
+    .header h1{
+    /* position: relative !important;
+    left: 30px !important; */
+     color: #0275d8;
+    font-size: 60px;
+}   
 
 /* SECOND SECTION */
 #second{
@@ -158,12 +170,12 @@ footer span, footer h5{
   
 .mid{
 
-    margin: 0px !important;
+    margin: 30px 0 !important;
 }
 
 
 #second img{
-    margin: 60px 0px !important;
+    margin: 10px 0px 40px 0px !important;
     width:400px !important;
     height:300px !important;
     border-radius: 12px;
@@ -232,7 +244,7 @@ height: 550px;
     /* position:relative;
     top: -15px;
     left: 45px; */
-    color:#0275d8;
+    color:#0275d8
 }
 
 #first i {
@@ -247,9 +259,11 @@ bottom: 50px;
 
 
 
-
 nav{
-    float:right;
+    
+    float:right; 
+    top: -65px;
+    
 }
 
 .navbar-toggler {
@@ -270,18 +284,21 @@ nav{
  .header{
     text-align: center; 
     position:relative;
-    top: 150px;
+    top: 100px;
     left: 0px;
 }
     
 .header h1{
+    visibility: hidden;
+    /* position: relative;
+    left: 20px; */
      color: #0275d8;
     font-size: 60px;
 }
 
 .header h2{
     margin-top: 30px;
-    color: white;
+    color: #0275d8;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -302,17 +319,17 @@ nav{
 /* Second section */
 #second {
     display: flex;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 
 .mid{
-    margin:30px 60px;
+    margin:30px;
 }
 
 .mid h2{
     font-size: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-weight: 650;
 }
 
@@ -339,7 +356,7 @@ nav{
 
 /* Third section */
 #third{
-    height: 350px;
+    height: 300px;
     text-align: center;
     background-color: #e21737;
     padding:70px;

@@ -4,7 +4,7 @@
         <section id="first" class="container-fluid">
                 <span class="logo"><i class="fas fa-chalkboard-teacher fa-2x"></i></span>
                 <h5 class="logo">Lektore</h5> 
-                <nav class="navbar navbar-expand-lg navbar-dark">
+                <nav id ="top" class="navbar navbar-expand-lg navbar-dark">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -78,11 +78,10 @@
             <div class="mid">
                 <h2><span class="ielts">Welcome <%=user.username%>,</span> <br> <span class="lektore">Lektore</span> is a platform to help make the IELTS exam easier for you</h2>
                 <p>The International English Language Testing System (<span class="ielts">IELTS</span>) examination is one of the most written
-                    tests of the English
-                    Language written by candidates all over the world for academic and migrational purposes.</p>
+                    tests of the English Language written by candidates all over the world for academic and migrational purposes.</p>
                 <p>Having seen most people take this exam a couple of times without a headway, <span class="lektore">Lektore</span>  was birthed.
                     <span class="lektore">Lektore</span> provides
-                    Nigerians with the wherewithal necessary to passing the exam, and making their admission into
+                    <span class="ielts">IELTS</span> test takers with the wherewithal necessary to passing the exam, and making their admission into
                     international universities
                     and migration a success.</p>
                 <p>Here on <span class="lektore">Lektore</span>, with the aid of seasoned instructors who got a band 8 each in one sitting, you get
@@ -96,8 +95,7 @@
         </section>
         <section id="third"class="container-fluid">
             <h6>ULTIMATE SOLUTION FOR YOUR IELTS NEEDS</h6>
-            <h2>our-services more about us</h2>
-            <i class="far fa-4x fa-play-circle"></i>
+            <h2>learn more about <a href="#top" class="btn btn-primary">our services</a></h2>
         </section>
         <section id="fourth" class="container-fluid">
             <h2>What <span class="ielts">Lektore</span> offers?</h2>
@@ -108,93 +106,78 @@
                     <i class="fas fa-info-circle fa-5x"></i>
                     <div>
                         <h5>Free content</h5>
-                        <p>Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <a href="#" >Read more</a>
+                        <p>Download materials on both modules of the IELTS exam.</p>
+                        <a href="/tests/practicetests">Read more</a>
                     </div>
                 </div>
-
+        
                 <div class="cards">
                     <i class="fas fa-users fa-5x"></i>
                     <div>
                         <h5>Qualified tutors</h5>
-                        <p>Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <a href="#" >Read more</a>
+                        <p>Meet all your IELTS needs with our highly qualified tutors.</p>
+                        <a href="/about-us/tutors">Read more</a>
                     </div>
                 </div>
-
+        
                 <div class="cards">
                     <i class="far fa-question-circle fa-5x"></i>
                     <div>
-                        <h5>Free quizzes</h5>
-                        <p>Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <a href="#" >Read more</a>
+                        <h5>Elocution</h5>
+                        <p>Loosen your accent and speak like natives with our elocution specialists.</p>
+                        <a href="/our-services/elocution">Read more</a>
                     </div>
                 </div>
-
+        
             </div>
             <div id="get-started">
-                <h2>How to <span  class="ielts">Get Started?</span> </h2>
-                <div class="get-started">
-                    <h3>our-servicesing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
-                    lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
-                    parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
-                    rhoncus pronin sapien nunc accuan eget.</p>
-                    <a href="#" class="btn btn-primary">Read more</a>
-                </div>
-                <div class="get-started">
-                    <h3>Testing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
-                    lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
-                    parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
-                    rhoncus pronin sapien nunc accuan eget.</p>
-                    <a href="#" class="btn btn-primary">Read more</a>
-                </div>
+                <h2>Want to Get Started? <a href="/signup" class="btn btn-primary"> Sign up</a> or <a href="signin"
+                        class="btn btn-primary">Sign in</a></h2>
             </div>
-        </section>
+            </section>
 
         <section id="success" class="container-fluid">
-                <h2><span class="ielts">Success</span> stories</h2>
-                <div id="success-carousel">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <h2 class="success-text">Lektore was of immense help to me as i got my desired band(band 8) in my first and only attempt.</h2>
-                                <img class="success-image" src="images/asian-863318_1920.jpg" alt="lady-profile">
-                                <em>Chiamaka, Lagos.</em>
-                            </div>
-                            <div class="carousel-item">
-                                <h2 class="success-text">With the help of a tutor from Lektore, I was able to ace my IELTS exam in one sitting getting my desired band 8.</h2>
-                                <img class="success-image" src="images/asian-863318_1920.jpg" alt="lady-profile">
-                                <em>Dr. Aderonke, Lagos.</em>
-                            </div>
-                            <div class="carousel-item">
-                                <h2 class="success-text">I never expected to get a band 8.5 in my IELTS exam; but with the help of a tutor from Lektore, I got a band 8.5 in writing, and 8.5 overall.</h2>
-                                <img class="success-image" src="images/asian-863318_1920.jpg" alt="lady-profile">
-                                <em>Obehi, Benin city.</em>
-                            </div>
-                            <div class="carousel-item">
-                                <h2 class="success-text">Lektore helped me get an overall band 8.5 in my first and only attempt at the IELTS exam</h2>
+            <h2><span class="ielts">Success</span> stories</h2>
+            <div id="success-carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="success-text">Lektore was of immense help to me as i got my desired band (band 8)
+                                in my first and only attempt.</p>
+                            <img class="success-image" src="images/asian-863318_1920.jpg" alt="lady-profile">
+                            <em>Chiamaka, Lagos.</em>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="success-text">With the help of a tutor from Lektore, I was able to ace my IELTS
+                                exam in one sitting getting my desired band 8.</p>
+                            <img class="success-image" src="images/asian-863318_1920.jpg" alt="lady-profile">
+                            <em>Dr. Aderonke, Lagos.</em>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="success-text">I never expected to get a band 8.5 in my IELTS exam; but with the
+                                help of a tutor from Lektore, I got a band 8.5 in writing, and 8.5 overall.</p>
+                            <img class="success-image" src="images/asian-863318_1920.jpg" alt="lady-profile">
+                            <em>Obehi, Benin city.</em>
+                        </div>
+                        <div class="carousel-item">
+                            <hp class="success-text">Lektore helped me get an overall band 8.5 in my first and only
+                                attempt at the IELTS exam</p>
                                 <img class="success-image" src="images/asian-863318_1920.jpg" alt="lady-profile">
                                 <em>Moni, Egypt.</em>
-                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                
-            </section>
+            </div>
+        
+        </section>
         <%- include('partials/footer'); -%>

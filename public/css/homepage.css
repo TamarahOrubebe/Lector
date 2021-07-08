@@ -19,7 +19,7 @@
 
 .mid{
 
-    margin: 0px !important;
+    margin: 30px 0px !important;
 }
 
 
@@ -169,12 +169,12 @@ footer span, footer h5{
   
 .mid{
 
-    margin: 0px !important;
+    margin: 30px 0 !important;
 }
 
 
 #second img{
-    margin: 60px 0px !important;
+    margin: 10px 0px 40px 0px !important;
     width:400px !important;
     height:300px !important;
     border-radius: 12px;
@@ -399,7 +399,7 @@ nav{
 }
 
 #fourth #cards{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 #fourth div.cards{
@@ -426,18 +426,10 @@ nav{
     color:#0275d8;
 }
 
-#fourth .get-started{
-    margin: 50px 20px;
-    background-color:#e21737;
-    display:inline-block;
-    width:500px;
-    padding: 30px;
-    height: 300px;
-    text-align: left;
-}
+
 
 #get-started{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .get-started h3{
@@ -456,6 +448,9 @@ nav{
     
 }
 /* Success Stories section */
+#success {
+    margin-top: 0px;
+}
 
 #success-carousel{
      font-family: 'Raleway', sans-serif;
