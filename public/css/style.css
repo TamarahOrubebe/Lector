@@ -181,6 +181,33 @@ footer span, footer h5{
     border-radius: 12px;
 }
 
+
+/* THIRD SECTION */
+#third{
+    height: 300px;
+    text-align: center;
+    background-color: #e21737;
+    padding:20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#third h6, #third h2{
+    margin-top: -10px;
+    margin-bottom: 0px;
+    color: white;
+    font-weight: 700;
+}
+
+#third h6{
+    
+    font-size: 13px;
+}
+#third h2{
+    font-size: 50px;
+    
+}
+
+
 /* FOURTH SECTION */
 #fourth{
     font-family: 'Raleway', sans-serif;

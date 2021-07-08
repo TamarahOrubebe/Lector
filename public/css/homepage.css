@@ -38,32 +38,28 @@
 
 }
 
-
-/* THIRD SECTION  */
+/* THIRD SECTION */
 #third{
-    height: 350px;
     text-align: center;
     background-color: #e21737;
-    padding: auto;
+    padding:20px !important;
     font-family: 'Raleway', sans-serif;
 }
 
 #third h6, #third h2{
-    margin-bottom: 5px !important;
+    margin-top: -10px !important;
+    margin-bottom: 0px !important;
     color: white;
     font-weight: 700;
 }
 
 #third h6{
+    
     font-size: 13px;
 }
 #third h2{
-    font-size: 35px;
+    font-size: 35px !important;
     
-}
-
-#third i{
-    color: #0275d8;
 }
 
 
@@ -178,6 +174,31 @@ footer span, footer h5{
     width:400px !important;
     height:300px !important;
     border-radius: 12px;
+}
+
+/* THIRD SECTION */
+#third{
+    height: 300px;
+    text-align: center;
+    background-color: #e21737;
+    padding:20px !important;
+    font-family: 'Raleway', sans-serif;
+}
+
+#third h6, #third h2{
+    margin-top: -10px !important;
+    margin-bottom: 0px !important;
+    color: white;
+    font-weight: 700;
+}
+
+#third h6{
+    
+    font-size: 13px;
+}
+#third h2{
+    font-size: 35px !important;
+    
 }
 
 /* FOURTH SECTION */
