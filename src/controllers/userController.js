@@ -50,7 +50,7 @@ userController.createUser = (req, res) => {
     
     }
 
-    const { username, email, password} = req.body;
+    const { profileId, username, email, password} = req.body;
 
 		db.getUser(email).then((result) => {
             if (result[0]) { 
@@ -59,7 +59,7 @@ userController.createUser = (req, res) => {
                 return res.redirect("/signup"); 
 			} else {
 				bcrypt.hash(password, saltRounds, function (err, hash) {
-					db.createUser(username, email, hash).catch((err) =>
+					db.createUser(profileId, username, email, hash).catch((err) =>
 						console.log(err),
 					);
 				});

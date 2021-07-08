@@ -60,34 +60,28 @@ passport.use(
 		{
 			clientID: process.env.GOOGLE_CLIENT_ID,
 			clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-			callbackURL: "http://localhost:3000/auth/google/callback",
+			callbackURL: "https://test-lektor.azurewebsites.net/auth/google/callback",
 		},
 		function (accessToken, refreshToken, profile, done) {
-			
+			db.getUserByProfileId(profile.id)
+				.then((user) => {
+					if (user[0] == undefined) {
+						db.createUser(
+							profile.id,
+							profile.displayName,
+							profile.emails[0].value,
+						);
 
-            db.getUserByProfileId(profile.id).then(user => {
-                
-                    
-                if (user[0] == undefined) {
-                    db.createUser(
-                        profile.id,
-                        profile.displayName,
-                        profile.emails[0].value,
-                    );
+						db.getUser(profile.emails[0].value).then((user) => {
+                            done(null, user[0]);
+						});
+					}
 
-                    db.getUser(profile.emails[0].value).then(user => {
-                        done(null, user[0]);
-                    });
-                }
-
-                done(null, user[0]);
-            }).catch(err => {
-                done(err, null)
-            });
-                
-            
-               
-        
+					done(null, user[0]);
+				})
+				.catch((err) => {
+					done(err, null);
+				});
 		},
 	),
 );
@@ -97,29 +91,31 @@ passport.use(
 		{
 			clientID: process.env.FACEBOOK_APP_ID,
 			clientSecret: process.env.FACEBOOK_APP_SECRET,
-			callbackURL: "http://localhost:3000/auth/facebook/callback",
+			callbackURL:
+				"https://test-lektor.azurewebsites.net/auth/facebook/callback",
 			profileFields: ["id", "emails", "displayName"],
 		},
 		function (accessToken, refreshToken, profile, done) {
-            db.getUserByProfileId(profile.id).then(user => {
-                
-				console.log(profile);
-				if (user[0] == undefined) {
-					db.createUser(
-						profile.id,
-						profile.displayName,
-						profile.emails[0].value,
-					);
+			db.getUserByProfileId(profile.id)
+				.then((user) => {
+					console.log(profile);
+					if (user[0] == undefined) {
+						db.createUser(
+							profile.id,
+							profile.displayName,
+							profile.emails[0].value,
+						);
 
-					db.getUser(profile.emails[0].value).then(user => {
-						done(null, user[0]);
-					});
-				}
+						db.getUser(profile.emails[0].value).then((user) => {
+							done(null, user[0]);
+						});
+					}
 
-				done(null, user[0]);
-            }).catch(err => {
-                done(err, null)
-            });
+					done(null, user[0]);
+				})
+				.catch((err) => {
+					done(err, null);
+				});
 		},
 	),
 );
@@ -129,30 +125,28 @@ passport.use(
 		{
 			consumerKey: process.env.TWITTER_CONSUMER_KEY,
 			consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
-			callbackURL: "http://localhost:3000/auth/twitter/callback",
+			callbackURL:
+				"https://test-lektor.azurewebsites.net/auth/twitter/callback",
 			profileFields: ["id", "displayName", "emails"],
 		},
 		function (token, tokenSecret, profile, done) {
-            db.getUserByProfileId(profile.id).then(user => {
-                
-                console.log(profile);
+			db.getUserByProfileId(profile.id)
+				.then((user) => {
+					console.log(profile);
 
-				if (user == undefined) {
-					db.createUser(
-						profile.id,
-						profile.displayName,
-						profile.username,
-					);
+					if (user == undefined) {
+						db.createUser(profile.id, profile.displayName, profile.username);
 
-					db.getUserByProfileId(profile.id).then(user => {
-                        done(null, user[0]);
-					});
-				}
+						db.getUserByProfileId(profile.id).then((user) => {
+							done(null, user[0]);
+						});
+					}
 
-                done(null, user[0]);
-            }).catch(err => {
-                done(err, null);
-            });
+					done(null, user[0]);
+				})
+				.catch((err) => {
+					done(err, null);
+				});
 		},
 	),
 );

@@ -1,4 +1,181 @@
-@media only screen and (max-width: 1024px) {
+/* For mobile phones in portrait mode */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+    /* FIRST SECTION */
+
+
+    nav{
+        position: relative;
+        z-index: 1;
+    }
+
+
+/* SECOND SECTION */
+#second{
+    display: block !important;
+}
+  
+
+.mid{
+
+    margin: 0px !important;
+}
+
+
+
+.mid h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 650;
+}
+
+#second img{
+    margin: 30px 0px !important;
+    width:200px !important;
+    height:200px !important;
+    border-radius: 12px;
+
+}
+
+
+/* THIRD SECTION  */
+#third{
+    height: 350px;
+    text-align: center;
+    background-color: #e21737;
+    padding: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+#third h6, #third h2{
+    margin-bottom: 5px !important;
+    color: white;
+    font-weight: 700;
+}
+
+#third h6{
+    font-size: 13px;
+}
+#third h2{
+    font-size: 35px;
+    
+}
+
+#third i{
+    color: #0275d8;
+}
+
+
+
+/* FOURTH SECTION */
+#fourth{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 20px !important;
+}
+
+#fourth h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#fourth #cards{
+    margin-bottom: 70px !important;
+}
+
+#fourth div.cards{
+    display:block !important;
+    margin:50px !important;
+    width: 200px;
+}
+
+#fourth div.cards a{
+    border-radius: 13px;
+    border:2px solid #0275d8;
+    padding: 5px 10px;
+    color: #0275d8;
+    text-decoration: none;
+}
+
+
+#fourth i{
+    color:#e21737;
+    margin-bottom: 20px;
+}
+
+#fourth h5{
+    color:#0275d8;
+}
+
+
+#fourth .get-started{
+    margin: 20px !important;
+    background-color:#e21737;
+    display: block !important;
+    width:300px !important;
+    padding: 10px;
+    height: 200px;
+    text-align: left;
+}
+
+.get-started p{
+   
+    margin-bottom: 15px !important;
+        
+}
+
+
+
+
+/* FOOTER */
+footer{
+    display: block !important;
+    
+}
+
+#footer{
+    margin-right: 0px !important; 
+    float: none !important;
+}
+
+
+#footer div{
+    display: inline-block !important;
+    margin: 10px !important;
+}
+
+
+
+
+/* #contact{
+    position: relative !important;
+  bottom: 96px !important;
+} */
+
+/* #follow{
+    position: relative !important;
+    bottom: 123px !important;
+    
+} */
+
+/* #quick{
+    position: initial !important;
+    
+} */
+
+
+/* .copyright{
+    position: initial !important;
+    
+} */
+
+  
+}
+
+
+/* For tablets */
+@media (min-width: 500px) and (max-width: 1024px) {
 
     /* FIRST SECTION */
 
@@ -60,7 +237,7 @@
 
 
 #fourth .get-started{
-    margin: 50px 30pxpx !important;
+    margin: 50px 30px !important;
     background-color:#e21737;
     display:inline-block;
     width:380px !important;
@@ -131,9 +308,9 @@ html, body{
 #first {
 background-image: url('../images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg');
 background-repeat: no-repeat;
-background-size: 100% 100%;
-background-position: center;
-height: 550px;
+background-size: cover;
+background-position: bottom;
+height: 520px;
 
 }
 
@@ -227,9 +404,6 @@ nav{
     /* padding: 20px; */
     
 }
-
-
-
 
 .mid{
     margin:30px;

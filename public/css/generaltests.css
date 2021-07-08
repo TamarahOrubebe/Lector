@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) {
+@media (min-width: 500px) and (max-width: 1024px) {
 
 /* FIRST SECTION */
     nav{
@@ -128,7 +128,7 @@ html, body{
 #first {
 background-image: url('../images/evaluation-1516644_1920.jpg');
 background-repeat: no-repeat;
-background-size: 100% 100%;
+background-size: cover;
 background-position: center;
 height: 550px;
 

@@ -1,4 +1,145 @@
-@media only screen and (max-width: 1024px) {
+/* for mobile phones in portrait mode */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+    /* FIRST SECTION */
+
+
+    nav{
+        position: relative;
+        z-index: 1;
+    }
+
+
+/* SECOND SECTION */
+#second{
+    display: block !important;
+}
+  
+
+.mid{
+
+    margin: 0px !important;
+}
+
+
+
+.mid h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 650;
+}
+
+#second img{
+    margin: 30px 0px !important;
+    width:200px !important;
+    height:200px !important;
+    border-radius: 12px;
+
+}
+
+
+/* THIRD SECTION  */
+#third{
+    height: 350px;
+    text-align: center;
+    background-color: #e21737;
+    padding: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+#third h6, #third h2{
+    margin-bottom: 5px !important;
+    color: white;
+    font-weight: 700;
+}
+
+#third h6{
+    font-size: 13px;
+}
+#third h2{
+    font-size: 35px;
+    
+}
+
+#third i{
+    color: #0275d8;
+}
+
+
+
+/* FOURTH SECTION */
+#fourth{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 20px !important;
+}
+
+#fourth h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#fourth #cards{
+    margin-bottom: 70px !important;
+}
+
+#fourth div.cards{
+    display:block !important;
+    margin:50px !important;
+    width: 200px;
+}
+
+#fourth div.cards a{
+    border-radius: 13px;
+    border:2px solid #0275d8;
+    padding: 5px 10px;
+    color: #0275d8;
+    text-decoration: none;
+}
+
+
+#fourth i{
+    color:#e21737;
+    margin-bottom: 20px;
+}
+
+#fourth h5{
+    color:#0275d8;
+}
+
+
+#fourth .get-started{
+    margin: 20px !important;
+    background-color:#e21737;
+    display: block !important;
+    width:300px !important;
+    height: 200px;
+    text-align: left;
+}
+
+.get-started p{
+   
+    margin-bottom: 15px !important;
+        
+}
+
+footer span, footer h5{
+    display: none;
+}
+
+#footer{
+     margin-top: -40px 20px 0px 20px;
+    display: flex;
+    
+}
+
+
+}
+
+
+/* For tablets  */
+@media  (min-width: 500px) and (max-width: 1024px) {
 
     /* FIRST SECTION */
 
@@ -37,7 +178,7 @@
 
 
 #fourth .get-started{
-    margin: 50px 30pxpx !important;
+    margin: 50px 30px !important;
     background-color:#e21737;
     display:inline-block;
     width:380px !important;
@@ -58,44 +199,13 @@ footer{
     
 }
 
+
+
 #footer{
-    margin-right: 0px !important; 
-    float: none !important;
-}
-
-
-#footer div{
-    display: inline-block !important;
-    margin: 50px !important;
-}
-
-
-#logo{
-    
-    display: none !important;
-}
-
-#contact{
-    position: relative !important;
-  bottom: 96px !important;
-}
-
-#follow{
-    position: relative !important;
-    bottom: 123px !important;
+     margin-top: -40px 20px 0px 20px;
+    display: flex;
     
 }
-
-#quick{
-    position: initial !important;
-    
-}
-
-
-/* .copyright{
-    position: initial !important;
-    
-} */
 
 }
 
@@ -105,11 +215,13 @@ footer{
 #first {
 background-image: url('../images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg');
 background-repeat: no-repeat;
-background-size: 100% 100%;
+background-size: cover;
 background-position: center;
 height: 550px;
 
 }
+
+
 #first .logo{
     position: relative;
     top: 10px;
@@ -194,8 +306,6 @@ nav{
 }
 
 
-
-
 .mid{
     margin:30px 60px;
 }
@@ -267,7 +377,7 @@ nav{
 }
 
 #fourth #cards{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 #fourth div.cards{
@@ -294,33 +404,17 @@ nav{
     color:#0275d8;
 }
 
-#fourth .get-started{
-    margin: 50px 30px;
-    background-color:#e21737;
-    display:inline-block;
-    width:500px;
-    padding: 30px;
-    height: 300px;
-    text-align: left;
-}
 
-#get-started{
-    margin-bottom: 20px;
-}
 
-.get-started h3{
+
+#get-started h3{
     font-weight: 900;
 }
 
-.get-started p{
-    font-size: 13px;
-    color:white;
-    margin-bottom: 50px;
-        
-}
 
-.get-started a{
+#get-started a{
     border-radius: 10px;
+    margin:30px;
     
 }
 /* Success Stories section */
@@ -375,47 +469,22 @@ footer h5.logo{
     /* position:relative;
     top: -15px;
     left: 45px; */
-    color:#0275d8
+    color:#0275d8;
 }
 
 #footer{
-    float: right;
-    margin-right: 100px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 
-
-#footer div{
-display: inline-block;
-margin: 0px 50px;
-}
-
-
-#footer p{
-    position: relative;
-    left: 32px;
-    font-weight: 900;
-    font-size: 18px;
-
-}
 
 #footer ul{
     list-style: none;
 }
 
-#contact{
-    position: relative;
-   bottom: 180px;
-}
 
-#follow{
-    position: relative;
-    bottom: 207px;
-}
-
-#quick{
-    position: relative;
-    bottom: 84px;
-}
 
 #quick a{
     text-decoration: none;
@@ -425,21 +494,14 @@ margin: 0px 50px;
 color:blue;
 }
 
-#follow li{
-    display:inline-block;
-    margin: 10px;
+
+#follow .first{
+    margin-bottom: 5px;
 }
 
 #follow li a{
     color:#0275d8;
 }
 
-#follow .first{
-    margin-left: 0px;
-}
 
-.copyright{
-    position: relative;
-    top: 180px;
-}
 
