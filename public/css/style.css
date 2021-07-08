@@ -129,7 +129,7 @@ footer span, footer h5{
 }
 
 #footer{
-     margin-top: -40px 20px 0px 20px;
+     margin-top: -30px 20px 0px 20px;
     display: flex;
     
 }
@@ -414,7 +414,7 @@ nav{
 
 #get-started a{
     border-radius: 10px;
-    margin:30px;
+    /* margin:30px; */
     
 }
 /* Success Stories section */
@@ -434,8 +434,12 @@ nav{
 }
 
 .success-text{
-    font-size: 3rem;
-    line-height: 1.5;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    /* line-height: 1.5; */
+    text-align: center;
+    /* font-size: 50px; */
+    font-weight: 700;
 }
 
 #success h2{
