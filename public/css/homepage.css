@@ -39,7 +39,7 @@
 }
 
 /* THIRD SECTION */
-#third{
+/* #third{
     text-align: center;
     background-color: #e21737;
     padding:20px !important;
@@ -60,7 +60,7 @@
 #third h2{
     font-size: 35px !important;
     
-}
+} */
 
 
 
@@ -178,7 +178,6 @@ footer span, footer h5{
 
 /* THIRD SECTION */
 #third{
-    height: 300px;
     text-align: center;
     background-color: #e21737;
     padding:20px !important;
@@ -186,16 +185,17 @@ footer span, footer h5{
 }
 
 #third h6, #third h2{
-    margin-top: -10px !important;
-    margin-bottom: 0px !important;
+   
+    margin-bottom: 10px !important;
     color: white;
     font-weight: 700;
 }
 
 #third h6{
-    
+     margin-top: 10px !important;
     font-size: 13px;
 }
+
 #third h2{
     font-size: 35px !important;
     
