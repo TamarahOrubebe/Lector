@@ -297,15 +297,14 @@ nav{
 /* Second section */
 #second {
     display: flex;
-   padding: 50px;
-    margin-bottom: 0px;
+   
 }
 
 
 
 
 .mid{
-    font-family: 'Raleway', sans-serif;
+    
     margin:30px;
 }
 
@@ -321,7 +320,7 @@ margin-top: 5px;
 }
 
 #second img{
-    margin: 30px 20px 50px;
+    margin: 90px 20px 50px;
     width:450px;
     height:280px;
     border-radius: 12px;
@@ -363,7 +362,7 @@ margin-top: 5px;
     font-weight: 700;
 }
 
-#third #cards #fourth #cards{
+#third #cards, #fourth #cards{
     margin-bottom: 50px;
 }
 

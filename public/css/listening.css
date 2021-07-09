@@ -283,16 +283,15 @@ nav{
 /* Second section */
 #second {
     display: flex;
-    padding: 50px;
-    margin-bottom: 0px;
+   
 }
 
 
 
 
 .mid{
-    font-family: 'Raleway', sans-serif;
-    margin:30px 30px;
+    
+    margin:30px;
 }
 
 .mid h2{
@@ -307,7 +306,7 @@ margin-top: 5px;
 }
 
 #second img{
-    margin: 30px 20px 50px;
+    margin: 90px 20px 50px;
     width:450px;
     height:280px;
     border-radius: 12px;
