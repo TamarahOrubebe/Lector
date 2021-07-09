@@ -4,8 +4,6 @@
   
   
     /* FIRST SECTION */
-
-
     nav{
         position: relative;
         z-index: 1;
@@ -20,7 +18,7 @@
   
 .mid{
 
-    margin: 0px !important;
+    margin: 30 0px !important;
 }
 
 
@@ -94,13 +92,7 @@
 }
 
 
-/* #first-card{
-    margin-left: 10px !important;
-} */
 
-/* #last-card{
-    margin-right: -25px !important;
-} */
 
 
 /* FOOTER */
@@ -130,16 +122,6 @@ footer span, footer h5{
 
 /* FIRST SECTION */
 
-/* #first {
-    width: 100% !important;
-background-image: url('../images/writing-1149962_1920.jpg') !important;
-background-repeat: no-repeat !important;
-background-size: cover !important;
-background-position: center !important;
-object-fit: cover !important;
-height: auto !important;
-
-} */
     nav{
         position: relative;
         z-index: 5;
