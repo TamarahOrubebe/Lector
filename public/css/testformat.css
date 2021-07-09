@@ -110,7 +110,11 @@ padding: 30px !important;
 .tutor-card h5, em{
   position: relative;
   left: 75px !important;
-  bottom: 30px !important;
+  bottom: 60px !important;
+}
+
+.tutor-card h5{
+    font-size: 8px;
 }
 
 .tutor-card p {
@@ -326,7 +330,7 @@ nav{
 /* Second section */
 #second {
     display: flex;
-    padding: 50px;
+   
 }
 
 
@@ -334,7 +338,7 @@ nav{
 
 .mid{
     font-family: 'Raleway', sans-serif;
-    margin:30px 30px;
+    margin:30px;
 }
 
 .mid h2{
