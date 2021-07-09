@@ -1,4 +1,4 @@
-/* For mobile phones in portrait mode */
+/* for mobile phones in portrait mode */
 @media (min-width: 320px) and (max-width: 480px) {
   
   
@@ -11,6 +11,13 @@
     }
 
 
+    /* .header h1{
+    position: relative !important;
+    left: 30px !important;
+     color: #0275d8;
+    font-size: 60px;
+}    */
+
 /* SECOND SECTION */
 #second{
     display: block !important;
@@ -18,7 +25,6 @@
   
 
 .mid{
-
     margin: 30px 0px !important;
 }
 
@@ -37,8 +43,6 @@
     border-radius: 12px;
 
 }
-
-
 
 
 
@@ -88,7 +92,6 @@
     background-color:#e21737;
     display: block !important;
     width:300px !important;
-    padding: 10px;
     height: 200px;
     text-align: left;
 }
@@ -99,10 +102,6 @@
         
 }
 
-
-
-
-/* FOOTER */
 footer span, footer h5{
     display: none;
 }
@@ -114,16 +113,11 @@ footer span, footer h5{
 }
 
 
-
-
-
-
-  
 }
 
 
-/* For tablets */
-@media (min-width: 500px) and (max-width: 1024px) {
+/* For tablets  */
+@media  (min-width: 500px) and (max-width: 1024px) {
 
     /* FIRST SECTION */
 
@@ -132,8 +126,13 @@ footer span, footer h5{
         z-index: 1;
     }
 
-    
-     
+
+    .header h1{
+    /* position: relative !important;
+    left: 30px !important; */
+     color: #0275d8;
+    font-size: 60px;
+}   
 
 /* SECOND SECTION */
 #second{
@@ -153,6 +152,8 @@ footer span, footer h5{
     height:300px !important;
     border-radius: 12px;
 }
+
+
 
 
 
@@ -194,13 +195,8 @@ footer{
     
 }
 
-
 }
 
-
-html, body{
-    width:100%;
-}
 
 
 /*FIRST SECTION */
@@ -208,16 +204,11 @@ html, body{
 background-image: url('../images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg');
 background-repeat: no-repeat;
 background-size: cover;
-background-position: bottom;
-height: 520px;
+background-position: center;
+height: 550px;
 
 }
 
-/* Nav section*/
-/* #first ul {
-position:relative;
-bottom: 50px;
-} */
 
 #first .logo{
     position: relative;
@@ -235,11 +226,18 @@ bottom: 50px;
 #first i {
     color:#e21737;
 }
+/* Nav section*/
+/* #first ul {
+position:relative;
+bottom: 50px;
+} */
+
+
 
 
 nav{
-    float:right;
-    position: relative;
+    
+    float:right; 
     top: -65px;
     
 }
@@ -260,26 +258,23 @@ nav{
 
 /* Header div */
  .header{
-    text-align: center;
-     position: relative;
-    top: 150px;
-    left: 150px;
-    
+    text-align: center; 
+    position:relative;
+    top: 100px;
+    left: 0px;
 }
     
 .header h1{
-    /* position: absolute;
-    left: 150px; */
-    /* margin-left: 100px;
-    margin-right: 100px; */
-    color: #0275d8;
+    visibility: hidden;
+    /* position: relative;
+    left: 20px; */
+     color: #0275d8;
     font-size: 60px;
-
 }
 
 .header h2{
     margin-top: 30px;
-    color: white;
+    color: #0275d8;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -300,9 +295,9 @@ nav{
 /* Second section */
 #second {
     display: flex;
-    /* padding: 20px; */
-    
+    /* padding: 50px; */
 }
+
 
 .mid{
     margin:30px;
@@ -316,7 +311,7 @@ nav{
 
 
 #second img{
-    margin: 90px 20px 10px;
+    margin: 90px 20px 50px;
     width:450px;
     height:350px;
     border-radius: 12px;
@@ -326,7 +321,7 @@ nav{
     color:#0275d8;
 }
 
-.lektore{
+ .lektore{
     color:#e21737;
 }
 
@@ -365,7 +360,7 @@ nav{
 #fourth{
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding-top: 50px;
+    padding: 70px;
 }
 
 #fourth h2{
@@ -379,8 +374,8 @@ nav{
 
 #fourth div.cards{
     display: inline-block;
-    margin:30px 50px;
-    width: 300px;
+    margin:30px 90px;
+    width: 200px;
 }
 
 #fourth div.cards a{
@@ -403,36 +398,25 @@ nav{
 
 
 
-#get-started{
-    margin-bottom: 40px;
-}
 
-.get-started h3{
+#get-started h3{
     font-weight: 900;
 }
 
-.get-started p{
-    font-size: 13px;
-    color:white;
-    margin-bottom: 50px;
-        
-}
 
-.get-started a{
+#get-started a{
     border-radius: 10px;
+    /* margin:30px; */
     
 }
 /* Success Stories section */
-#success {
-    margin-top: 0px;
-}
 
 #success-carousel{
      font-family: 'Raleway', sans-serif;
      background-color:#e21737;
      text-align: center;
-     color:white;
-    
+     color:white
+     
 }
 
 .success-image{
@@ -442,8 +426,12 @@ nav{
 }
 
 .success-text{
-    font-size: 3rem;
-    line-height: 1.5;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    /* line-height: 1.5; */
+    text-align: center;
+    /* font-size: 50px; */
+    font-weight: 700;
 }
 
 #success h2{
@@ -510,4 +498,6 @@ color:blue;
 #follow li a{
     color:#0275d8;
 }
+
+
 
