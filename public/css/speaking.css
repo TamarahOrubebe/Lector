@@ -67,41 +67,44 @@
 }
 
 /* SIXTH SECTION */
-.tutor{
-    padding: 10px !important;
-    width: 300px !important;
+#sixth h2{
+    margin: 20px 0px !important;
    
 }
 
-.tutor-card{
-     display: inline-block;
-     width: 200px !important;
-     margin: 5px 0px 5px 5px !important ;
+
+.tutor{
+padding: 0 !important;
+
+}
+
+ .tutor-card{
+     display: block !important;
+     width: 240px !important;
+     margin: 23px 0px 23px 40px !important;
      border: 1px solid black;
      border-radius: 10px;
     
 }
 
+#last-card{
+    margin-right: -25px;
+}
+
 .tutor-card img{
-    margin: 10px !important;
+    margin: 10px;
     border-radius: 10px;
-    width: 50px !important;
-    height: 50px !important;
+    width: 65px !important;
+    height: 65px !important;
 }
+
+
 .tutor-card h5, em{
+    font-size: 13px;
   position: relative;
-  left: 50px !important;
-  bottom: 40px !important;
+  left: 80px !important;
+  bottom: 60px !important;
 }
-
-
-/* #first-card{
-    margin-left: 10px !important;
-} */
-
-/* #last-card{
-    margin-right: -25px !important;
-} */
 
 
 /* FOOTER */
