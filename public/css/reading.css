@@ -475,13 +475,11 @@ padding: 50px;
 
 
 
-/* FOOTER SECTION */
+/* Footer Section */
 
 footer{
-   
     font-family: 'Raleway', sans-serif;
     margin-top: 30px;
-    
     
 }
 
@@ -496,48 +494,23 @@ footer .logo i {
 }
 
 footer h5.logo{
-   
+    
     color:#0275d8;
 }
 
 #footer{
-    float: right;
-    margin-right: 100px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 
-
-#footer div{
-display: inline-block;
-margin: 0px 50px;
-}
-
-
-#footer p{
-    position: relative;
-    left: 32px;
-    font-weight: 900;
-    font-size: 18px;
-
-}
 
 #footer ul{
     list-style: none;
 }
 
-#contact{
-    position: relative;
-   bottom: 180px;
-}
 
-#follow{
-    position: relative;
-    bottom: 207px;
-}
-
-#quick{
-    position: relative;
-    bottom: 84px;
-}
 
 #quick a{
     text-decoration: none;
@@ -547,21 +520,13 @@ margin: 0px 50px;
 color:blue;
 }
 
-#follow li{
-    display:inline-block;
-    margin: 10px;
+
+#follow .first{
+    margin-bottom: 5px;
 }
 
 #follow li a{
     color:#0275d8;
 }
 
-#follow .first{
-    margin-left: 0px;
-}
-
-.copyright{
-    position: relative;
-    top: 180px;
-}
 
