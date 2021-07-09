@@ -88,7 +88,7 @@ padding: 30px !important;
 
  .tutor-card{
      display: block !important;
-     width: 250px !important;
+     width: 270px !important;
      margin: 23px;
      border: 1px solid black;
      border-radius: 10px;
@@ -109,13 +109,13 @@ padding: 30px !important;
 
 .tutor-card h5, em{
   position: relative;
-  left: 75px !important;
+  left: 80px !important;
   bottom: 60px !important;
 }
 
-.tutor-card h5{
-    font-size: 8px;
-}
+/* .tutor-card h5{
+    /* font-size: 8px; */
+
 
 .tutor-card p {
     margin: 10px;
