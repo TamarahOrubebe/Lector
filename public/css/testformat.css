@@ -89,7 +89,7 @@ padding: 0 !important;
  .tutor-card{
      display: block !important;
      width: 240px !important;
-     margin: 23px;
+     margin: 23px 0px 23px 40px;
      border: 1px solid black;
      border-radius: 10px;
     
@@ -108,7 +108,7 @@ padding: 0 !important;
 
 
 .tutor-card h5, em{
-    font-size: 12px;
+    font-size: 13px;
   position: relative;
   left: 80px !important;
   bottom: 60px !important;
