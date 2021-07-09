@@ -1,3 +1,125 @@
+/* For mobile phones in portrait mode */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+    /* FIRST SECTION */
+
+
+    nav{
+        position: relative;
+        z-index: 1;
+    }
+
+
+/* SECOND SECTION */
+#second{
+
+    display: block !important;
+}
+  
+.mid{
+
+    margin: 0px !important;
+}
+
+
+#second img{
+    margin: 30px 0px !important;
+    width:250px !important;
+    height:200px !important;
+    border-radius: 12px;
+}
+
+
+
+
+/* FIFTH SECTION */
+#fifth{
+    height: 200px !important;
+    text-align: center;
+    background-color: #e21737;
+    padding:20px !important;
+    font-family: 'Raleway', sans-serif;
+}
+
+#fifth h2{
+    margin: 10px 0px !important;
+    font-size: 30px !important;
+    color: white;
+    font-weight: 700;
+}
+
+#fifth a {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px !important;
+    width: 80px !important;
+    margin: 20px !important;
+    padding: 2px;
+    border-radius: 12px;
+    
+}
+
+/* SIXTH SECTION */
+#sixth h2{
+    margin: 20px 0px !important;
+   
+}
+
+
+.tutor{
+padding: 0 !important;
+
+}
+
+ .tutor-card{
+     display: block !important;
+     width: 230px !important;
+     margin: 23px 0px 23px 40px !important;
+     border: 1px solid black;
+     border-radius: 10px;
+    
+}
+
+
+.tutor-card img{
+    margin: 10px;
+    border-radius: 10px;
+    width: 65px !important;
+    height: 65px !important;
+}
+
+
+.tutor-card h5, em{
+    font-size: 13px;
+  position: relative;
+  left: 80px !important;
+  bottom: 60px !important;
+}
+
+
+
+
+
+
+/* FOOTER */
+footer span, footer h5{
+    display: none;
+}
+
+#footer{
+     margin-top: 30px !important;
+    display: flex;
+    
+}
+
+  }
+
+
+
+
+
+
 @media  (min-width: 500px) and (max-width: 1024px){
 
 /* FIRST SECTION */
@@ -421,9 +543,6 @@ padding: 50px;
 }
 
 
-/* #first-card{
-    margin-left: 30px;
-} */
 
 #last-card{
     margin-right: -25px;
@@ -483,9 +602,7 @@ footer .logo i {
 }
 
 footer h5.logo{
-    /* position:relative;
-    top: -15px;
-    left: 45px; */
+   
     color:#0275d8;
 }
 

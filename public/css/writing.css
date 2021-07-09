@@ -4,6 +4,8 @@
   
   
     /* FIRST SECTION */
+
+
     nav{
         position: relative;
         z-index: 1;
@@ -18,81 +20,80 @@
   
 .mid{
 
-    margin: 30 0px !important;
+    margin: 30px 0px !important;
 }
 
 
 #second img{
     margin: 30px 0px !important;
-    width:200px !important;
+    width:250px !important;
     height:200px !important;
     border-radius: 12px;
 }
 
-/* FOURTH SECTION
-#fifth{
+/* THIRD AND FOURTH SECTIONS */
+#third, #fourth{
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding: 50px !important;
-} */
-
-
-/* FIFTH SECTION */
-#fifth{
-    height: 200px !important;
-    text-align: center;
-    background-color: #e21737;
-    padding:20px !important;
-    font-family: 'Raleway', sans-serif;
+    padding: 20px !important;
 }
 
-#fifth h2{
-    margin: 10px 0px !important;
-    font-size: 30px !important;
-    color: white;
+#third h2, #fourth h2{
+    font-size: 35px;
     font-weight: 700;
 }
 
-#fifth a {
-    font-family: 'Raleway', sans-serif;
-    margin-top: 10px !important;
-    width: 80px !important;
-    margin: 20px !important;
-    padding: 2px;
-    border-radius: 12px;
-    
+#third #cards, #fourth #cards{
+    margin-bottom: 70px !important;
 }
 
-/* SIXTH SECTION */
-.tutor{
-    padding: 10px !important;
-    width: 300px !important;
+#third div.cards, #fourth div.cards{
+    display:block !important;
+    margin:60px !important;
+    width: 200px;
+}
+
+
+
+/* FIFTH SECTION */
+#fifth h2{
+    margin: 20px 0px !important;
    
 }
 
-.tutor-card{
-     display: inline-block;
-     width: 200px !important;
-     margin: 5px 0px 5px 5px !important ;
+
+.tutor{
+padding: 0 !important;
+
+}
+
+ .tutor-card{
+     display: block !important;
+     width: 230px !important;
+     margin: 23px 0px 23px 40px !important;
      border: 1px solid black;
      border-radius: 10px;
     
 }
 
+#last-card{
+    margin-right: -25px;
+}
+
 .tutor-card img{
     margin: 10px;
     border-radius: 10px;
-    width: 50px !important;
-    height: 50px !important;
+    width: 65px !important;
+    height: 65px !important;
 }
+
+
 .tutor-card h5, em{
+    font-size: 13px;
   position: relative;
-  left: 50px !important;
-  bottom: 40px !important;
+  left: 80px !important;
+  bottom: 60px !important;
 }
-
-
-
 
 
 /* FOOTER */
@@ -105,7 +106,6 @@ footer span, footer h5{
     display: flex;
     
 }
-
 
   
 }
@@ -151,40 +151,9 @@ footer span, footer h5{
     border-radius: 12px;
 }
 
-/* FOURTH SECTION
-#fifth{
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding: 50px !important;
-} */
+
 
 /* FIFTH SECTION */
-#fifth{
-    height: 350px;
-    text-align: center;
-    background-color: #e21737;
-    padding:30px !important;
-    font-family: 'Raleway', sans-serif;
-}
-
-#fifth h2{
-    margin: 20px 0px !important;
-    font-size: 50px;
-    color: white;
-    font-weight: 700;
-}
-
-#fifth a {
-    font-family: 'Raleway', sans-serif;
-    margin-top: 20px !important;
-    width: 120px;
-    margin: 35px;
-    padding: 2px;
-    border-radius: 12px;
-    
-}
-
-/* SIXTH SECTION */
 .tutor{
     padding: 10px !important;
     width: 380px !important;
@@ -215,13 +184,7 @@ footer span, footer h5{
 
 
 
-/* #first-card{
-    margin-left: 10px !important;
-} */
 
-/* #last-card{
-    margin-right: -25px !important;
-} */
 
 
 /* FOOTER */
@@ -253,17 +216,11 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: top;
 height: 520px;
-/* padding-bottom: 40%;
-object-fit: cover;
-object-position: center; */
+
 
 }
 
-/* Nav section*/
-/* #first ul {
-position:relative;
-bottom: 50px;
-} */
+
 
 #first .logo{
     position: relative;
@@ -272,9 +229,7 @@ bottom: 50px;
 }
 
 #first h5.logo{
-    /* position:relative;
-    top: -15px;
-    left: 45px; */
+    
     color:#0275d8;
 }
 
@@ -349,7 +304,7 @@ nav{
 
 .mid{
     font-family: 'Raleway', sans-serif;
-    margin:30px 30px;
+    margin:30px;
 }
 
 .mid h2{
@@ -386,7 +341,7 @@ margin-top: 5px;
 
 
 /* THIRD AND FOURTH SECTIONS */
-#third{
+#third, #fourth{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     padding: 50px;
@@ -398,9 +353,7 @@ margin-top: 5px;
 
 #fourth{
     background-color: rgb(238, 237, 237);
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding: 50px;
+    
 }
 
 #third h2, #fourth h2{
@@ -408,7 +361,7 @@ margin-top: 5px;
     font-weight: 700;
 }
 
-#third #cards #fourth #cards{
+#third #cards, #fourth #cards{
     margin-bottom: 50px;
 }
 
@@ -448,41 +401,17 @@ margin-top: 5px;
 
 
 /* FIFTH SECTION */
+
+
+/* fifth SECTION */
 #fifth{
-    height: 350px;
-    text-align: center;
-    background-color: #e21737;
-    padding:50px;
-    font-family: 'Raleway', sans-serif;
-}
-
-#fifth h2{
-    margin: 20px 0px;
-    font-size: 50px;
-    color: white;
-    font-weight: 700;
-}
-
-#fifth a {
-    font-family: 'Raleway', sans-serif;
-    margin-top: 30px;
-    width: 120px;
-    margin: 35px;
-    padding: 2px;
-    border-radius: 12px;
-    
-}
-
-
-/* SIXTH SECTION */
-#sixth{
   font-family: 'Raleway', sans-serif;
  
  
  
 }
 
-#sixth h2{
+#fifth h2{
     margin: 40px 0px;
     text-align: center;
     font-size: 50px;
@@ -505,9 +434,7 @@ padding: 50px;
 }
 
 
-/* #first-card{
-    margin-left: 30px;
-} */
+
 
 #last-card{
     margin-right: -25px;

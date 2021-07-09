@@ -15,7 +15,7 @@
   
 .mid{
 
-    margin: 0px !important;
+    margin: 30px 0px !important;
 }
 
 
@@ -184,7 +184,7 @@ nav{
 /* Second section */
 #second {
     display: flex;
-    padding: 50px;
+    
 }
 
 
@@ -192,7 +192,7 @@ nav{
 
 .mid{
     font-family: 'Raleway', sans-serif;
-    margin:30px 30px;
+    margin:30px;
 }
 
 .mid h2{
