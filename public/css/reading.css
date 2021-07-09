@@ -47,6 +47,12 @@
     margin-bottom: 70px !important;
 }
 
+#third div.cards{
+
+    width: 200px !important;
+}
+
+
 #third div.cards, #fourth div.cards{
     display:block !important;
     margin:60px !important;
@@ -144,14 +150,14 @@ footer span, footer h5{
 }
 
 /* THIRD SECTION */
-#third{
+/* #third{
     margin-top: 0px !important;
 }
 #third div.cards {
     display: inline-block;
-    width: 350px;
+    width: 200px;
     margin: 50px 20px;
-}
+} */
 
 
 
