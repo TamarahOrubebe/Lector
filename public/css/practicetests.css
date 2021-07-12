@@ -1,4 +1,153 @@
-@media (min-width: 500px) and (max-width: 1024px) {
+/* for mobile phones in portrait mode */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+    /* FIRST SECTION */
+
+
+    nav{
+        position: relative;
+        z-index: 1;
+    }
+
+
+    
+
+/* SECOND SECTION */
+#second{
+    display: block !important;
+}
+  
+
+.mid{
+    margin: 30px 0px !important;
+}
+
+
+
+.mid h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 650;
+}
+
+.mid a {
+    display: block !important;
+    
+}
+
+#second img{
+    margin: 30px 0px !important;
+    width:250px !important;
+    height:200px !important;
+    border-radius: 12px;
+
+}
+
+
+
+/* FOURTH AND FIFTH SECTIONS*/
+#fourth, #fifth{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 20px !important;
+}
+
+#fourth h2, #fifth h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#fourth #cards, #fifth #cards{
+    margin-bottom: 70px !important;
+}
+
+#fourth div.cards, #fifth div.cards{
+    display:block !important;
+    margin:60px !important;
+    width: 200px;
+}
+
+/* SIXTH SECTION  */
+
+#sixth{
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+#sixth h2{
+    margin: 20px 0px !important;
+   
+}
+
+
+.tutor{
+padding: 0 0 0 20px !important;
+
+}
+
+ .tutor-card{
+     display: block !important;
+     width: 230px !important;
+     margin: 23px 0px 23px 50px !important;
+     border: 1px solid black;
+     border-radius: 10px;
+    
+}
+
+
+
+.tutor-card img{
+    margin: 10px;
+    border-radius: 10px;
+    width: 65px !important;
+    height: 65px !important;
+}
+
+
+.tutor-card h5, em{
+    font-size: 13px;
+  position: relative;
+  left: 80px !important;
+  bottom: 60px !important;
+}
+
+
+
+.tutor-card p {
+    margin: 10px;
+    position: relative;
+    bottom: 60px;
+}
+
+.tutor-card a{
+    position: relative;
+    bottom: 30px;
+    background-color:#e21737;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+
+footer span, footer h5{
+    display: none;
+}
+
+#footer{
+     margin-top: 30px !important;
+    display: flex;
+    
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
 
 /* FIRST SECTION */
     nav{
@@ -15,12 +164,12 @@
   
 .mid{
 
-    margin: 30px 0px !important;
+    margin: 30px 0 !important;
 }
 
 
 #second img{
-    margin: 60px 0px !important;
+    margin: 10px 0px 40px 0px !important;
     width:400px !important;
     height:300px !important;
     border-radius: 12px;
@@ -64,13 +213,6 @@
 
 
 
-/* #first-card{
-    margin-left: 10px !important;
-} */
-
-/* #last-card{
-    margin-right: -25px !important;
-} */
 
 
 /* FOOTER */
@@ -90,13 +232,15 @@ footer{
 
 }
 
+
+
 html, body{ 
     width: 100%;
 }
 
 /*FIRST SECTION */
 #first {
-background-image: url('../images/evaluation-1516644_1920.jpg');
+background-image: url('../images/test-4481925_1920.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -104,11 +248,7 @@ height: 550px;
 
 }
 
-/* Nav section*/
-/* #first ul {
-position:relative;
-bottom: 50px;
-} */
+
 
 #first .logo{
     position: relative;
@@ -117,9 +257,7 @@ bottom: 50px;
 }
 
 #first h5.logo{
-    /* position:relative;
-    top: -15px;
-    left: 45px; */
+   
     color:#0275d8;
 }
 
@@ -138,8 +276,7 @@ nav{
 
 .navbar-toggler {
     background-color: #0275d8 !important;
-    
-    
+       
 }
 
 .nav-link{
@@ -149,6 +286,7 @@ nav{
 .nav-link:hover{
     color: blue !important;
 }
+
 /* Header div */
  .header{
     text-align: center;
@@ -161,6 +299,7 @@ nav{
     font-size: 60px;
 }
 
+
 .header h2{
     margin-top: 30px;
     color: white;
@@ -171,14 +310,14 @@ nav{
     color: #e21737;
 }
 
+
 .header a {
     font-family: 'Raleway', sans-serif;
     margin-top: 50px;
     width: 120px;
     margin: 35px;
     padding: 2px;
-    border-radius: 12px;
-    
+    border-radius: 12px;    
 }
 
 /* Second section */
@@ -230,16 +369,15 @@ margin-top: 5px;
 
 .mid a {
     background-color:#e21737;
-    /* border-radius: 10px; */
     padding: 5px 10px;
     color: white;
     text-decoration: none;
     margin: 30px;
 }
 
+
 /* Third section */
 #third{
-    height: 350px;
     text-align: center;
     background-color: #e21737;
     padding:70px;
@@ -267,20 +405,16 @@ margin-top: 5px;
 
 
 /* FOURTH AND FIFTH SECTIONS */
-#fourth{
+#fourth, #fifth{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     padding: 50px;
 }
 
 
-
-
 #fifth{
     background-color: rgb(238, 237, 237);
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding: 50px;
+    
 }
 
 #fourth h2, #fifth h2{
@@ -327,9 +461,7 @@ margin-top: 5px;
 /* SIXTH SECTION */
 #sixth{
   font-family: 'Raleway', sans-serif;
- 
- 
- 
+  
 }
 
 #sixth h2{
@@ -343,6 +475,7 @@ margin-top: 5px;
 
 .tutor{
 padding: 50px;
+
 }
 
  .tutor-card{
@@ -354,10 +487,6 @@ padding: 50px;
     
 }
 
-
-/* #first-card{
-    margin-left: 30px;
-} */
 
 #last-card{
     margin-right: -25px;
@@ -453,3 +582,9 @@ color:blue;
 #follow li a{
     color:#0275d8;
 }
+
+
+
+
+
+
