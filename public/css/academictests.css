@@ -410,6 +410,7 @@ table i{
 
 #listening table{ 
     margin: 30px 0;
+    width: 75%;
    
 }
 
@@ -418,6 +419,9 @@ background-color:#e21737;
 color: white;
 }
 
+#listening .table1 .second {
+   padding-left: 20%;
+}
 
 
 /* READING DIV AND  TABLE */
