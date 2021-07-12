@@ -323,13 +323,14 @@ nav{
 
 /* Second section */
 #second {
-    padding: 30px 0px;
+    display: flex;
+    
 }
 
+
 .mid{
-   padding: 0px 30px;
     font-family: 'Raleway', sans-serif;
-    margin:30px 0px;
+    margin:30px;
 }
 
 .mid h2{
