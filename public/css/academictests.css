@@ -43,10 +43,10 @@
 
 #listening .table2{ 
     margin: 30px 0;
-    width: auto !important;
+    
 }
 
-#listening .table1 .second {
+/* #listening .table1 .second {
    padding-left: 20% !important;
 }
 #listening .table2 .second {
@@ -55,7 +55,7 @@
 
 #listening table .third {
    padding-left: 0% !important;
-}
+} */
 
 
 /* FOURTH AND FIFTH SECTIONS*/
@@ -410,7 +410,7 @@ table i{
 
 #listening table{ 
     margin: 30px 0;
-    width: 75%;
+   
 }
 
 .table thead{
@@ -418,16 +418,7 @@ background-color:#e21737;
 color: white;
 }
 
-#listening .table1 .second {
-   padding-left: 35%;
-}
-#listening .table2 .second {
-   padding-left: 15%;
-}
 
-#listening table .third {
-   padding-left: 3%;
-}
 
 /* READING DIV AND  TABLE */
 #reading{
