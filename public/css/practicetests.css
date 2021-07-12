@@ -33,6 +33,7 @@
 
 .mid a {
     display: block !important;
+    text-align: center !important;
     
 }
 
@@ -82,7 +83,7 @@
 
 
 .tutor{
-padding: 0 0 0 20px !important;
+padding: 0 !important;
 
 }
 
