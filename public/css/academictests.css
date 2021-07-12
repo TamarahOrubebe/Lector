@@ -41,21 +41,22 @@
 }
 
 
-#listening table{ 
+#listening .table2{ 
     margin: 30px 0;
-    width: 75%;
+    width: 60% !important;
 }
 
 #listening .table1 .second {
    padding-left: 20% !important;
 }
 #listening .table2 .second {
-   padding-left: 10% !important;
+   padding-left: 0% !important;
 }
 
 #listening table .third {
-   padding-left: 3%;
+   padding-left: 0% !important;
 }
+
 
 /* FOURTH AND FIFTH SECTIONS*/
 #fourth, #fifth{
@@ -175,7 +176,7 @@ footer span, footer h5{
   
 .mid{
 
-    margin: 30px 0 !important;
+    margin: 30px 0px !important;
 }
 
 
