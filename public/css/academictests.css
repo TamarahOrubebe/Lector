@@ -43,7 +43,7 @@
 
 #listening .table2{ 
     margin: 30px 0;
-    width: 40% !important;
+    width: auto !important;
 }
 
 #listening .table1 .second {
