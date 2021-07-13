@@ -97,5 +97,13 @@ siteController.getGeneralTests = (req, res) => {
 	});
 };
 
+siteController.getPricing = (req, res) => {
+	res.render("pricing", {
+		css: "/css/pricing.css",
+		src: "/js/script.js",
+		title: "Pricing",
+	});
+};
+
 
 module.exports = siteController;

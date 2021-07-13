@@ -20,6 +20,7 @@ router.get('/test/practicetests', userController.checkLoggedIn, siteController.g
 router.get('/test/practicetests/academictests', userController.checkLoggedIn, siteController.getAcademicTests);
 router.get('/test/practicetests/generaltests', userController.checkLoggedIn, siteController.getGeneralTests);
 router.get('/test/testresults', userController.checkLoggedIn, siteController.getTestResults);
+router.get('/bookings/pricing', userController.checkLoggedIn, siteController.getPricing);
 
 
 //Export router

@@ -52,21 +52,21 @@ userController.createUser = (req, res) => {
 
     const { profileId, username, email, password} = req.body;
 
-		db.getUser(email).then((result) => {
-            if (result[0]) { 
-                errorsArr.push(`A user with ${email} already exists. Please use another email.`)
-                req.flash("errors", errorsArr);
-                return res.redirect("/signup"); 
-			} else {
-				bcrypt.hash(password, saltRounds, function (err, hash) {
-					db.createUser(profileId, username, email, hash).catch((err) =>
-						console.log(err),
-					);
-				});
+    db.getUser(email).then((result) => {
+        if (result[0]) {
+            errorsArr.push(`A user with ${email} already exists. Please use another email.`)
+            req.flash("errors", errorsArr);
+            return res.redirect("/signup");
+        } else {
+            bcrypt.hash(password, saltRounds, function (err, hash) {
+                db.createUser(profileId, username, email, hash).catch((err) =>
+                    console.log(err),
+                );
+            });
 
-                res.redirect("/login");
-			}
-		});
+            res.redirect("/login");
+        }
+    });
 
     
 };
