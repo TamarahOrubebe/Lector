@@ -1,28 +1,36 @@
 "use strict";
 
+//Dependencies
+
+
 const siteController = {
 
 };
 
-siteController.getHome = (req, res) => {
-	res.render("home", {
-		css: "css/style.css",
-		src: "",
-		title: "Lektore"
-	});
-}
-
 
 siteController.getHomePage = (req, res) => {
 	
-	console.log(req.user);
 	res.render("homepage", {
 		css: "css/homepage.css",
 		src: "",
-		user: req.user,
 		title: "Lektore"
 	});
 };
+
+siteController.getProfile = (req, res) => {
+	
+	console.log(req.user);
+
+	res.render("profile", {
+		css: "css/profile.css",
+		src: "/js/script.js",
+		user: req.user,
+		hList: [],
+		title: "Profile",
+		message: req.flash('message')
+	});
+};
+
 
 
 siteController.getTestFormat = (req, res) => {
@@ -105,5 +113,14 @@ siteController.getPricing = (req, res) => {
 	});
 };
 
+siteController.handleUpload = (req, res) => {
+
+	req.flash('message', 'Upload successful');
+
+	
+	res.redirect('/profile');
+	
+	
+}
 
 module.exports = siteController;

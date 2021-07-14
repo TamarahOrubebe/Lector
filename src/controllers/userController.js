@@ -102,24 +102,6 @@ userController.checkLoggedOut = (req, res, next) => {
     next();
 };
 
-// userController.getUser = (req, res) => {
-    
-//     const { email, password } = req.body;
-
-// 		db.getUser(email).then((result) => {
-// 			if (result[0]) {
-// 				bcrypt.compare(password, result[0].password, function (err, result) {
-// 					if (!err && result == true) {
-// 						res.send({ message: "Authentication complete" });
-// 					} else {
-// 						res.send({ message: "invalid password" });
-// 					}
-// 				});
-// 			} else {
-// 				res.send({ message: "User does not exist" });
-// 			}
-// 		});
-// };
 
 
 userController.postLogout = (req, res) => {

@@ -13,7 +13,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/homepage">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button"
@@ -44,7 +44,7 @@
                                 Bookings
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Pricing</a>
+                                <a class="dropdown-item" href="/bookings/pricing">Pricing</a>
                                 <a class="dropdown-item" href="#">Book a Tutor</a>
                             </div>
                         </li>
@@ -86,16 +86,16 @@
                 <p>Download free materials for the different sections for your <span class="lektore">IELTS</span> preparation</p>
                 <ul class="nav nav-tabs nav-justified" style="border-bottom:0px">
                     <li class="nav-item">
-                        <a class="nav-link active test-link" aria-current="page"  onclick="handleClick()" href="#listening">Listening</a>
+                        <a class="nav-link active test-link" aria-current="page"  onclick="return handleClick()" href="#listening">Listening</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link test-link" onclick="handleClick()" href="#reading">Reading</a>
+                        <a class="nav-link test-link" onclick="return handleClick()" href="#reading">Reading</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link test-link" onclick="handleClick()" href="#writing">Writing</a>
+                        <a class="nav-link test-link" onclick="return handleClick()" href="#writing">Writing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link test-link"  onclick="handleClick()" href="#speaking">Speaking</a>
+                        <a class="nav-link test-link"  onclick="return handleClick()" href="#speaking">Speaking</a>
                     </li>
                 </ul>
                 <div id="listening"  class="container-fluid">

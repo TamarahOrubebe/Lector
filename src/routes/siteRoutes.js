@@ -1,6 +1,7 @@
 "use strict";
 
 const express = require('express');
+const multer = require("multer");
 const siteController = require('../controllers/siteController');
 const userController = require('../controllers/userController');
 
@@ -8,10 +9,23 @@ const router = express.Router();
 
 
 
+const fileStorageEngine = multer.diskStorage({
+	destination: (req, file, cb) => {
+		cb(null, "../lector/userUploads");
+	},
+
+	filename: (req, file, cb) => {
+		cb(null, Date.now() + "--" + file.originalname);
+	},
+});
+
+const upload = multer({ storage: fileStorageEngine });
+
+
 //lector endpoints
-router.get('/', siteController.getHome);
-router.get('/homepage', userController.checkLoggedIn, siteController.getHomePage);
-router.get('/our-services/testformat',userController.checkLoggedIn, siteController.getTestFormat);
+router.get('/', siteController.getHomePage);
+router.get('/profile', userController.checkLoggedIn, siteController.getProfile);
+router.get('/our-services/testformat', userController.checkLoggedIn, siteController.getTestFormat);
 router.get('/our-services/listening', userController.checkLoggedIn, siteController.getListening);
 router.get('/our-services/reading', userController.checkLoggedIn, siteController.getReading);
 router.get('/our-services/writing', userController.checkLoggedIn, siteController.getWriting);
@@ -21,6 +35,7 @@ router.get('/test/practicetests/academictests', userController.checkLoggedIn, si
 router.get('/test/practicetests/generaltests', userController.checkLoggedIn, siteController.getGeneralTests);
 router.get('/test/testresults', userController.checkLoggedIn, siteController.getTestResults);
 router.get('/bookings/pricing', userController.checkLoggedIn, siteController.getPricing);
+router.post('/profile/new-upload', upload.single('file'), siteController.handleUpload);
 
 
 //Export router
