@@ -81,10 +81,11 @@ padding: 0 !important;
 
 }
 
+ 
  .tutor-card{
      display: block !important;
-     width: 228px !important;
-     margin: 23px 0px 23px 45px !important;
+     width: 230px !important;
+     margin-left: 40px !important;
      border: 1px solid black;
      border-radius: 10px;
     
@@ -465,14 +466,13 @@ margin-top: 5px;
 
 
 .tutor{
-padding: 50px;
-
+padding: auto;
 }
 
- .tutor-card{
+.tutor-card{
      display: inline-block;
      width: 337px;
-     margin: 23px;
+     margin: 30px;
      border: 1px solid black;
      border-radius: 10px;
     
