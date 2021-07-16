@@ -70,7 +70,7 @@ padding: 0 !important;
  .tutor-card{
      display: block !important;
      width: 235px !important;
-     margin: auto !important;
+     margin-left: 40px !important;
      border: 1px solid black;
      border-radius: 10px;
     
@@ -159,7 +159,7 @@ footer span, footer h5{
 .tutor-card{
      display: inline-block;
      width: 300px !important;
-     margin: 10px 0px 10px 10px !important ;
+     margin-left: 40px !important;
      border: 1px solid black;
      border-radius: 10px;
     
@@ -415,13 +415,13 @@ margin-top: 5px;
 
 
 .tutor{
-padding: 50px;
+padding: auto;
 }
 
 .tutor-card{
      display: inline-block;
      width: 337px;
-     margin: 23px;
+     margin: 30px;
      border: 1px solid black;
      border-radius: 10px;
     
@@ -431,7 +431,7 @@ padding: 50px;
 
 
 #last-card{
-    margin-right: -25px;
+    margin-right: 0px;
 }
 
 .tutor-card img{
