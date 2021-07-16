@@ -1,21 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* for mobile phones in portrait mode */
 @media (min-width: 320px) and (max-width: 480px) {
   
@@ -102,7 +85,7 @@ padding: 0 !important;
  .tutor-card{
      display: block !important;
      width: 230px !important;
-     margin: 23px 0px 23px 50px !important;
+     margin: 23px 0px 23px 45px !important;
      border: 1px solid black;
      border-radius: 10px;
     
