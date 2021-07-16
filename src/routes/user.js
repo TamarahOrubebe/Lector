@@ -37,7 +37,7 @@ router.get(
 
 router.get("/auth/google/callback", passport.authenticate("google", { failureRedirect: "/login" }),
 	function (req, res) {
-		res.redirect("/profile");
+		res.redirect("/welcome");
 	},
 );
 
@@ -51,7 +51,7 @@ router.get(
 router.get(
 	"/auth/facebook/callback",
 	passport.authenticate("facebook", {
-		successRedirect: "/profile",
+		successRedirect: "/welcome",
 		failureRedirect: "/login",
 	}),
 );
@@ -61,7 +61,7 @@ router.get("/auth/twitter", passport.authenticate("twitter", { scope: ["profile"
 router.get(
 	"/auth/twitter/callback",
 	passport.authenticate("twitter", {
-		successRedirect: "/profile",
+		successRedirect: "/welcome",
 		failureRedirect: "/login",
 	}),
 );
@@ -69,7 +69,7 @@ router.get(
 
 
 router.post('/login', passport.authenticate("local", {
-    successRedirect: "/profile",
+    successRedirect: "/welcome",
     failureRedirect: "/login",
     successFlash: true,
     failureFlash: true

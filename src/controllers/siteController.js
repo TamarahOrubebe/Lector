@@ -17,16 +17,15 @@ siteController.getHomePage = (req, res) => {
 	});
 };
 
-siteController.getProfile = (req, res) => {
+siteController.getWelcome = (req, res) => {
 	
-	console.log(req.user);
 
-	res.render("profile", {
-		css: "css/profile.css",
+	res.render("welcome", {
+		css: "css/welcome.css",
 		src: "/js/script.js",
 		user: req.user,
 		hList: [],
-		title: "Profile",
+		title: "Welcome",
 		message: req.flash('message')
 	});
 };
@@ -118,7 +117,7 @@ siteController.handleUpload = (req, res) => {
 	req.flash('message', 'Upload successful');
 
 	
-	res.redirect('/profile');
+	res.redirect('/welcome');
 	
 	
 }

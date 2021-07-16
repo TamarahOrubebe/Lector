@@ -154,11 +154,7 @@ footer span, footer h5{
 
 
 /* FIFTH SECTION */
-.tutor{
-    padding: 10px !important;
-    width: 380px !important;
-   
-}
+
 
 .tutor-card{
      display: inline-block;
@@ -406,9 +402,7 @@ margin-top: 5px;
 /* fifth SECTION */
 #fifth{
   font-family: 'Raleway', sans-serif;
- 
- 
- 
+  
 }
 
 #fifth h2{

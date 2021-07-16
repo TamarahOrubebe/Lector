@@ -97,7 +97,7 @@ userController.getLogin = (req, res) => {
 
 userController.checkLoggedOut = (req, res, next) => {
     if (req.isAuthenticated()) {
-       return  res.redirect("/homepage");
+       return  res.redirect("/welcome");
     }
     next();
 };
