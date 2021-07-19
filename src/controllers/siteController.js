@@ -73,6 +73,14 @@ siteController.getWriting = (req, res) => {
 	});
 };
 
+siteController.getElocution = (req, res) => {
+	res.render("elocution", {
+		css: "/css/elocution.css",
+		src: "",
+		title: "Elocution",
+	});
+};
+
 siteController.getPracticeTests = (req, res) => {
 	res.render("practicetests", {
 		css: "/css/practicetests.css",

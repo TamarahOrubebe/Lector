@@ -30,6 +30,7 @@ router.get('/our-services/listening', userController.checkLoggedIn, siteControll
 router.get('/our-services/reading', userController.checkLoggedIn, siteController.getReading);
 router.get('/our-services/writing', userController.checkLoggedIn, siteController.getWriting);
 router.get('/our-services/speaking', userController.checkLoggedIn, siteController.getSpeaking);
+router.get('/our-services/elocution', userController.checkLoggedIn, siteController.getElocution);
 router.get('/test/practicetests', userController.checkLoggedIn, siteController.getPracticeTests);
 router.get('/test/practicetests/academictests', userController.checkLoggedIn, siteController.getAcademicTests);
 router.get('/test/practicetests/generaltests', userController.checkLoggedIn, siteController.getGeneralTests);

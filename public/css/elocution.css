@@ -1,0 +1,526 @@
+
+/* For mobile phones in portrait mode */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+    /* FIRST SECTION */
+
+
+    nav{
+        position: relative;
+        z-index: 1;
+    }
+
+
+/* SECOND SECTION */
+#second{
+
+    display: block !important;
+}
+  
+.mid{
+
+    margin: 30px 0px !important;
+}
+
+
+#second img{
+    margin: 30px 0px !important;
+    width:250px !important;
+    height:200px !important;
+    border-radius: 12px;
+}
+
+/* THIRD AND FOURTH SECTIONS */
+#third, #fourth{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 20px !important;
+}
+
+#third h2, #fourth h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#third #cards, #fourth #cards{
+    margin-bottom: 70px !important;
+}
+
+#third div.cards, #fourth div.cards{
+    display:block !important;
+    margin:60px !important;
+    width: 200px;
+}
+
+
+
+/* FIFTH SECTION */
+#fifth h2{
+    margin: 20px 0px !important;
+   
+}
+
+
+.tutor{
+padding: 0 !important;
+
+}
+
+ 
+ .tutor-card{
+     display: block !important;
+     width: 230px !important;
+     margin-left: 40px !important;
+     border: 1px solid black;
+     border-radius: 10px;
+    
+}
+
+#last-card{
+    margin-right: -25px;
+}
+
+.tutor-card img{
+    margin: 10px;
+    border-radius: 10px;
+    width: 65px !important;
+    height: 65px !important;
+}
+
+
+.tutor-card h5, em{
+    font-size: 13px;
+  position: relative;
+  left: 80px !important;
+  bottom: 60px !important;
+}
+
+
+/* FOOTER */
+footer span, footer h5{
+    display: none;
+}
+
+#footer{
+     margin-top: 30px !important;
+    display: flex;
+    
+}
+
+  
+}
+
+
+
+
+/* for tablets portrait and landscape mode */
+
+@media (min-width: 500px) and (max-width: 1024px) {
+
+/* FIRST SECTION */
+
+
+    nav{
+        position: relative;
+        z-index: 1;
+    }
+
+
+/* SECOND SECTION */
+#second{
+
+    display: block !important;
+}
+  
+.mid{
+
+    margin:30px 0px !important;
+}
+
+
+#second img{
+    margin: 60px 0px !important;
+    width:400px !important;
+    height:300px !important;
+    border-radius: 12px;
+}
+
+
+
+
+/* fifth SECTION */
+.tutor{
+    padding: 10px !important;
+    width: 380px !important;
+   
+}
+
+.tutor-card{
+     display: inline-block;
+     width: 300px !important;
+     margin: 10px 0px 10px 10px !important ;
+     border: 1px solid black;
+     border-radius: 10px;
+    
+}
+
+.tutor-card img{
+    margin: 10px;
+    border-radius: 10px;
+    width: 100px !important;
+    height: 100px !important;
+}
+.tutor-card h5, em{
+  position: relative;
+  left: 120px !important;
+  bottom: 100px !important;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    display: block !important;
+    
+}
+
+
+
+#footer{
+     margin-top: -40px;
+    display: flex;
+    
+}
+
+
+}
+
+html, body{ 
+    width: 100%;
+}
+
+/*FIRST SECTION */
+#first {
+    width: 100%;
+    background-image: url('../images/yura-timoshenko-JVSNOoCsU4k-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+}
+
+
+
+#first .logo{
+    position: relative;
+    top: 10px;
+
+}
+
+#first h5.logo{
+    
+    color:#0275d8;
+}
+
+#first i {
+    color:#e21737;
+}
+
+
+nav{
+    float:right;
+    position: relative;
+    top: -65px;
+    
+}
+
+
+.navbar-toggler {
+    background-color: #0275d8 !important;
+    
+    
+}
+
+.nav-link{
+    color: white !important;
+
+}
+
+.nav-link:hover{
+    color: blue !important;
+}
+
+/* Header div */
+ .header{
+    text-align: center;
+    position:relative;
+    top: 150px;
+}
+    
+.header h1{
+     color: #0275d8;
+    font-size: 60px;
+}
+
+.header h2{
+    margin-top: 30px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header h2 span{
+    color: #e21737;
+}
+
+.header a {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
+    width: 120px;
+    margin: 35px;
+    padding: 2px;
+    border-radius: 12px;
+    
+}
+
+/* Second section */
+#second {
+    display: flex;
+   
+}
+
+
+
+
+.mid{
+    
+    margin:30px;
+}
+
+.mid h2{
+    font-size: 40px;
+    margin-bottom: 35px;
+    font-weight: 650;
+}
+
+.mid p{
+margin-right: 60px;
+margin-top: 5px;
+}
+
+#second img{
+    margin: 90px 20px 50px;
+    width:450px;
+    height:280px;
+    border-radius: 12px;
+}
+
+ .ielts{
+    color:#0275d8;
+}
+
+ .lektore{
+    color:#e21737;
+}
+
+.mid a {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+
+
+/* THIRD AND FOURTH SECTIONS */
+#third, #fourth{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 50px;
+    margin-top: 0px;
+    
+}
+
+
+
+
+#fourth{
+    background-color: rgb(238, 237, 237);
+    
+}
+
+#third h2, #fourth h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#third #cards, #fourth #cards{
+    margin-bottom: 50px;
+}
+
+#third div.cards {
+    display: inline-block;
+    width: 200px;
+    margin: 50px;
+}
+
+#third div.cards span{
+    margin-bottom: 15px;
+}
+#fourth div.cards{
+    display: inline-block;
+    margin:30px 90px;
+    width: 200px;
+}
+
+#third div.cards a, #fourth div.cards a{
+    border-radius: 13px;
+    border:2px solid #0275d8;
+    padding: 5px 10px;
+    color: #0275d8;
+    text-decoration: none;
+}
+
+
+#third i, #fourth i{
+    color:#e21737;
+    margin-bottom: 20px;
+}
+
+
+#third h5, #fourth h5{
+    color:#0275d8;
+}
+
+
+
+
+
+
+/* FIFTH SECTION */
+#fifth{
+  font-family: 'Raleway', sans-serif;
+ 
+ 
+ 
+}
+
+#fifth h2{
+    margin: 40px 0px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.tutor{
+padding: auto;
+}
+
+.tutor-card{
+     display: inline-block;
+     width: 337px;
+     margin: 30px;
+     border: 1px solid black;
+     border-radius: 10px;
+    
+}
+
+
+
+
+#last-card{
+    margin-right: -25px;
+}
+
+.tutor-card img{
+    margin: 10px;
+    border-radius: 10px;
+    width: 130px;
+    height: 130px;
+}
+
+
+.tutor-card h5, em{
+  position: relative;
+  left: 150px;
+  bottom: 120px;
+}
+
+.tutor-card p {
+    margin: 10px;
+    position: relative;
+    bottom: 60px;
+}
+
+.tutor-card a{
+    position: relative;
+    bottom: 30px;
+    background-color:#e21737;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+
+
+
+/* FOOTER SECTION */
+
+
+footer{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+    
+}
+
+footer .logo{
+    position: relative;
+    top: 10px;
+
+}
+
+footer .logo i {
+    color:#e21737;
+}
+
+footer h5.logo{
+    /* position:relative;
+    top: -15px;
+    left: 45px; */
+    color:#0275d8;
+}
+
+#footer{
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+#footer ul{
+    list-style: none;
+}
+
+
+
+#quick a{
+    text-decoration: none;
+}
+
+#quick a:hover{
+color:blue;
+}
+
+
+#follow .first{
+    margin-bottom: 5px;
+}
+
+#follow li a{
+    color:#0275d8;
+}
+
