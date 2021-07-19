@@ -44,7 +44,7 @@
 
 /* FOURTH AND FIFTH SECTIONS*/
 #fourth, #fifth{
-    font-family: 'Raleway', sans-serif;
+    
     text-align: center;
     padding: 20px !important;
 }
@@ -66,10 +66,6 @@
 
 /* SIXTH SECTION  */
 
-#sixth{
-  font-family: 'Raleway', sans-serif;
-  
-}
 
 #sixth h2{
     margin: 20px 0px !important;
@@ -181,7 +177,7 @@ footer span, footer h5{
 
 /* FOURTH SECTION */
 #fifth{
-    font-family: 'Raleway', sans-serif;
+    
     text-align: center;
     padding: 50px !important;
 }
@@ -237,9 +233,9 @@ footer{
 }
 
 
-
-html, body{ 
+body{ 
     width: 100%;
+   font-family: 'Roboto', sans-serif;
 }
 
 /*FIRST SECTION */
@@ -307,7 +303,7 @@ nav{
 .header h2{
     margin-top: 30px;
     color: white;
-    font-family: 'Raleway', sans-serif;
+    
 }
 
 .header h2 span{
@@ -316,7 +312,7 @@ nav{
 
 
 .header a {
-    font-family: 'Raleway', sans-serif;
+    
     margin-top: 50px;
     width: 120px;
     margin: 35px;
@@ -394,7 +390,7 @@ margin-top: 5px;
     text-align: center;
     background-color: #e21737;
     padding:70px;
-    font-family: 'Raleway', sans-serif;
+    
 }
 
 #third h6, #third h2{
@@ -419,7 +415,7 @@ margin-top: 5px;
 
 /* FOURTH AND FIFTH SECTIONS */
 #fourth, #fifth{
-    font-family: 'Raleway', sans-serif;
+    
     text-align: center;
     padding: 50px;
 }
@@ -472,10 +468,7 @@ margin-top: 5px;
 
 
 /* SIXTH SECTION */
-#sixth{
-  font-family: 'Raleway', sans-serif;
-  
-}
+
 
 #sixth h2{
     margin: 40px 0px;
@@ -542,7 +535,7 @@ padding: auto;
 
 
 footer{
-    font-family: 'Raleway', sans-serif;
+    
     margin-top: 30px;
     
 }

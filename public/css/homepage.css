@@ -48,7 +48,7 @@
 
 /* FOURTH SECTION */
 #fourth{
-    font-family: 'Raleway', sans-serif;
+  
     text-align: center;
     padding: 20px !important;
 }
@@ -159,7 +159,7 @@ footer span, footer h5{
 
 /* FOURTH SECTION */
 #fourth{
-    font-family: 'Raleway', sans-serif;
+  
     text-align: center;
     padding: 50px !important;
 }
@@ -197,7 +197,10 @@ footer{
 
 }
 
-
+body{ 
+    width: 100%;
+   font-family: 'Roboto', sans-serif;
+}
 
 /*FIRST SECTION */
 #first {
@@ -275,7 +278,7 @@ nav{
 .header h2{
     margin-top: 30px;
     color: #0275d8;
-    font-family: 'Raleway', sans-serif;
+  
 }
 
 .header h2 span{
@@ -283,7 +286,7 @@ nav{
 }
 
 .header a {
-    font-family: 'Raleway', sans-serif;
+  
     margin-top: 50px;
     width: 120px;
     margin: 35px;
@@ -335,7 +338,7 @@ nav{
     text-align: center;
     background-color: #e21737;
     padding:70px;
-    font-family: 'Raleway', sans-serif;
+  
 }
 
 #third h6, #third h2{
@@ -358,7 +361,7 @@ nav{
 
 /* Fourth section */
 #fourth{
-    font-family: 'Raleway', sans-serif;
+  
     text-align: center;
     padding: 70px;
 }
@@ -412,7 +415,7 @@ nav{
 /* Success Stories section */
 
 #success-carousel{
-     font-family: 'Raleway', sans-serif;
+   
      background-color:#e21737;
      text-align: center;
      color:white
@@ -446,7 +449,7 @@ nav{
 /* Footer Section */
 
 footer{
-    font-family: 'Raleway', sans-serif;
+  
     margin-top: 30px;
     
 }

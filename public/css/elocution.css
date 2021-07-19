@@ -32,23 +32,23 @@
     border-radius: 12px;
 }
 
-/* THIRD AND FOURTH SECTIONS */
-#third, #fourth{
-    font-family: 'Raleway', sans-serif;
+/* THIRD SECTION */
+#third{
+    
     text-align: center;
     padding: 20px !important;
 }
 
-#third h2, #fourth h2{
+#third h2{
     font-size: 35px;
     font-weight: 700;
 }
 
-#third #cards, #fourth #cards{
+#third #cards{
     margin-bottom: 70px !important;
 }
 
-#third div.cards, #fourth div.cards{
+#third div.cards{
     display:block !important;
     margin:60px !important;
     width: 200px;
@@ -56,8 +56,8 @@
 
 
 
-/* FIFTH SECTION */
-#fifth h2{
+/* FOURTH SECTION */
+#fourth h2{
     margin: 20px 0px !important;
    
 }
@@ -150,7 +150,7 @@ footer span, footer h5{
 
 
 
-/* fifth SECTION */
+/* FOURTH SECTION */
 .tutor{
     padding: 10px !important;
     width: 380px !important;
@@ -198,8 +198,9 @@ footer{
 
 }
 
-html, body{ 
+body{ 
     width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*FIRST SECTION */
@@ -208,7 +209,7 @@ html, body{
     background-image: url('../images/yura-timoshenko-JVSNOoCsU4k-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 520px;
 }
 
@@ -268,7 +269,7 @@ nav{
 .header h2{
     margin-top: 30px;
     color: white;
-    font-family: 'Raleway', sans-serif;
+    
 }
 
 .header h2 span{
@@ -276,7 +277,7 @@ nav{
 }
 
 .header a {
-    font-family: 'Raleway', sans-serif;
+    
     margin-top: 50px;
     width: 120px;
     margin: 35px;
@@ -332,9 +333,9 @@ margin-top: 5px;
 
 
 
-/* THIRD AND FOURTH SECTIONS */
-#third, #fourth{
-    font-family: 'Raleway', sans-serif;
+/* THIRD SECTIONS */
+ #third{
+    
     text-align: center;
     padding: 50px;
     margin-top: 0px;
@@ -344,36 +345,27 @@ margin-top: 5px;
 
 
 
-#fourth{
+#third{
     background-color: rgb(238, 237, 237);
     
 }
 
-#third h2, #fourth h2{
+ #third h2{
     font-size: 50px;
     font-weight: 700;
 }
 
-#third #cards, #fourth #cards{
+ #third #cards{
     margin-bottom: 50px;
 }
 
-#third div.cards {
-    display: inline-block;
-    width: 200px;
-    margin: 50px;
-}
-
-#third div.cards span{
-    margin-bottom: 15px;
-}
-#fourth div.cards{
+#third div.cards{
     display: inline-block;
     margin:30px 90px;
     width: 200px;
 }
 
-#third div.cards a, #fourth div.cards a{
+ #third div.cards a{
     border-radius: 13px;
     border:2px solid #0275d8;
     padding: 5px 10px;
@@ -382,13 +374,13 @@ margin-top: 5px;
 }
 
 
-#third i, #fourth i{
+ #third i{
     color:#e21737;
     margin-bottom: 20px;
 }
 
 
-#third h5, #fourth h5{
+ #third h5{
     color:#0275d8;
 }
 
@@ -397,15 +389,10 @@ margin-top: 5px;
 
 
 
-/* FIFTH SECTION */
-#fifth{
-  font-family: 'Raleway', sans-serif;
- 
- 
- 
-}
+/* FOURTH SECTION */
 
-#fifth h2{
+
+#fourth h2{
     margin: 40px 0px;
     text-align: center;
     font-size: 50px;
@@ -471,7 +458,7 @@ padding: auto;
 
 
 footer{
-    font-family: 'Raleway', sans-serif;
+    
     margin-top: 30px;
     
 }
