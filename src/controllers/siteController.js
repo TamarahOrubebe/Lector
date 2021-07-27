@@ -3,10 +3,8 @@
 
 //Dependencies
 const currencySymbol = require("currency-symbol");
-const CC = require('currency-converter-lt')
-const ipapi = require("ipapi.co");
+const CC = require('currency-converter-lt');
 const geoip = require("geoip-lite");
-const ipaddr = require("ipaddr.js");
 const RequestIp = require("@supercharge/request-ip");
 const getCurrency = require('iso-country-currency');
 
@@ -136,6 +134,7 @@ siteController.getPricing = (req, res) => {
 	});
 };
 
+
 siteController.handlePricing = (req, res) => {
 
 	console.log(req.body, req.user);
@@ -150,19 +149,22 @@ siteController.handlePricing = (req, res) => {
 
 	var geo = geoip.lookup(ip);
 
+	const currency = getCurrency.getAllInfoByISO(geo.country).currency
 
 	const currencyConverter = new CC({
 		from: "GBP",
-		to: `${getCurrency.getAllInfoByISO(geo.country).currency}`,
+		to: `${currency}`,
 		amount: parseInt(req.body.amount),
 	});
 
 	currencyConverter.convert().then(response => {
 
+		const currency = getCurrency.getAllInfoByISO(geo.country).currency;
+
 			res.render("paymentinfo", {
 				user: req.user,
 				amount: "GBP" + " " + req.body.amount,
-				localAmount: "" + loc.currency + " " + parseFloat(response).toFixed(2),
+				localAmount: "" + currency + " " + parseFloat(response).toFixed(2),
 				css: "/css/paymentinfo.css",
 				src: "/js/script.js",
 				title: "Payment-Info",
