@@ -5,7 +5,10 @@
 const currencySymbol = require("currency-symbol");
 const CC = require('currency-converter-lt')
 const ipapi = require("ipapi.co");
-
+const geoip = require("geoip-lite");
+const ipaddr = require("ipaddr.js");
+const RequestIp = require("@supercharge/request-ip");
+const getCurrency = require('iso-country-currency');
 
 
 
@@ -135,19 +138,26 @@ siteController.getPricing = (req, res) => {
 
 siteController.handlePricing = (req, res) => {
 
-	console.log(req.body, req.user)
+	console.log(req.body, req.user);
 
-	ipapi.location(loc => {
 
-		console.log(loc);
+	
+	const ip = RequestIp.getClientIp(req);
 
-		const currencyConverter = new CC({
-			from: "GBP",
-			to: `${loc.currency}`,
-			amount: parseInt(req.body.amount)
-		});
+	console.log(ip);
 
-		currencyConverter.convert().then(response => {
+	
+
+	var geo = geoip.lookup(ip);
+
+
+	const currencyConverter = new CC({
+		from: "GBP",
+		to: `${getCurrency.getAllInfoByISO(geo.country)}`,
+		amount: parseInt(req.body.amount),
+	});
+
+	currencyConverter.convert().then(response => {
 
 			res.render("paymentinfo", {
 				user: req.user,
@@ -161,9 +171,9 @@ siteController.handlePricing = (req, res) => {
 
 
 	
-	});
+	}
 
-}
+
 
 
 

@@ -1,6 +1,13 @@
-"use strict";
 
-let price;
+
+
+function getUserIp() {
+	fetch("https://ipapi.co/json/")
+		.then((res) => res.json())
+		.then((json) => console.log(json));
+}
+
+
 function handleClick(event) {
 
     const listening = $("#listening");
