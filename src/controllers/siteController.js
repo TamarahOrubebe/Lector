@@ -159,8 +159,6 @@ siteController.handlePricing = (req, res) => {
 
 	currencyConverter.convert().then(response => {
 
-		const currency = getCurrency.getAllInfoByISO(geo.country).currency;
-
 			res.render("paymentinfo", {
 				user: req.user,
 				amount: "GBP" + " " + req.body.amount,
