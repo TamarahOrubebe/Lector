@@ -1,4 +1,7 @@
-function handleClick(event){
+"use strict";
+
+let price;
+function handleClick(event) {
 
     const listening = $("#listening");
     const reading = $("#reading");
@@ -137,4 +140,11 @@ function togglePasswordVisibility() {
     
 }
 
- 
+
+
+
+
+
+
+
+

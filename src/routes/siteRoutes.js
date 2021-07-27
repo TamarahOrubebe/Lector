@@ -16,6 +16,7 @@ const fileStorageEngine = multer.diskStorage({
 
 	filename: (req, file, cb) => {
 		cb(null, Date.now() + "--" + file.originalname);
+		
 	},
 });
 
@@ -36,7 +37,9 @@ router.get('/test/practicetests/academictests', userController.checkLoggedIn, si
 router.get('/test/practicetests/generaltests', userController.checkLoggedIn, siteController.getGeneralTests);
 router.get('/test/testresults', userController.checkLoggedIn, siteController.getTestResults);
 router.get('/bookings/pricing', userController.checkLoggedIn, siteController.getPricing);
-router.post('/profile/new-upload', upload.single('file'), siteController.handleUpload);
+router.post('/bookings/pricing/paymentinfo', userController.checkLoggedIn, siteController.handlePricing);
+router.post('/bookings/pricing/paymentinfo/checkout', userController.checkLoggedIn, siteController.handleCheckout);
+router.post('/welcome/new-upload', upload.single('file'), siteController.handleUpload);
 
 
 //Export router

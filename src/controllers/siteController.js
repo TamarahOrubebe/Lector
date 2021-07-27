@@ -1,8 +1,15 @@
 "use strict";
 
+
 //Dependencies
+const currencySymbol = require("currency-symbol");
+const CC = require('currency-converter-lt')
+const ipapi = require("ipapi.co");
 
 
+
+
+// Set up Site Controllers
 const siteController = {
 
 };
@@ -73,6 +80,7 @@ siteController.getWriting = (req, res) => {
 	});
 };
 
+
 siteController.getElocution = (req, res) => {
 	res.render("elocution", {
 		css: "/css/elocution.css",
@@ -80,6 +88,7 @@ siteController.getElocution = (req, res) => {
 		title: "Elocution",
 	});
 };
+
 
 siteController.getPracticeTests = (req, res) => {
 	res.render("practicetests", {
@@ -89,12 +98,14 @@ siteController.getPracticeTests = (req, res) => {
 	});
 };
 
+
 siteController.getTestResults = (req, res) => {
 	res.render("testresults", {
 		css: "/css/testresults.css",
 		src: ""
 	});
 };
+
 
 siteController.getAcademicTests = (req, res) => {
 	res.render("academictests", {
@@ -104,6 +115,7 @@ siteController.getAcademicTests = (req, res) => {
 	});
 };
 
+
 siteController.getGeneralTests = (req, res) => {
 	res.render("generaltests", {
 		css: "/css/generaltests.css",
@@ -111,6 +123,7 @@ siteController.getGeneralTests = (req, res) => {
 		title: "General Practice Tests",
 	});
 };
+
 
 siteController.getPricing = (req, res) => {
 	res.render("pricing", {
@@ -120,12 +133,68 @@ siteController.getPricing = (req, res) => {
 	});
 };
 
-siteController.handleUpload = (req, res) => {
+siteController.handlePricing = (req, res) => {
 
-	req.flash('message', 'Upload successful');
+	console.log(req.body, req.user)
+
+	ipapi.location(loc => {
+
+		console.log(loc);
+
+		const currencyConverter = new CC({
+			from: "GBP",
+			to: `${loc.currency}`,
+			amount: parseInt(req.body.amount)
+		});
+
+		currencyConverter.convert().then(response => {
+
+			res.render("paymentinfo", {
+				user: req.user,
+				amount: "GBP" + " " + req.body.amount,
+				localAmount: "" + loc.currency + " " + parseFloat(response).toFixed(2),
+				css: "/css/paymentinfo.css",
+				src: "/js/script.js",
+				title: "Payment-Info",
+			});
+		});
+
 
 	
-	res.redirect('/welcome');
+	});
+
+}
+
+
+
+siteController.handleCheckout = (req, res) => {
+
+	console.log(req.body);
+
+
+	res.send("Payment Successful");
+		
+	
+};
+
+
+
+siteController.handleUpload = (req, res) => {
+
+	if (!req.file) {
+		
+		req.flash('message', 'No file chosen');
+
+		res.redirect('/welcome');
+		res.end();
+	} else {
+		req.flash("message", "Upload successful");
+		console.log(req.file);
+
+		res.redirect("/welcome");
+	
+	}
+
 	
 	
 }
