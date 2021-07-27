@@ -153,7 +153,7 @@ siteController.handlePricing = (req, res) => {
 
 	const currencyConverter = new CC({
 		from: "GBP",
-		to: `${getCurrency.getAllInfoByISO(geo.country)}`,
+		to: `${getCurrency.getAllInfoByISO(geo.country).currency}`,
 		amount: parseInt(req.body.amount),
 	});
 
