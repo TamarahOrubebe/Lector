@@ -125,6 +125,8 @@ passport.use(
 		{
 			consumerKey: process.env.TWITTER_CONSUMER_KEY,
 			consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
+			userProfileURL:
+				"https://api.twitter.com/1.1/account/verify_credentials.json",
 			callbackURL:
 				"https://test-lektor.azurewebsites.net/auth/twitter/callback",
 		},
