@@ -1,4 +1,5 @@
 "use strict";
+
 //configure dotenv
 require("dotenv").config();
  
@@ -9,7 +10,6 @@ const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const FacebookStrategy = require("passport-facebook").Strategy;
 const TwitterStrategy = require("passport-twitter").Strategy;
 const db = require('../db/userOperations');
-// const User = require('../db/Sequelize');
 const bcrypt = require("bcrypt");
 
   
@@ -125,16 +125,19 @@ passport.use(
 		{
 			consumerKey: process.env.TWITTER_CONSUMER_KEY,
 			consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
+
+			userProfileURL:
+				"https://api.twitter.com/1.1/account/verify_credentials.json",
 			callbackURL:
 				"https://test-lektor.azurewebsites.net/auth/twitter/callback",
-			profileFields: ["id", "displayName", "emails"],
 		},
 		function (token, tokenSecret, profile, done) {
 			db.getUserByProfileId(profile.id)
 				.then((user) => {
 					console.log(profile);
+					console.log(user);
 
-					if (user == undefined) {
+					if (user[0] == undefined) {
 						db.createUser(profile.id, profile.displayName, profile.username);
 
 						db.getUserByProfileId(profile.id).then((user) => {

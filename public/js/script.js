@@ -1,11 +1,4 @@
-
-
-
-function getUserIp() {
-	fetch("https://ipapi.co/json/")
-		.then((res) => res.json())
-		.then((json) => console.log(json));
-}
+"use strict";
 
 
 function handleClick(event) {
