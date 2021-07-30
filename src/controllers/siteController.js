@@ -7,6 +7,8 @@ const CC = require('currency-converter-lt');
 const geoip = require("geoip-lite");
 const RequestIp = require("@supercharge/request-ip");
 const getCurrency = require('iso-country-currency');
+const fetch = require('node-fetch');
+const ipapi = require('ipapi.co');
 
 
 
@@ -145,11 +147,11 @@ siteController.handlePricing = (req, res) => {
 
 	console.log(ip);
 
-	
-
 	var geo = geoip.lookup(ip);
 
-	const currency = getCurrency.getAllInfoByISO(geo.country).currency
+	console.log(geo);
+
+	const currency = getCurrency.getAllInfoByISO(geo.country).currency;
 
 	const currencyConverter = new CC({
 		from: "GBP",
@@ -157,21 +159,20 @@ siteController.handlePricing = (req, res) => {
 		amount: parseInt(req.body.amount),
 	});
 
-	currencyConverter.convert().then(response => {
 
-			res.render("paymentinfo", {
-				user: req.user,
-				amount: "GBP" + " " + req.body.amount,
-				localAmount: "" + currency + " " + parseFloat(response).toFixed(2),
-				css: "/css/paymentinfo.css",
-				src: "/js/script.js",
-				title: "Payment-Info",
-			});
+	currencyConverter.convert().then((response) => {
+		res.render("paymentinfo", {
+			user: req.user,
+			amount: "GBP" + " " + req.body.amount,
+			localAmount: "" + currency + " " + parseFloat(response).toFixed(2),
+			css: "/css/paymentinfo.css",
+			src: "/js/script.js",
+			title: "Payment-Info",
 		});
-
+	});
 
 	
-	}
+};
 
 
 
@@ -181,32 +182,91 @@ siteController.handleCheckout = (req, res) => {
 
 	console.log(req.body);
 
+	let { email, localAmount } = req.body;
 
-	res.send("Payment Successful");
-		
+	localAmount = localAmount.slice(3);
+
+	console.log(parseInt(localAmount));
+
 	
+	
+	const body = { email, amount: parseInt(localAmount) * 100 };
+
+	console.log(body);
+
+	
+	fetch("https://api.paystack.co/transaction/initialize", {
+		method: "post",
+		body: JSON.stringify(body),
+		headers: {
+			Authorization: "Bearer" + " " + process.env.TEST_SECRET_KEY,
+			"Content-Type": "application/json",
+		},
+	}).then((res) => res.json())
+		.then((jsonResponse) => {
+			console.log(jsonResponse)
+
+			const redirectUrl = jsonResponse.data.authorization_url;
+
+			res.redirect(redirectUrl);
+
+		}).catch((err) => console.log(err));
+		
+		
+};
+
+
+siteController.getSucess = (req, res) => {
+
+	console.log(req.query.trxref)
+
+	fetch("https://api.paystack.co/transaction/verify/" + req.query.trxref, {
+		method: "get",
+		headers: {
+			Authorization: "Bearer" + " " + process.env.TEST_SECRET_KEY,
+
+		},
+	})
+		.then((res) => res.json())
+		.then((response) => {
+			console.log(response);
+
+			res.render("success", {
+				reference: req.query.trxref,
+				status: response.data.status,
+				user: req.user,
+				css: "/css/success.css",
+				src: "/js/script.js",
+				title: "Success",
+			});
+		})
+		.catch((err) => console.log(err));
+
+
+			
+		
 };
 
 
 
-siteController.handleUpload = (req, res) => {
+	siteController.handleUpload = (req, res) => {
 
-	if (!req.file) {
+		if (!req.file) {
+			
+			req.flash('message', 'No file chosen');
+
+			res.redirect('/welcome');
+			res.end();
+		} else {
+			req.flash("message", "Upload successful");
+			console.log(req.file);
+
+			res.redirect("/welcome");
 		
-		req.flash('message', 'No file chosen');
+		}
 
-		res.redirect('/welcome');
-		res.end();
-	} else {
-		req.flash("message", "Upload successful");
-		console.log(req.file);
-
-		res.redirect("/welcome");
-	
+		
+		
 	}
-
-	
-	
-}
 
 module.exports = siteController;

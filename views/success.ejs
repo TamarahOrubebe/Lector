@@ -1,5 +1,3 @@
-
-
 <%- include('partials/header'); -%>
 
     <body>
@@ -75,69 +73,14 @@
 
         </section>
         <section id="second" class="container-fluid">
-
-            <div class="container">
-                <h2 class="ielts">Payment Information</h2>
-                
-                <form  action="/bookings/pricing/paymentinfo/checkout" method="POST">
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <label for="firstName" class="form-label">User name</label>
-                            <input type="text" class="form-control" id="firstName" name="userName" value="<%=user.username%>" required>
-                        </div>
-            
-                        <div class="col-sm-6">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" name="email" value="<%=user.email%>">
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" name="phoneNumber" id="phoneNumber" required>
-                            
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="amount" class="form-label">Amount</label>
-                            <input type="text" class="form-control" name="amount" id="amount" value="<%=amount%>"  required>
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="amount" class="form-label">local rate</label>
-                            <input type="text" class="form-control" name="localAmount" id="amount" value="<%=localAmount%>"  required>
-                        </div>
-            
-                    </div>
-            
-                    <hr class="my-4">
-        
-            
-                    <h4 class="mb-3">Payment Method</h4>
-            
-                    <div class="my-3">
-                        <div class="form-check">
-                            <input id="card" name="paymentMethod" type="radio" value="card" class="form-check-input" checked required>
-                            <label class="form-check-label" for="card">Card</label>
-                        </div>
-                        <div class="form-check">
-                            <input id="account" name="paymentMethod" type="radio" value="account"class="form-check-input" required>
-                            <label class="form-check-label" for="account">Account</label>
-                        </div>
-                        <div class="form-check">
-                            <input id="bankTransfer" name="paymentMethod" type="radio" value="banktransfer"class="form-check-input" required>
-                            <label class="form-check-label" for="bankTransfer">Bank Transfer</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input id="paypal" name="paymentMethod" type="radio" value="ussd" class="form-check-input" required>
-                            <label class="form-check-label" for="ussd">USSD</label>
-                        </div>
-                    </div>
-            
-                    <hr class="my-4">
-            
-                    <button class="btn btn-primary" type="submit">Continue to checkout</button>
-                </form>
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold ielts">Payment Successful</h1>
+                    <p class="col-md-8 fs-4">Your transaction with reference number: <%=reference%> was
+                        a <%=status%>.</p>
+                </div>
             </div>
-
-        </section>    
+        </section>
         <section id="third" class="container-fluid">
             <h6>ULTIMATE SOLUTION FOR YOUR IELTS NEEDS</h6>
             <h2>learn more about <a href="#top" class="btn btn-primary">our services</a></h2>
@@ -220,7 +163,7 @@
 
         </section>
         <section id="sixth" class="container-fluid">
-            <h2>Find a <span class="ielts">Tutor</span></h2>
+            <h2>Book a <span class="ielts">Tutor</span></h2>
             <div class="tutor container-fluid">
                 <div id="first-card" class="tutor-card">
                     <img src="/images/profile pic.jpg" alt="tutor picture">
@@ -253,8 +196,5 @@
             </div>
         </section>
         <hr>
+
         <%- include('partials/footer'); -%>
-
-
-
-
