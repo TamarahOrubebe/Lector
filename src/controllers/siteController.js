@@ -176,8 +176,6 @@ siteController.handlePricing = (req, res) => {
 
 
 
-
-
 siteController.handleCheckout = (req, res) => {
 
 	console.log(req.body);
@@ -216,7 +214,7 @@ siteController.handleCheckout = (req, res) => {
 };
 
 
-siteController.getSucess = (req, res) => {
+siteController.getSuccess = (req, res) => {
 
 	console.log(req.query.trxref)
 
@@ -249,24 +247,41 @@ siteController.getSucess = (req, res) => {
 
 
 
-	siteController.handleUpload = (req, res) => {
+siteController.handleUpload = (req, res) => {
 
-		if (!req.file) {
+	if (!req.file) {
 			
-			req.flash('message', 'No file chosen');
+		req.flash('message', 'No file chosen');
 
-			res.redirect('/welcome');
-			res.end();
-		} else {
-			req.flash("message", "Upload successful");
-			console.log(req.file);
+		res.redirect('/welcome');
+		res.end();
+	} else {
+		req.flash("message", "Upload successful");
+		console.log(req.file);
 
-			res.redirect("/welcome");
-		
-		}
-
-		
+		res.redirect("/welcome");
 		
 	}
+
+		
+		
+}
+siteController.getContactUs = (req, res) => {
+
+	
+	res.render("contactus", {
+		user: req.user,
+		css: "/css/contactus.css",
+		src: "/js/script.js",
+		title: "Contact us",
+	});
+
+
+
+}
+
+		
+		
+
 
 module.exports = siteController;
