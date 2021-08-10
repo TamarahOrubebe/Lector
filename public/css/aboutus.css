@@ -1,6 +1,4 @@
-
-/* For mobile phones in portrait mode */
-
+/* for mobile phones in portrait mode */
 @media (min-width: 320px) and (max-width: 480px) {
   
   
@@ -13,51 +11,44 @@
     }
 
 
+    
+
 /* SECOND SECTION */
 #second{
-
     display: block !important;
 }
   
-.mid{
-
-    margin: 30px 0px !important;
-}
 
 
-#second img{
-    margin: 30px 0px !important;
-    width:250px !important;
-    height:200px !important;
-    border-radius: 12px;
-}
 
-/* THIRD SECTION */
-#third{
+
+
+/* FOURTH AND FIFTH SECTIONS*/
+#fourth, #fifth{
     
     text-align: center;
     padding: 20px !important;
 }
 
-#third h2{
+#fourth h2, #fifth h2{
     font-size: 35px;
     font-weight: 700;
 }
 
-#third #cards{
+#fourth #cards, #fifth #cards{
     margin-bottom: 70px !important;
 }
 
-#third div.cards{
+#fourth div.cards, #fifth div.cards{
     display:block !important;
     margin:60px !important;
     width: 200px;
 }
 
+/* SIXTH SECTION  */
 
 
-/* FOURTH SECTION */
-#fourth h2{
+#sixth h2{
     margin: 20px 0px !important;
    
 }
@@ -68,7 +59,6 @@ padding: 0 !important;
 
 }
 
- 
  .tutor-card{
      display: block !important;
      width: 230px !important;
@@ -78,9 +68,7 @@ padding: 0 !important;
     
 }
 
-#last-card{
-    margin-right: -25px;
-}
+
 
 .tutor-card img{
     margin: 10px;
@@ -98,7 +86,25 @@ padding: 0 !important;
 }
 
 
-/* FOOTER */
+
+.tutor-card p {
+    margin: 10px;
+    position: relative;
+    bottom: 60px;
+}
+
+.tutor-card a{
+    position: relative;
+    bottom: 30px;
+    background-color:#e21737;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+
 footer span, footer h5{
     display: none;
 }
@@ -109,19 +115,14 @@ footer span, footer h5{
     
 }
 
-  
+
 }
 
 
 
-
-/* for tablets portrait and landscape mode */
-
-@media (min-width: 500px) and (max-width: 1024px) {
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
 
 /* FIRST SECTION */
-
-
     nav{
         position: relative;
         z-index: 1;
@@ -134,20 +135,41 @@ footer span, footer h5{
     display: block !important;
 }
   
-.mid{
 
-    margin:30px 0px !important;
+/* FOURTH SECTION */
+#fifth{
+    
+    text-align: center;
+    padding: 50px !important;
 }
 
-
-#second img{
-    margin: 60px 0px !important;
-    width:400px !important;
-    height:300px !important;
-    border-radius: 12px;
+/* SIXTH SECTION */
+.tutor{
+    padding: 10px !important;
+    width: 380px !important;
+   
 }
 
+.tutor-card{
+     display: inline-block;
+     width: 300px !important;
+     margin: 10px 0px 10px 10px !important ;
+     border: 1px solid black;
+     border-radius: 10px;
+    
+}
 
+.tutor-card img{
+    margin: 10px;
+    border-radius: 10px;
+    width: 100px !important;
+    height: 100px !important;
+}
+.tutor-card h5, em{
+  position: relative;
+  left: 120px !important;
+  bottom: 100px !important;
+}
 
 
 
@@ -171,19 +193,20 @@ footer{
 
 }
 
+
 body{ 
     width: 100%;
-  font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto', sans-serif;
 }
 
 /*FIRST SECTION */
 #first {
-    width: 100%;
-    background-image: url('../images/yura-timoshenko-JVSNOoCsU4k-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    height: 520px;
+background-image: url('../images/neonbrand-zFSo6bnZJTw-unsplash.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 550px;
+
 }
 
 
@@ -195,9 +218,10 @@ body{
 }
 
 #first h5.logo{
-    
+   
     color:#0275d8;
 }
+
 
 #first i {
     color:#e21737;
@@ -214,131 +238,121 @@ nav{
 
 .navbar-toggler {
     background-color: #0275d8 !important;
-    
-    
+       
 }
 
 .nav-link{
     color: white !important;
-
 }
 
 .nav-link:hover{
     color: blue !important;
 }
 
-/* Header div */
- .header{
-    text-align: center;
-    position:relative;
-    top: 150px;
-}
-    
-.header h1{
-     color: #0275d8;
-    font-size: 60px;
-}
 
-.header h2{
-    margin-top: 30px;
-    color: white;
-    
-}
 
-.header h2 span{
-    color: #e21737;
-}
 
-.header a {
-    
-    margin-top: 50px;
-    width: 120px;
-    margin: 35px;
-    padding: 2px;
-    border-radius: 12px;
-    
-}
 
 /* Second section */
-#second {
-    display: flex;
-   
-}
 
 
-
-
-.mid{
+#second h1{
+    margin: 20px;
+    text-align: center;
     
-    margin:30px;
 }
 
-.mid h2{
-    font-size: 40px;
-    margin-bottom: 35px;
-    font-weight: 650;
+#second h2{
+    text-align: center;
+    text-decoration: underline;
+    color:#0275d8;
 }
 
-.mid p{
-margin-right: 60px;
-margin-top: 5px;
-}
-
-#second img{
-    margin: 90px 20px 50px;
-    width:450px;
-    height:280px;
-    border-radius: 12px;
-}
 
  .ielts{
     color:#0275d8;
 }
 
+
  .lektore{
     color:#e21737;
 }
 
-.mid a {
-    margin-top: 30px;
-    border-radius: 10px;
+
+#second .row{
+   display: flex;
+   justify-content:space-evenly;
+   margin: 30px 0px;
+}
+
+#second .card{
+    margin: 20px 0px;
+}
+
+
+/* Third section */
+#third{
+    text-align: center;
+    background-color: #e21737;
+    padding:70px;
+    
+}
+
+#third h6, #third h2{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+#third h6{
+    font-size: 13px;
+}
+#third h2{
+    font-size: 50px;
+    
+}
+
+#third i{
+    color: #0275d8;
 }
 
 
 
-/* THIRD SECTIONS */
- #third{
+/* FOURTH AND FIFTH SECTIONS */
+#fourth, #fifth{
     
     text-align: center;
     padding: 50px;
-    margin-top: 0px;
-    
 }
 
 
-
-
-#third{
+#fifth{
     background-color: rgb(238, 237, 237);
     
 }
 
- #third h2{
+#fourth h2, #fifth h2{
     font-size: 50px;
     font-weight: 700;
 }
 
- #third #cards{
+#fourth #cards, #fifth #cards{
     margin-bottom: 50px;
 }
 
-#third div.cards{
+#fourth div.cards {
+    display: inline-block;
+    width: 200px;
+    margin: 50px;
+}
+
+#fifth div.cards{
     display: inline-block;
     margin:30px 90px;
     width: 200px;
 }
 
- #third div.cards a{
+#fourth div.cards a, #fifth div.cards a{
     border-radius: 13px;
     border:2px solid #0275d8;
     padding: 5px 10px;
@@ -347,20 +361,15 @@ margin-top: 5px;
 }
 
 
- #third i{
+#fourth i, #fifth i{
     color:#e21737;
     margin-bottom: 20px;
 }
 
 
- #third h5{
+#fourth h5, #fifth h5{
     color:#0275d8;
 }
-
-
-
-
-
 
 
 
@@ -422,4 +431,13 @@ color:blue;
 #follow li a{
     color:#0275d8;
 }
+
+
+
+
+
+
+
+
+
 

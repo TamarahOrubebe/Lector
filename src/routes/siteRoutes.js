@@ -38,7 +38,9 @@ router.get('/test/practicetests/generaltests', userController.checkLoggedIn, sit
 router.get('/test/testresults', userController.checkLoggedIn, siteController.getTestResults);
 router.get('/bookings/pricing', userController.checkLoggedIn, siteController.getPricing);
 router.get('/bookings/pricing/paymentinfo/checkout/success/', userController.checkLoggedIn, siteController.getSuccess);
+router.get('/aboutus', userController.checkLoggedIn, siteController.getAboutUs);
 router.get('/contactus', userController.checkLoggedIn, siteController.getContactUs);
+router.post('/contactus', userController.checkLoggedIn, siteController.handleMessage);
 router.post('/bookings/pricing/paymentinfo', userController.checkLoggedIn, siteController.handlePricing);
 router.post('/bookings/pricing/paymentinfo/checkout', siteController.handleCheckout);
 router.post('/welcome/new-upload', upload.single('file'), siteController.handleUpload);
