@@ -12,6 +12,7 @@ const ipapi = require('ipapi.co');
 
 
 
+
 // Set up Site Controllers
 const siteController = {
 
@@ -124,6 +125,14 @@ siteController.getGeneralTests = (req, res) => {
 		css: "/css/generaltests.css",
 		src: "/js/script.js",
 		title: "General Practice Tests",
+	});
+};
+
+siteController.getAboutUs = (req, res) => {
+	res.render("aboutus", {
+		css: "/css/aboutus.css",
+		src: "/js/script.js",
+		title: "About us",
 	});
 };
 
@@ -274,12 +283,40 @@ siteController.getContactUs = (req, res) => {
 		css: "/css/contactus.css",
 		src: "/js/script.js",
 		title: "Contact us",
+		message: ""
 	});
 
 
 
 }
 
+siteController.handleMessage = (req, res) => {
+	const { email, message } = req.body;
+
+	// var api_key = "key-3ax6xnjp29jd6fds4gc373sgvjxteol0";
+	// var domain = "samples.mailgun.org";
+
+	// const mailgun = require("mailgun-js")({ apiKey: api_key, domain: domain });
+
+	// var data = {
+	// 	from: `Excited User <${email}>`,
+	// 	to: "info@aipidata.com",
+	// 	subject: "Hello",
+	// 	text: `${message}`,
+	// };
+
+	// mailgun.messages().send(data, function (error, body) {
+	// 	console.log(body);
+	// });
+
+	res.render("contactus", {
+		user: req.user,
+		css: "/css/contactus.css",
+		src: "/js/script.js",
+		title: "Contact us",
+		message: `Thank you for dropping your message. A reply will be sent to ${email} shortly`,
+	});
+}
 		
 		
 

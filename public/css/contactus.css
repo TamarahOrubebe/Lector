@@ -13,6 +13,14 @@ body, html {
 	font-family: Poppins-Regular, sans-serif;
 }
 
+
+
+
+#message h2{
+  text-align: center;
+  color: #0275d8;
+  margin: 20px 0px;
+}
 /*---------------------------------------------*/
 /* a {
 	font-family: Poppins-Regular;
