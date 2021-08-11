@@ -45,64 +45,7 @@
     width: 200px;
 }
 
-/* SIXTH SECTION  */
 
-
-#sixth h2{
-    margin: 20px 0px !important;
-   
-}
-
-
-.tutor{
-padding: 0 !important;
-
-}
-
- .tutor-card{
-     display: block !important;
-     width: 230px !important;
-     margin-left: 40px !important;
-     border: 1px solid black;
-     border-radius: 10px;
-    
-}
-
-
-
-.tutor-card img{
-    margin: 10px;
-    border-radius: 10px;
-    width: 65px !important;
-    height: 65px !important;
-}
-
-
-.tutor-card h5, em{
-    font-size: 13px;
-  position: relative;
-  left: 80px !important;
-  bottom: 60px !important;
-}
-
-
-
-.tutor-card p {
-    margin: 10px;
-    position: relative;
-    bottom: 60px;
-}
-
-.tutor-card a{
-    position: relative;
-    bottom: 30px;
-    background-color:#e21737;
-    border-radius: 10px;
-    padding: 5px 10px;
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-}
 
 
 footer span, footer h5{
@@ -143,33 +86,6 @@ footer span, footer h5{
     padding: 50px !important;
 }
 
-/* SIXTH SECTION */
-.tutor{
-    padding: 10px !important;
-    width: 380px !important;
-   
-}
-
-.tutor-card{
-     display: inline-block;
-     width: 300px !important;
-     margin: 10px 0px 10px 10px !important ;
-     border: 1px solid black;
-     border-radius: 10px;
-    
-}
-
-.tutor-card img{
-    margin: 10px;
-    border-radius: 10px;
-    width: 100px !important;
-    height: 100px !important;
-}
-.tutor-card h5, em{
-  position: relative;
-  left: 120px !important;
-  bottom: 100px !important;
-}
 
 
 
