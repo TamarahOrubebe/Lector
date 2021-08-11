@@ -207,15 +207,10 @@ siteController.handleCheckout = (req, res) => {
 
 	const currency = getCurrency.getAllInfoByISO(geo.country).currency;
 
-	const currencyConverter = new CC({
-		from: `${currency}`,
-		to: "NGN",
-		amount: parseInt(localAmount),
-	});
-
-	currencyConverter.convert().then((response) => {
+	if (currency === "NGN") {
 		
-		const body = { email, amount: parseInt(response) * 100 };
+
+		const body = { email, amount: parseInt(localAmount) * 100 };
 
 		console.log(body);
 
@@ -236,7 +231,43 @@ siteController.handleCheckout = (req, res) => {
 				res.redirect(redirectUrl);
 			})
 			.catch((err) => console.log(err));
-	});
+	
+
+	} else {
+
+		const currencyConverter = new CC({
+			from: `${currency}`,
+			to: "NGN",
+			amount: parseInt(localAmount),
+		});
+
+		currencyConverter.convert().then((response) => {
+			const body = { email, amount: parseInt(response) * 100 };
+
+			console.log(body);
+
+			fetch("https://api.paystack.co/transaction/initialize", {
+				method: "post",
+				body: JSON.stringify(body),
+				headers: {
+					Authorization: "Bearer" + " " + process.env.TEST_SECRET_KEY,
+					"Content-Type": "application/json",
+				},
+			})
+				.then((res) => res.json())
+				.then((jsonResponse) => {
+					console.log(jsonResponse);
+
+					const redirectUrl = jsonResponse.data.authorization_url;
+
+					res.redirect(redirectUrl);
+				})
+				.catch((err) => console.log(err));
+		});
+	
+
+	}
+
 	
 	
 		
