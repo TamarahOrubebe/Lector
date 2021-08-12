@@ -187,23 +187,14 @@ siteController.handlePricing = (req, res) => {
 
 siteController.handleCheckout = (req, res) => {
 
-	console.log(req.body);
 
 	let { email, localAmount } = req.body;
 
-	localAmount = localAmount.slice(3);
-
-	console.log(parseInt(localAmount));
-
-	
+	localAmount = localAmount.slice(3);	
 
 	const ip = RequestIp.getClientIp(req);
 
-	console.log(ip);
-
 	var geo = geoip.lookup(ip);
-
-	console.log(geo);
 
 	const currency = getCurrency.getAllInfoByISO(geo.country).currency;
 
@@ -211,8 +202,6 @@ siteController.handleCheckout = (req, res) => {
 		
 
 		const body = { email, amount: parseInt(localAmount) * 100 };
-
-		console.log(body);
 
 		fetch("https://api.paystack.co/transaction/initialize", {
 			method: "post",
@@ -224,7 +213,6 @@ siteController.handleCheckout = (req, res) => {
 		})
 			.then((res) => res.json())
 			.then((jsonResponse) => {
-				console.log(jsonResponse);
 
 				const redirectUrl = jsonResponse.data.authorization_url;
 
@@ -244,8 +232,6 @@ siteController.handleCheckout = (req, res) => {
 		currencyConverter.convert().then((response) => {
 			const body = { email, amount: parseInt(response) * 100 };
 
-			console.log(body);
-
 			fetch("https://api.paystack.co/transaction/initialize", {
 				method: "post",
 				body: JSON.stringify(body),
@@ -256,7 +242,6 @@ siteController.handleCheckout = (req, res) => {
 			})
 				.then((res) => res.json())
 				.then((jsonResponse) => {
-					console.log(jsonResponse);
 
 					const redirectUrl = jsonResponse.data.authorization_url;
 
@@ -265,19 +250,12 @@ siteController.handleCheckout = (req, res) => {
 				.catch((err) => console.log(err));
 		});
 	
-
-	}
-
-	
-	
-		
+	}	
 		
 };
 
 
 siteController.getSuccess = (req, res) => {
-
-	console.log(req.query.trxref)
 
 	fetch("https://api.paystack.co/transaction/verify/" + req.query.trxref, {
 		method: "get",
@@ -288,7 +266,6 @@ siteController.getSuccess = (req, res) => {
 	})
 		.then((res) => res.json())
 		.then((response) => {
-			console.log(response);
 
 			res.render("success", {
 				reference: req.query.trxref,
@@ -337,8 +314,6 @@ siteController.getContactUs = (req, res) => {
 		title: "Contact us",
 		message: ""
 	});
-
-
 
 }
 
