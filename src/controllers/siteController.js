@@ -204,8 +204,6 @@ siteController.handleUpload = (req, res) => {
 		res.redirect("/welcome");
 	
 	}
-
-	
 	
 }
 
