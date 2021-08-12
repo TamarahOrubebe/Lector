@@ -300,10 +300,9 @@ siteController.handleUpload = (req, res) => {
 		res.redirect("/welcome");
 		
 	}
-
-		
-		
+	
 }
+
 siteController.getContactUs = (req, res) => {
 
 	
