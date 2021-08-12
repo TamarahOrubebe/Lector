@@ -315,8 +315,6 @@ siteController.getContactUs = (req, res) => {
 		message: ""
 	});
 
-
-
 }
 
 siteController.handleMessage = (req, res) => {
