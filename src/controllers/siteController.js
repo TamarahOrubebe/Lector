@@ -277,10 +277,7 @@ siteController.getSuccess = (req, res) => {
 			});
 		})
 		.catch((err) => console.log(err));
-
-
-			
-		
+	
 };
 
 
@@ -300,10 +297,9 @@ siteController.handleUpload = (req, res) => {
 		res.redirect("/welcome");
 		
 	}
-
-		
-		
+	
 }
+
 siteController.getContactUs = (req, res) => {
 
 	
