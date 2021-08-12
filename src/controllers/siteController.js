@@ -251,11 +251,7 @@ siteController.handleCheckout = (req, res) => {
 		});
 	
 
-	}
-
-	
-	
-		
+	}	
 		
 };
 
