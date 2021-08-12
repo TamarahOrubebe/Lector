@@ -60,7 +60,7 @@ passport.use(
 		{
 			clientID: process.env.GOOGLE_CLIENT_ID,
 			clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-			callbackURL: "https://lektore.com/auth/google/callback",
+			callbackURL: "https://test-lektor.azurewebsites.net/auth/google/callback",
 		},
 		function (accessToken, refreshToken, profile, done) {
 			db.getUserByProfileId(profile.id)
@@ -92,7 +92,7 @@ passport.use(
 			clientID: process.env.FACEBOOK_APP_ID,
 			clientSecret: process.env.FACEBOOK_APP_SECRET,
 			callbackURL:
-				"https://lektore.com/auth/facebook/callback",
+				"https://test-lektor.azurewebsites.net/auth/facebook/callback",
 			profileFields: ["id", "emails", "displayName"],
 		},
 		function (accessToken, refreshToken, profile, done) {
@@ -126,7 +126,7 @@ passport.use(
 			consumerKey: process.env.TWITTER_CONSUMER_KEY,
 			consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
 			callbackURL:
-				"https://lektore.com/auth/twitter/callback",
+				"https://test-lektor.azurewebsites.net/auth/twitter/callback",
 		},
 		function (token, tokenSecret, profile, done) {
 			db.getUserByProfileId(profile.id)
