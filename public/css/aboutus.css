@@ -23,23 +23,23 @@
 
 
 
-/* FOURTH AND FIFTH SECTIONS*/
-#fourth, #fifth{
+/* FOURTH AND fourth SECTIONS*/
+#fourth, #fourth{
     
     text-align: center;
     padding: 20px !important;
 }
 
-#fourth h2, #fifth h2{
+#fourth h2, #fourth h2{
     font-size: 35px;
     font-weight: 700;
 }
 
-#fourth #cards, #fifth #cards{
+#fourth #cards, #fourth #cards{
     margin-bottom: 70px !important;
 }
 
-#fourth div.cards, #fifth div.cards{
+#fourth div.cards, #fourth div.cards{
     display:block !important;
     margin:60px !important;
     width: 200px;
@@ -80,7 +80,7 @@ footer span, footer h5{
   
 
 /* FOURTH SECTION */
-#fifth{
+#fourth{
     
     text-align: center;
     padding: 50px !important;
@@ -234,41 +234,37 @@ nav{
 
 
 
-/* FOURTH AND FIFTH SECTIONS */
-#fourth, #fifth{
+/* FOURTH SECTION */
+#fourth{
     
     text-align: center;
     padding: 50px;
 }
 
 
-#fifth{
+#fourth{
     background-color: rgb(238, 237, 237);
     
 }
 
-#fourth h2, #fifth h2{
+#fourth h2{
     font-size: 50px;
     font-weight: 700;
 }
 
-#fourth #cards, #fifth #cards{
+#fourth #cards{
     margin-bottom: 50px;
 }
 
-#fourth div.cards {
-    display: inline-block;
-    width: 200px;
-    margin: 50px;
-}
 
-#fifth div.cards{
+
+#fourth div.cards{
     display: inline-block;
     margin:30px 90px;
     width: 200px;
 }
 
-#fourth div.cards a, #fifth div.cards a{
+#fourth div.cards a{
     border-radius: 13px;
     border:2px solid #0275d8;
     padding: 5px 10px;
@@ -277,13 +273,13 @@ nav{
 }
 
 
-#fourth i, #fifth i{
+#fourth i{
     color:#e21737;
     margin-bottom: 20px;
 }
 
 
-#fourth h5, #fifth h5{
+#fourth h5{
     color:#0275d8;
 }
 
