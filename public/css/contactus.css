@@ -429,9 +429,11 @@ textarea.input2 + .focus-input2::after {
 
 /* FOOTER SECTION */
 
+
 footer{
     
     margin-top: 30px;
+    background-color: whitesmoke;
     
 }
 
@@ -446,12 +448,14 @@ footer .logo i {
 }
 
 footer h5.logo{
-    
-    color:#0275d8;
+    /* position:relative;
+    top: -15px;
+    left: 45px; */
+    color:blue;
 }
 
 #footer{
-   margin-top: -2%;;
+    margin-top: -2%;
     display: flex;
     justify-content: space-evenly;
     
@@ -463,12 +467,14 @@ footer h5.logo{
 }
 
 
- #quick li a{
+
+#quick a{
+    color:blue;
     text-decoration: none;
 }
 
-#quick li a:hover{
-color:blue;
+#quick a:hover{
+text-decoration: underline;
 }
 
 
@@ -477,7 +483,7 @@ color:blue;
 }
 
 #follow li a{
-    color:#0275d8;
+    color:blue;
 }
 
 
