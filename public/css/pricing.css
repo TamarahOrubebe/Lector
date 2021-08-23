@@ -326,7 +326,7 @@ margin-top: 5px;
 
 
 #fourth{
-    background-color: rgb(238, 237, 237);
+    background-color: white;
     
 }
 
@@ -372,12 +372,10 @@ margin-top: 5px;
 
 
 
-/* FOOTER SECTION */
-
-
 footer{
     
     margin-top: 30px;
+    background-color: whitesmoke;
     
 }
 
@@ -395,7 +393,7 @@ footer h5.logo{
     /* position:relative;
     top: -15px;
     left: 45px; */
-    color:#0275d8;
+    color:blue;
 }
 
 #footer{
@@ -413,11 +411,12 @@ footer h5.logo{
 
 
 #quick a{
+    color:blue;
     text-decoration: none;
 }
 
 #quick a:hover{
-color:blue;
+text-decoration: underline;
 }
 
 
@@ -426,6 +425,5 @@ color:blue;
 }
 
 #follow li a{
-    color:#0275d8;
+    color:blue;
 }
-

@@ -106,7 +106,7 @@ footer span, footer h5{
 #second img{
     margin: 60px 0px !important;
     width:400px !important;
-    height:300px !important;
+    height:266px !important;
     border-radius: 12px;
 }
 
@@ -251,8 +251,8 @@ margin-top: 5px;
 
 #second img{
     margin: 90px 20px 50px;
-    width:450px;
-    height:280px;
+    width:400px;
+    height:266px;
     border-radius: 12px;
 }
 
@@ -283,7 +283,7 @@ margin-top: 5px;
 
 
 #fourth{
-    background-color: rgb(238, 237, 237);
+    background-color: white;
     
 }
 
@@ -338,11 +338,10 @@ margin-top: 5px;
 
 
 
-/* Footer Section */
-
 footer{
     
     margin-top: 30px;
+    background-color: whitesmoke;
     
 }
 
@@ -357,8 +356,10 @@ footer .logo i {
 }
 
 footer h5.logo{
-    
-    color:#0275d8;
+    /* position:relative;
+    top: -15px;
+    left: 45px; */
+    color:blue;
 }
 
 #footer{
@@ -376,11 +377,12 @@ footer h5.logo{
 
 
 #quick a{
+    color:blue;
     text-decoration: none;
 }
 
 #quick a:hover{
-color:blue;
+text-decoration: underline;
 }
 
 
@@ -389,7 +391,8 @@ color:blue;
 }
 
 #follow li a{
-    color:#0275d8;
+    color:blue;
 }
+
 
 

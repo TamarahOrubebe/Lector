@@ -238,7 +238,7 @@ nav {
 }
 
 #fifth {
-	background-color: rgb(238, 237, 237);
+	background-color: white;
 }
 
 #fourth h2,
@@ -285,50 +285,59 @@ nav {
 }
 
 
-/* FOOTER SECTION */
-
-footer {
-	margin-top: 30px;
+footer{
+    
+    margin-top: 30px;
+    background-color: whitesmoke;
+    
 }
 
-footer .logo {
-	position: relative;
-	top: 10px;
+footer .logo{
+    position: relative;
+    top: 10px;
+
 }
 
 footer .logo i {
-	color: #e21737;
+    color:#e21737;
 }
 
-footer h5.logo {
-	/* position:relative;
+footer h5.logo{
+    /* position:relative;
     top: -15px;
     left: 45px; */
-	color: #0275d8;
+    color:blue;
 }
 
-#footer {
-	margin-top: -2%;
-	display: flex;
-	justify-content: space-evenly;
+#footer{
+    margin-top: -2%;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 
-#footer ul {
-	list-style: none;
+
+#footer ul{
+    list-style: none;
 }
 
-#quick a {
-	text-decoration: none;
+
+
+#quick a{
+    color:blue;
+    text-decoration: none;
 }
 
-#quick a:hover {
-	color: blue;
+#quick a:hover{
+text-decoration: underline;
 }
 
-#follow .first {
-	margin-bottom: 5px;
+
+#follow .first{
+    margin-bottom: 5px;
 }
 
-#follow li a {
-	color: #0275d8;
+#follow li a{
+    color:blue;
 }
+
