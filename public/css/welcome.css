@@ -261,7 +261,7 @@ margin-top: 5px;
     margin-bottom: 30px;
 }
 .mid ul a{
-    background-color:lightgray !important;
+    background-color:rgb(39, 37, 37) !important;
     
 } 
 
@@ -360,7 +360,7 @@ margin-top: 5px;
 
 
 #fourth{
-    background-color: rgb(238, 237, 237);
+    background-color: white;
     
 }
 
@@ -412,6 +412,7 @@ margin-top: 5px;
 footer{
     
     margin-top: 30px;
+    background-color: whitesmoke;
     
 }
 
@@ -429,7 +430,7 @@ footer h5.logo{
     /* position:relative;
     top: -15px;
     left: 45px; */
-    color:#0275d8;
+    color:blue;
 }
 
 #footer{
@@ -447,11 +448,12 @@ footer h5.logo{
 
 
 #quick a{
+    color:blue;
     text-decoration: none;
 }
 
 #quick a:hover{
-color:blue;
+text-decoration: underline;
 }
 
 
@@ -460,7 +462,7 @@ color:blue;
 }
 
 #follow li a{
-    color:#0275d8;
+    color:blue;
 }
 
 
