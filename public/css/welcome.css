@@ -65,11 +65,7 @@
     margin-bottom: 70px !important;
 }
 
-#fourth div.cards, #fifth div.cards{
-    display:block !important;
-    margin:60px !important;
-    width: 200px;
-}
+
 
 
 
@@ -360,7 +356,7 @@ margin-top: 5px;
 
 
 #fourth{
-    background-color: white;
+    background-color: rgb(241, 235, 235);
     
 }
 
@@ -377,7 +373,7 @@ margin-top: 5px;
 
 #fourth div.cards{
     display: inline-block;
-    margin:30px 90px;
+    margin:30px 70px;
     width: 200px;
 }
 
@@ -406,13 +402,10 @@ margin-top: 5px;
 
 
 
-/* FOOTER SECTION */
-
-
 footer{
     
     margin-top: 30px;
-    background-color: whitesmoke;
+    
     
 }
 

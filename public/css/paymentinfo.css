@@ -47,12 +47,7 @@
 		margin-bottom: 70px !important;
 	}
 
-	#fourth div.cards,
-	#fifth div.cards {
-		display: block !important;
-		margin: 60px !important;
-		width: 200px;
-	}
+	
 
 	
 	footer span,
@@ -238,7 +233,7 @@ nav {
 }
 
 #fifth {
-	background-color: white;
+	background-color: rgb(241, 235, 235);
 }
 
 #fourth h2,
@@ -260,7 +255,7 @@ nav {
 
 #fifth div.cards {
 	display: inline-block;
-	margin: 30px 90px;
+	margin: 30px 70px;
 	width: 200px;
 }
 
@@ -288,7 +283,7 @@ nav {
 footer{
     
     margin-top: 30px;
-    background-color: whitesmoke;
+    
     
 }
 
@@ -340,4 +335,3 @@ text-decoration: underline;
 #follow li a{
     color:blue;
 }
-
