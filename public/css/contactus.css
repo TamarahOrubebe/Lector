@@ -427,13 +427,10 @@ textarea.input2 + .focus-input2::after {
 }
 
 
-/* FOOTER SECTION */
-
-
 footer{
     
     margin-top: 30px;
-    background-color: whitesmoke;
+    
     
 }
 
@@ -485,7 +482,6 @@ text-decoration: underline;
 #follow li a{
     color:blue;
 }
-
 
 
 /* For mobile phones in portrait mode */
