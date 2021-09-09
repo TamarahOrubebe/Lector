@@ -9,6 +9,7 @@ const RequestIp = require("@supercharge/request-ip");
 const getCurrency = require('iso-country-currency');
 const fetch = require('node-fetch');
 const ipapi = require('ipapi.co');
+const userController = require("./userController");
 
 
 
@@ -21,23 +22,42 @@ const siteController = {
 
 siteController.getHomePage = (req, res) => {
 	
+	 if (req.isAuthenticated()) {
+			res.render("welcome", {
+				css: "css/welcome.css",
+				src: "/js/script.js",
+				user: req.user,
+				hList: [],
+				title: "Welcome",
+				message: req.flash("message"),
+			});
+		}
+	
+	
 	res.render("homepage", {
 		css: "css/homepage.css",
 		src: "",
-		title: "Lektore"
+		title: "Lektore",
 	});
 };
 
 siteController.getWelcome = (req, res) => {
 	
+	if (req.isAuthenticated()) {
+		res.render("welcome", {
+			css: "css/welcome.css",
+			src: "/js/script.js",
+			user: req.user,
+			hList: [],
+			title: "Welcome",
+			message: req.flash("message"),
+		});
+	}
 
-	res.render("welcome", {
-		css: "css/welcome.css",
-		src: "/js/script.js",
-		user: req.user,
-		hList: [],
-		title: "Welcome",
-		message: req.flash('message')
+	res.render("homepage", {
+		css: "css/homepage.css",
+		src: "",
+		title: "Lektore",
 	});
 };
 
