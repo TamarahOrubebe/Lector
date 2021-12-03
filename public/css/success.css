@@ -62,7 +62,6 @@
 
 
 
-
 footer span, footer h5{
     display: none;
 }
@@ -109,6 +108,14 @@ footer span, footer h5{
     height:300px !important;
     border-radius: 12px;
 }
+
+/* FOURTH SECTION */
+#fifth{
+    
+    text-align: center;
+    padding: 50px !important;
+}
+
 
 
 
@@ -313,37 +320,41 @@ margin-top: 5px;
 
 
 
-/* FOURTH SECTION */
-#fourth{
+/* FOURTH AND FIFTH SECTIONS */
+#fourth, #fifth{
     
     text-align: center;
     padding: 50px;
 }
 
 
-#fourth{
+#fifth{
     background-color: rgb(241, 235, 235);
     
 }
 
-#fourth h2{
+#fourth h2, #fifth h2{
     font-size: 50px;
     font-weight: 700;
 }
 
-#fourth #cards{
+#fourth #cards, #fifth #cards{
     margin-bottom: 50px;
 }
 
+#fourth div.cards {
+    display: inline-block;
+    width: 200px;
+    margin: 50px;
+}
 
-
-#fourth div.cards{
+#fifth div.cards{
     display: inline-block;
     margin:30px 70px;
     width: 200px;
 }
 
-#fourth div.cards a{
+#fourth div.cards a, #fifth div.cards a{
     border-radius: 13px;
     border:2px solid #0275d8;
     padding: 5px 10px;
@@ -352,15 +363,16 @@ margin-top: 5px;
 }
 
 
-#fourth i{
+#fourth i, #fifth i{
     color:#e21737;
     margin-bottom: 20px;
 }
 
 
-#fourth h5{
+#fourth h5, #fifth h5{
     color:#0275d8;
 }
+
 
 
 
@@ -422,3 +434,5 @@ text-decoration: underline;
 #follow li a{
     color:blue;
 }
+
+

@@ -312,8 +312,8 @@ nav{
 
 #second img{
     margin: 90px 20px 50px;
-    width:450px;
-    height:350px;
+    width:400px;
+    height:267px;
     border-radius: 12px;
 }
 
@@ -422,6 +422,7 @@ nav{
 .success-image{
     border-radius:100%;
     width: 10%;
+    height: 10%;
     margin: 20px;
 }
 
@@ -467,7 +468,7 @@ footer h5.logo{
 }
 
 #footer{
-    margin-top: -40px;
+    margin-top: -2%;
     display: flex;
     justify-content: space-evenly;
     

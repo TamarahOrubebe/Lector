@@ -8389,3 +8389,44 @@ h1, h2, h3, h4, h5,
         border: 1px solid transparent;
         background: #fff;
         color: #000; }
+
+
+
+#first .logo{
+    position: relative;
+    top: 10px;
+
+}
+
+#first h5.logo{
+    
+    color:#0275d8;
+}
+
+#first i {
+    color:#e21737;
+}
+
+
+
+nav{
+    float:right;
+    position: relative;
+    top: -65px;
+    
+}
+
+
+.navbar-toggler {
+    background-color: #0275d8 !important;
+    
+    
+}
+
+.nav-link{
+    color: #e21737 !important;
+}
+
+.nav-link:hover{
+    color: blue !important;
+}

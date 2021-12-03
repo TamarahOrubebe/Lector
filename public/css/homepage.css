@@ -1,10 +1,15 @@
+
 /* for mobile phones in portrait mode */
 @media (min-width: 320px) and (max-width: 480px) {
   
   
     /* FIRST SECTION */
 
+/* #first {
+background-image:none !important;
+height: auto !important;
 
+} */
     nav{
         position: relative;
         z-index: 1;
@@ -39,7 +44,7 @@
 #second img{
     margin: 30px 0px !important;
     width:250px !important;
-    height:200px !important;
+    height:160px !important;
     border-radius: 12px;
 
 }
@@ -62,11 +67,7 @@
     margin-bottom: 70px !important;
 }
 
-#fourth div.cards{
-    display:block !important;
-    margin:60px !important;
-    width: 200px;
-}
+
 
 #fourth div.cards a{
     border-radius: 13px;
@@ -315,8 +316,8 @@ nav{
 
 #second img{
     margin: 90px 20px 50px;
-    width:450px;
-    height:350px;
+    width:400px;
+    height:267px;
     border-radius: 12px;
 }
 
@@ -377,7 +378,7 @@ nav{
 
 #fourth div.cards{
     display: inline-block;
-    margin:30px 90px;
+    margin:30px 70px;
     width: 200px;
 }
 
@@ -425,6 +426,7 @@ nav{
 .success-image{
     border-radius:100%;
     width: 10%;
+    height: 10%;
     margin: 20px;
 }
 
@@ -446,11 +448,10 @@ nav{
 }
 
 
-/* Footer Section */
-
 footer{
-  
+    
     margin-top: 30px;
+    
     
 }
 
@@ -468,11 +469,11 @@ footer h5.logo{
     /* position:relative;
     top: -15px;
     left: 45px; */
-    color:#0275d8;
+    color:blue;
 }
 
 #footer{
-    margin-top: -40px;
+    margin-top: -2%;
     display: flex;
     justify-content: space-evenly;
     
@@ -486,11 +487,12 @@ footer h5.logo{
 
 
 #quick a{
+    color:blue;
     text-decoration: none;
 }
 
 #quick a:hover{
-color:blue;
+text-decoration: underline;
 }
 
 
@@ -499,8 +501,7 @@ color:blue;
 }
 
 #follow li a{
-    color:#0275d8;
+    color:blue;
 }
-
 
 
