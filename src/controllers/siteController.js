@@ -24,7 +24,7 @@ siteController.getHomePage = (req, res) => {
 	
 	 if (req.isAuthenticated()) {
 			res.render("welcome", {
-				css: "css/welcome.css",
+				css: "/css/welcome.css",
 				src: "/js/script.js",
 				user: req.user,
 				hList: [],
@@ -35,7 +35,7 @@ siteController.getHomePage = (req, res) => {
 	
 	
 	res.render("homepage", {
-		css: "css/homepage.css",
+		css: "/css/homepage.css",
 		src: "",
 		title: "Lektore",
 	});
@@ -45,7 +45,7 @@ siteController.getWelcome = (req, res) => {
 	
 	if (req.isAuthenticated()) {
 		res.render("welcome", {
-			css: "css/welcome.css",
+			css: "/css/welcome.css",
 			src: "/js/script.js",
 			user: req.user,
 			hList: [],
@@ -55,7 +55,7 @@ siteController.getWelcome = (req, res) => {
 	}
 
 	res.render("homepage", {
-		css: "css/homepage.css",
+		css: "/css/homepage.css",
 		src: "",
 		title: "Lektore",
 	});

@@ -29,9 +29,18 @@ const app = express();
 //SETUP MIDDLEWARE
 
 //zip files and security
+app.use(
+	helmet.contentSecurityPolicy({
+		useDefaults: true,
+		directives: {
+			
+			"script-src": ["'self'", "https://code.jquery.com/jquery-3.6.0.min.js", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js", "https://use.fontawesome.com/releases/v5.15.4/js/all.js"],
+			"style-src":  [ "'self'", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css", "https://use.fontawesome.com"],
+		},
+	}),
+);
 app.use(compression());
-app.use(helmet());
-
+ 
 
 //Body parsing
 app.use(express.urlencoded({ extended: false }));

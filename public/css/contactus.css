@@ -479,7 +479,7 @@ text-decoration: underline;
     margin-bottom: 5px;
 }
 
-#follow li a{
+#follow li .svg-inline--fa{
     color:blue;
 }
 
@@ -499,5 +499,10 @@ footer span, footer h5{
     
 }
 
+
+}
+
+.svg-inline--fa{
+    color:#e21737;
 
 }

@@ -108,6 +108,11 @@ body{
    font-family: 'Roboto', sans-serif;
 }
 
+.svg-inline--fa{
+    color:#e21737;
+
+}
+
 /*FIRST SECTION */
 #first {
 background-image: url('../images/neonbrand-zFSo6bnZJTw-unsplash.jpg');
@@ -332,7 +337,7 @@ text-decoration: underline;
     margin-bottom: 5px;
 }
 
-#follow li a{
+#follow li .svg-inline--fa{
     color:blue;
 }
 

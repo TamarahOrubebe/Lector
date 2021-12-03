@@ -201,6 +201,11 @@ body{
    font-family: 'Roboto', sans-serif;
 }
 
+.svg-inline--fa{
+    color:#e21737;
+
+}
+
 /*FIRST SECTION */
 #first {
 background-image: url('../images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg');
@@ -215,6 +220,7 @@ height: 550px;
 #first .logo{
     position: relative;
     top: 10px;
+    color:#e21737;
 
 }
 
@@ -498,6 +504,7 @@ text-decoration: underline;
     margin-bottom: 5px;
 }
 
-#follow li a{
-    color:blue;
+#follow li .svg-inline--fa{
+    color:blue ;
 }
+
