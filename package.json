@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo testing",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@supercharge/request-ip": "^1.1.2",
     "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
@@ -26,6 +27,7 @@
     "express-session": "^1.17.2",
     "express-validator": "^6.12.0",
     "geoip-lite": "^1.4.2",
+    "helmet": "^4.6.0",
     "ipaddr.js": "^1.9.1",
     "ipapi.co": "^0.3.0",
     "iso-country-currency": "^0.5.3",
@@ -33,7 +35,6 @@
     "mssql": "^6.3.2",
     "multer": "^1.4.2",
     "node-fetch": "^2.6.1",
-    "nodemon": "^2.0.9",
     "passport": "^0.4.1",
     "passport-facebook": "^3.0.0",
     "passport-google-oauth": "^2.0.0",
@@ -41,5 +42,8 @@
     "passport-twitter": "^0.1.5",
     "passport-twitter-oauth2": "^2.1.1",
     "sequelize": "^6.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

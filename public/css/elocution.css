@@ -172,6 +172,11 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.svg-inline--fa{
+    color:#e21737;
+
+}
+
 /*FIRST SECTION */
 #first {
     width: 100%;
@@ -413,6 +418,6 @@ text-decoration: underline;
     margin-bottom: 5px;
 }
 
-#follow li a{
+#follow li .svg-inline--fa{
     color:blue;
 }
