@@ -8391,7 +8391,7 @@ h1, h2, h3, h4, h5,
         color: #000; }
 
 
-        #first .logo{
+    #first .logo{
     position: relative;
     top: 10px;
 
@@ -8428,4 +8428,26 @@ nav{
 
 .nav-link:hover{
     color: blue !important;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+
+  nav{
+    
+        position: fixed;
+        z-index: 999;
+    }
+
+
+/* .ftco-section {
+
+  position: inherit;
+  z-index: -1;
+  
+  } */
+
 }

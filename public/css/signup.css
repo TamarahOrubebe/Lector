@@ -8430,3 +8430,22 @@ nav{
 .nav-link:hover{
     color: blue !important;
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  nav{
+        position: relative;
+        z-index: 999;
+    }
+
+
+/* .ftco-section {
+  position: fixed;
+  z-index: -1;
+
+  } */
+
+}
+
+

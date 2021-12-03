@@ -13,6 +13,7 @@
   "dependencies": {
     "@supercharge/request-ip": "^1.1.2",
     "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
@@ -26,6 +27,7 @@
     "express-session": "^1.17.2",
     "express-validator": "^6.12.0",
     "geoip-lite": "^1.4.2",
+    "helmet": "^4.6.0",
     "ipaddr.js": "^1.9.1",
     "ipapi.co": "^0.3.0",
     "iso-country-currency": "^0.5.3",

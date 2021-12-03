@@ -13,6 +13,8 @@ const connectFlash = require('connect-flash');
 const passport = require('passport');
 const userRouter = require('./src/routes/user');
 const siteRouter = require('./src/routes/siteRoutes');
+const helmet = require('helmet');
+const compression = require('compression');
 
 
 
@@ -25,6 +27,11 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 //SETUP MIDDLEWARE
+
+//zip files and security
+app.use(compression());
+app.use(helmet());
+
 
 //Body parsing
 app.use(express.urlencoded({ extended: false }));

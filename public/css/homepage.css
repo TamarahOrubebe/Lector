@@ -1,4 +1,3 @@
-
 /* for mobile phones in portrait mode */
 @media (min-width: 320px) and (max-width: 480px) {
   
@@ -8,7 +7,6 @@
 /* #first {
 background-image:none !important;
 height: auto !important;
-
 } */
     nav{
         position: relative;
@@ -503,5 +501,3 @@ text-decoration: underline;
 #follow li a{
     color:blue;
 }
-
-
