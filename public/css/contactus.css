@@ -479,8 +479,13 @@ text-decoration: underline;
     margin-bottom: 5px;
 }
 
-#follow li .svg-inline--fa{
-    color:blue;
+#follow li a {
+    color:blue ;
+    text-decoration: none;
+}
+
+#follow li a:hover{
+    text-decoration: underline;
 }
 
 
