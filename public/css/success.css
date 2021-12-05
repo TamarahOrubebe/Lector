@@ -304,15 +304,13 @@ margin-top: 5px;
     
 }
 
-#third h6, #third h2{
+#third h5, #third h2{
     margin-bottom: 20px;
     color: white;
     font-weight: 700;
 }
 
-#third h6{
-    font-size: 13px;
-}
+
 #third h2{
     font-size: 50px;
     
@@ -435,8 +433,13 @@ text-decoration: underline;
     margin-bottom: 5px;
 }
 
-#follow li .svg-inline--fa{
-    color:blue;
+#follow li a {
+    color:blue ;
+    text-decoration: none;
+}
+
+#follow li a:hover{
+    text-decoration: underline;
 }
 
 

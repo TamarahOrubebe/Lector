@@ -387,7 +387,11 @@ text-decoration: underline;
 #follow .first{
     margin-bottom: 5px;
 }
+#follow li a {
+    color:blue ;
+    text-decoration: none;
+}
 
-#follow li .svg-inline--fa{
-    color:blue;
+#follow li a:hover{
+    text-decoration: underline;
 }
