@@ -31,7 +31,7 @@ app.use(
 			useDefaults: true,
 			directives: {
 				"script-src": [
-					"'nonce-tamaraudoubra2'",
+					"'nonce-arsenalfc2456'",
 					"'strict-dynamic'",
 					"'unsafe-inline'",
 					"'self'",
@@ -40,7 +40,7 @@ app.use(
 					"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/fontawesome.min.js",
 				],
 				"style-src-elem": [
-					"'nonce-tamaraudoubra2'",
+					"'nonce-arsenalfc2456'",
 					"'strict-dynamic'",
 					"'unsafe-inline'",
 					"'self'",
