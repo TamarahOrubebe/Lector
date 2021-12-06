@@ -23,7 +23,7 @@ const siteController = {
 siteController.getHomePage = (req, res) => {
 	
 	 if (req.isAuthenticated()) {
-			res.render("welcome", {
+			return res.render("welcome", {
 				css: "/css/welcome.css",
 				src: "/js/script.js",
 				user: req.user,
@@ -44,7 +44,7 @@ siteController.getHomePage = (req, res) => {
 siteController.getWelcome = (req, res) => {
 	
 	if (req.isAuthenticated()) {
-		res.render("welcome", {
+		return res.render("welcome", {
 			css: "/css/welcome.css",
 			src: "/js/script.js",
 			user: req.user,

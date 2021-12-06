@@ -71,6 +71,9 @@ app.set("view engine", "ejs");
 //Enable cookieParse
 app.use(cookieParser(process.env.SECRET));
 
+//Enable Flash message
+app.use(connectFlash());
+
 //Configure session
 app.use(
 	session({
@@ -79,16 +82,12 @@ app.use(
 		saveUninitialized: true,
 		cookie: {
             maxAge: 1000 * 60 * 60 * 24, //86400000 1 day
-            sameSite: 'lax',
-            secure: true
-            
-            
-		},
+            sameSite: 'lax',    
+		}
 	}),
 );
 
-//Enable Flash message
-app.use(connectFlash());
+
 
 //Enable passport
 app.use(passport.initialize());

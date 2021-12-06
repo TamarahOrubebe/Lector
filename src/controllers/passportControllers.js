@@ -73,14 +73,14 @@ passport.use(
 						);
 
 						db.getUser(profile.emails[0].value).then((user) => {
-                            done(null, user[0]);
+                            return done(null, user[0]);
 						});
 					}
 
-					done(null, user[0]);
+					return done(null, user[0]);
 				})
 				.catch((err) => {
-					done(err, null);
+					return done(err, null);
 				});
 		},
 	),
@@ -107,14 +107,14 @@ passport.use(
 						);
 
 						db.getUser(profile.emails[0].value).then((user) => {
-							done(null, user[0]);
+							return done(null, user[0]);
 						});
 					}
 
-					done(null, user[0]);
+					return done(null, user[0]);
 				})
 				.catch((err) => {
-					done(err, null);
+					return done(err, null);
 				});
 		},
 	),
@@ -138,14 +138,14 @@ passport.use(
 						db.createUser(profile.id, profile.displayName, profile.username);
 
 						db.getUserByProfileId(profile.id).then((user) => {
-							done(null, user[0]);
+							return done(null, user[0]);
 						});
 					}
 
 					done(null, user[0]);
 				})
 				.catch((err) => {
-					done(err, null);
+					return done(err, null);
 				});
 		},
 	),
@@ -154,14 +154,14 @@ passport.use(
 passport.serializeUser((user, done) => {
     console.log(user);
 
-    done(null, user.Id);
+    return done(null, user.Id);
 });
     
 passport.deserializeUser((Id, done) => {
     db.getUserById(Id).then(user => {
-        done(null, user[0]);
+        return done(null, user[0]);
     }).catch(err => {
-        done(err, null);
+        return done(err, null);
     })
     
     

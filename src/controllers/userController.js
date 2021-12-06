@@ -64,7 +64,7 @@ userController.createUser = (req, res) => {
                 );
             });
 
-            res.redirect("/login");
+            return res.redirect("/login");
         }
     });
 
