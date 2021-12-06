@@ -8432,23 +8432,29 @@ nav{
 
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 250px) and (max-width: 480px) {
   
   
 
   nav{
     
-        position: fixed;
+   
         z-index: 999;
+     
+
     }
 
 
-/* .ftco-section {
-
-  position: inherit;
-  z-index: -1;
+.ftco-section {
+  position: fixed; 
+  bottom: 0%; 
+  top: 0%;
+  overflow-y: scroll; 
+  height: 100%;
   
-  } */
+  
+  
+  }
 
 }
 
