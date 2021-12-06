@@ -25,7 +25,7 @@ const upload = multer({ storage: fileStorageEngine });
 
 //lector endpoints
 router.get('/', siteController.getHomePage);
-router.get('/welcome', siteController.getWelcome);
+router.get('/welcome',userController.checkLoggedIn, siteController.getWelcome);
 router.get('/our-services/testformat', siteController.getTestFormat);
 router.get('/our-services/listening', siteController.getListening);
 router.get('/our-services/reading', siteController.getReading);
