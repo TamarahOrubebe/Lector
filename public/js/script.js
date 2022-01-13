@@ -132,7 +132,7 @@ function handleClick(event) {
 
 let isClicked = false;
 
-$("nav").click(() => {
+$("#nav").click(() => {
 
 	if (isClicked === false) {
 
@@ -141,7 +141,7 @@ $("nav").click(() => {
 		$("nav").addClass("bg-light");
 	
 	} else {
-		
+
 		$("nav").removeClass("bg-light");
 		isClicked = false;
 	}
