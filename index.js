@@ -25,6 +25,7 @@ const app = express();
 //SETUP MIDDLEWARE
 
 //zip files and security
+app.use(compression());
 app.use(
 	helmet({
 		contentSecurityPolicy: {
@@ -53,7 +54,7 @@ app.use(
 		},
 	}),
 );
-app.use(compression());
+
 
 //Body parsing
 app.use(express.urlencoded({ extended: false }));

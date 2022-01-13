@@ -1,5 +1,16 @@
 "use strict";
 
+$("#listening-link").click(handleClick)
+$("#reading-link").click(handleClick);
+$("#writing-link").click(handleClick);
+$("#speaking-link").click(handleClick);
+$("#history-link").click(handleClick);
+$("#reviewed-link").click(handleClick);
+$("#subscription-link").click(handleClick);
+$("#upload-link").click(handleClick);
+
+
+
 
 function handleClick(event) {
 
@@ -14,7 +25,7 @@ function handleClick(event) {
 
     
 
-    $(document).click(function (event) {
+    
         var text = $(event.target).text();
 
         switch (text) {
@@ -113,12 +124,31 @@ function handleClick(event) {
 					default:
 						null;
 				}
-   })
+   
 
 	return false;
 
 }
 
+let isClicked = false;
+
+$("nav").click(() => {
+
+	if (isClicked === false) {
+
+		isClicked = true;
+
+		$("nav").addClass("bg-light");
+	
+	} else {
+		
+		$("nav").removeClass("bg-light");
+		isClicked = false;
+	}
+	
+	
+
+});
 
 function toggleVisibility() {
 
