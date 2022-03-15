@@ -65,7 +65,7 @@ passport.use(
 		function (accessToken, refreshToken, profile, done) {
 			db.getUserByProfileId(profile.id)
 				.then((user) => {
-					if (!user[0]) {
+					if (!user) {
 						db.createUser(
 							profile.id,
 							profile.displayName,
@@ -99,7 +99,7 @@ passport.use(
 			db.getUserByProfileId(profile.id)
 				.then((user) => {
 					console.log(profile);
-					if (!user[0]) {
+					if (!user) {
 						db.createUser(
 							profile.id,
 							profile.displayName,
@@ -134,7 +134,7 @@ passport.use(
 					console.log(profile);
 					console.log(user);
 
-					if (!user[0]) {
+					if (!user) {
 						db.createUser(profile.id, profile.displayName, profile.username);
 
 						db.getUserByProfileId(profile.id).then((user) => {
