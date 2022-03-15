@@ -73,11 +73,11 @@ passport.use(
 						);
 
 						db.getUser(profile.emails[0].value).then((user) => {
-                            return done(null, user[0]);
+                            return done(null, user);
 						});
 					}
 
-					return done(null, user[0]);
+					return done(null, user);
 				})
 				.catch((err) => {
 					return done(err, null);
@@ -107,11 +107,11 @@ passport.use(
 						);
 
 						db.getUser(profile.emails[0].value).then((user) => {
-							return done(null, user[0]);
+							return done(null, user);
 						});
 					}
 
-					return done(null, user[0]);
+					return done(null, user);
 				})
 				.catch((err) => {
 					return done(err, null);
@@ -138,11 +138,11 @@ passport.use(
 						db.createUser(profile.id, profile.displayName, profile.username);
 
 						db.getUserByProfileId(profile.id).then((user) => {
-							return done(null, user[0]);
+							return done(null, user);
 						});
 					}
 
-					done(null, user[0]);
+					done(null, user);
 				})
 				.catch((err) => {
 					return done(err, null);
@@ -159,7 +159,7 @@ passport.serializeUser((user, done) => {
     
 passport.deserializeUser((Id, done) => {
     db.getUserById(Id).then(user => {
-        return done(null, user[0]);
+        return done(null, user);
     }).catch(err => {
         return done(err, null);
     })
