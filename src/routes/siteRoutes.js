@@ -38,9 +38,12 @@ router.get('/test/practicetests/generaltests', siteController.getGeneralTests);
 router.get('/test/testresults', siteController.getTestResults);
 router.get('/bookings/pricing', userController.checkLoggedIn, siteController.getPricing);
 router.get('/bookings/pricing/paymentinfo/checkout/success/', userController.checkLoggedIn, siteController.getSuccess);
+router.get('/pathways/students', siteController.getStudents)
+router.get('/pathways/immigrants', siteController.getImmigrants)
+router.get('/pathways/businesspersons', siteController.getBusinesspersons)
 router.get('/aboutus', siteController.getAboutUs);
 router.get('/contactus', siteController.getContactUs);
-router.post('/contactus',  siteController.handleMessage);
+router.post('/contactus', siteController.handleMessage);
 router.post('/bookings/pricing/paymentinfo', userController.checkLoggedIn, siteController.handlePricing);
 router.post('/bookings/pricing/paymentinfo/checkout', siteController.handleCheckout);
 router.post('/welcome/new-upload', upload.single('file'), siteController.handleUpload);

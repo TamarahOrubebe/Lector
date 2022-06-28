@@ -1,0 +1,817 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%
+}
+
+
+
+.svg-inline--fa {
+    color: #e21737;
+
+}
+
+
+
+/* Nav section*/
+
+
+/* #first ul {
+position:relative;
+bottom: 50px;
+} */
+
+
+
+
+nav {
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+
+
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0%;
+}
+
+
+
+nav form .btn {
+    margin: 0 10px;
+    border-radius: 0%;
+}
+
+.navbar-toggler {
+    background-color: #0275d8 !important;
+
+
+}
+
+.nav-link {
+    color: black !important;
+    margin-bottom: 0%;
+}
+
+nav .logo {
+    color: #e21737;
+
+}
+
+
+.nav-link:hover {
+    color: blue !important;
+}
+
+/*FIRST SECTION */
+#first {
+    display: flex;
+    height: 550px;
+    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+#first h5.logo {
+    /* position:relative;
+    top: -15px;
+    left: 45px; */
+    color: #0275d8
+}
+
+#first i {
+    color: #e21737;
+}
+
+
+
+
+
+/* Header div */
+
+.main {
+    margin-top: 2rem;
+    width: 70%;
+
+
+}
+
+.main .lektore {
+    padding: 6rem;
+
+}
+
+.main .lektore h1,
+p {
+    color: black;
+
+}
+
+.lektore p {
+    text-align: justify;
+}
+
+.lektore a {
+    margin-right: 40px;
+    border-radius: 0%;
+}
+
+
+.lektore-img {
+    width: 30%;
+    background-image: url('../images/emre-aliriz-2rhz3Nuq12c-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* SUPPORTED SECTION */
+
+.supported {
+    padding: 30px 50px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.supported h2 {
+    font-weight: 650;
+    margin-bottom: 40px;
+
+}
+
+
+#supported {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    gap: 3rem;
+}
+
+  #supported div {
+      width: 100px;
+      height: 100px;
+
+  }
+
+  #supported #one {
+      background-image: url('../images/jeremy-dorrough-wdtF-f4qBdU-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+  #supported #two {
+      background-image: url('../images/guillaume-jaillet-EIWCd0414xQ-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+  #supported #three {
+      background-image: url('../images/rocco-dipoppa-yxDhneWz3vk-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+  #supported #four {
+      background-image: url('../images/jeremy-dorrough-wdtF-f4qBdU-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+  #supported #five {
+      background-image: url('../images/guillaume-jaillet-EIWCd0414xQ-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+  #supported #six {
+      background-image: url('../images/rocco-dipoppa-yxDhneWz3vk-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+/* Second section */
+#second {
+    padding: 3rem 6rem;
+    background-color: lightgray;
+}
+
+#second h2 {
+    margin-bottom: 30px;
+    font-weight: 650;
+    text-align: center;
+}
+
+.mid {
+    display: flex;
+    padding: 0 6rem;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.mid1 {
+    width: 50%;
+
+}
+
+.mid1 p {
+    text-align: justify;
+}
+
+.mid2 {
+    width: 40%;
+    background-image: url('../images/ielts-1705198_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+/* #second img{
+    margin: 90px 20px 50px;
+    width:400px;
+    height:267px;
+    border-radius: 12px;
+} */
+
+/* .ielts{
+    color:#0275d8;
+}
+
+ .lektore{
+    color:#e21737;
+} */
+
+.mid a {
+    margin-top: 30px;
+    border-radius: 0%;
+}
+
+/* Third section */
+#third {
+    text-align: center;
+    background-color: white;
+    padding: 70px;
+
+}
+
+#third .text-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#third .text {
+    width: 50%;
+}
+
+#third p {
+    text-align: center;
+    width: 100%;
+}
+
+#third h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 700;
+}
+
+#third #cards .cards {
+    display: inline-block;
+    margin: 30px;
+    width: 200px;
+
+
+}
+
+#third .cards a {
+    color: #E1AD01;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: thin solid #E1AD01;
+    text-decoration: none;
+
+
+}
+
+#third i {
+    color: #0EB8BE;
+}
+
+#third .cards h5 {
+    font-weight: 700;
+}
+
+.hr {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.hr hr {
+    width: 20%;
+    background-color: black;
+
+
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Fourth section */
+
+.fourth .mid2 {
+    background-image: url('../images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Fifth section */
+#fifth .mid2 {
+    background-image: none;
+}
+
+#second .mid1 p,
+.fourth .mid1 p,
+#fifth .mid2 p,
+#sixth .mid1 p {
+    text-align: justify;
+
+}
+
+#fifth .mid1 {
+    width: 40%;
+    background-image: url('../images/maria-lupan-hwhO7cYOcUs-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/* SIXTH SECTIOn */
+
+#sixth .mid2 {
+    background-image: url('../images/linkedin-sales-solutions-i1MXZuHqD2k-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Success Stories section */
+
+#success-carousel {
+    text-align: center;
+    color: black
+}
+
+
+.success-image {
+    position: relative;
+    left: 1.7rem;
+    border-radius: 100%;
+    width: 10%;
+    height: 10%;
+    margin: 30px;
+}
+
+.success-text {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    /* line-height: 1.5; */
+    text-align: center;
+    /* font-size: 50px; */
+    font-weight: 700;
+}
+
+
+footer {
+    background-color: lightgray;
+    margin-top: 30px;
+    margin-bottom: 0%
+}
+
+footer .logo {
+    position: relative;
+    top: 10px;
+
+}
+
+footer .logo i {
+    color: #e21737;
+}
+
+footer h5.logo {
+    /* position:relative;
+    top: -15px;
+    left: 45px; */
+    color: blue;
+}
+
+#footer {
+    margin-top: -2%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+#footer ul {
+    list-style: none;
+}
+
+
+
+#quick a {
+    color: blue;
+    text-decoration: none;
+}
+
+#quick a:hover {
+    text-decoration: underline;
+}
+
+
+#follow .first {
+    margin-bottom: 5px;
+}
+
+#follow li a {
+    color: blue;
+    text-decoration: none;
+}
+
+#follow li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* For tablets  */
+@media only screen and (max-width: 1024px) {
+
+    /* FIRST SECTION */
+
+    #first {
+        display: block;
+        height: 550px;
+        width: 100%;
+        background-color: lightgray;
+        margin: 0;
+        padding: 2rem;
+
+    }
+
+
+
+    #first h5.logo {
+        /* position:relative;
+    top: -15px;
+    left: 45px; */
+        color: #0275d8
+    }
+
+    #first i {
+        color: #e21737;
+    }
+
+    /* Header div */
+
+    #first .main {
+        margin-top: 0% !important;
+        width: 100% !important;
+
+
+    }
+
+    #first .main .lektore {
+        padding: 0% !important;
+
+    }
+
+    .main .lektore h1,
+    p {
+        color: black;
+
+    }
+
+    .lektore p {
+        text-align: justify;
+    }
+
+    .lektore a {
+        margin-right: 40px;
+        border-radius: 0%;
+    }
+
+
+    .lektore-img {
+        background-image: url('../images/emre-aliriz-2rhz3Nuq12c-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* .header h1{
+    position: relative !important;
+    left: 30px !important;
+     color: #0275d8;
+    font-size: 60px;
+}    */
+
+    /* SECOND SECTION */
+    /* #supported {
+    ;
+        
+    } */
+
+
+    /* SECOND SECTION */
+    #second {
+
+        display: block !important;
+    }
+
+    #second .mid {
+        display: block;
+        padding: 0%;
+        width: 100%;
+    }
+
+
+    .mid {
+        display: block;
+        padding: 0 6rem;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .mid1 {
+        display: block;
+        width: 100%;
+
+    }
+
+    .mid1 p {
+        text-align: center;
+    }
+
+    .mid2 {
+        display: block;
+        width: 100%;
+        background-image: url('../images/ielts-1705198_1920.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+
+    .mid a {
+        margin-top: 30px;
+        border-radius: 0%;
+        margin: 0 auto;
+    }
+
+    /* FOURTH SECTION */
+    #fourth {
+
+        text-align: center;
+        padding: 50px !important;
+    }
+
+
+    #fourth .get-started {
+        margin: 50px 30px !important;
+        background-color: #e21737;
+        display: inline-block;
+        width: 380px !important;
+        padding: 30px;
+        height: 300px;
+        text-align: left;
+    }
+
+    .get-started p {
+
+        margin-bottom: 30px !important;
+
+    }
+
+    /* FOOTER */
+    footer {
+        display: block !important;
+
+    }
+
+
+
+    #footer {
+        margin-top: -40px;
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* FIRST SECTION */
+
+    /* #first {
+background-image:none !important;
+height: auto !important;
+} */
+    #first {
+        display: block;
+        height: 550px;
+        width: 100%;
+        background-color: lightgray;
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+
+    #first h5.logo {
+        /* position:relative;
+    top: -15px;
+    left: 45px; */
+        color: #0275d8
+    }
+
+    #first i {
+        color: #e21737;
+    }
+
+    /* Header div */
+
+    #first .main {
+        margin-top: 0% !important;
+        width: 100% !important;
+
+
+    }
+
+    #first .main .lektore {
+        padding: 0% !important;
+
+    }
+
+    .main .lektore h1,
+    p {
+        color: black;
+
+    }
+
+    .lektore p {
+        text-align: justify;
+    }
+
+    .lektore a {
+        margin-right: 40px;
+        border-radius: 0%;
+    }
+
+
+    .lektore-img {
+        background-image: url('../images/emre-aliriz-2rhz3Nuq12c-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* .header h1{
+    position: relative !important;
+    left: 30px !important;
+     color: #0275d8;
+    font-size: 60px;
+}    */
+
+    /* SECOND SECTION */
+    #supported div {
+        display: block;
+    }
+
+
+    .mid {
+        margin: 30px 0px !important;
+    }
+
+
+
+    .mid h2 {
+        font-size: 40px;
+        margin-bottom: 15px;
+        font-weight: 650;
+    }
+
+    #second img {
+        margin: 30px 0px !important;
+        width: 250px !important;
+        height: 160px !important;
+        border-radius: 12px;
+
+    }
+
+
+
+    /* FOURTH SECTION */
+    #fourth {
+
+        text-align: center;
+        padding: 20px !important;
+    }
+
+    #fourth h2 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    #fourth #cards {
+        margin-bottom: 70px !important;
+    }
+
+
+
+    #fourth div.cards a {
+        border-radius: 13px;
+        border: 2px solid #0275d8;
+        padding: 5px 10px;
+        color: #0275d8;
+        text-decoration: none;
+    }
+
+
+    #fourth i {
+        color: #e21737;
+        margin-bottom: 20px;
+    }
+
+    #fourth h5 {
+        color: #0275d8;
+    }
+
+
+    #fourth .get-started {
+        margin: 20px !important;
+        background-color: #e21737;
+        display: block !important;
+        width: 300px !important;
+        height: 200px;
+        text-align: left;
+    }
+
+    .get-started p {
+
+        margin-bottom: 15px !important;
+
+    }
+
+    footer span,
+    footer h5 {
+        display: none;
+    }
+
+    #footer {
+        margin-top: 30px !important;
+        display: flex;
+
+    }
+
+
+}

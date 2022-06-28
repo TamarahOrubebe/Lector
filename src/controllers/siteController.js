@@ -148,6 +148,28 @@ siteController.getGeneralTests = (req, res) => {
 	});
 };
 
+siteController.getStudents = (req, res) => {
+	res.render("students", {
+		css: "/css/students.css",
+		src: "/js/script.js",
+		title: "Students"
+	});
+}
+siteController.getImmigrants = (req, res) => {
+	res.render("immigrants", {
+		css: "/css/immigrants.css",
+		src: "/js/script.js",
+		title: "Immigrants"
+	});
+}
+siteController.getBusinesspersons = (req, res) => {
+	res.render("businesspersons", {
+		css: "/css/businesspersons.css",
+		src: "js/script.js",
+		title: "Businesspersons"
+	});
+}
+
 siteController.getAboutUs = (req, res) => {
 	res.render("aboutus", {
 		css: "/css/aboutus.css",

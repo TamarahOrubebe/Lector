@@ -1,0 +1,238 @@
+<%- include('partials/header'); -%>
+
+    <body>
+        <div class="container-fluid">
+            <nav id="top" class="navbar navbar-expand-lg navbar-dark">
+                <span class="logo"><i class="fas fa-chalkboard-teacher fa-2x"></i></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="nav-ul" class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Our services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/our-services/testformat">Test format</a>
+                                <a class="dropdown-item" href="/our-services/listening">Listening</a>
+                                <a class="dropdown-item" href="/our-services/reading">Reading</a>
+                                <a class="dropdown-item" href="/our-services/writing">Writing</a>
+                                <a class="dropdown-item" href="/our-services/speaking">Speaking</a>
+                                <a class="dropdown-item" href="/our-services/elocution">Elocution</a>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdownMenuLink1" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Test
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <a class="dropdown-item" href="/test/practicetests">Practice Tests</a>
+                                <a class="dropdown-item" href="test/testresults">IELTS Test Results</a>
+                            </div>
+                        </li> -->
+                        <!-- <li class="nav-item dropdown">
+                                                    <a class="nav-link " href="#" id="navbarDropdownMenuLink2" role="button"
+                                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Bookings
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                                        <a class="dropdown-item" href="/bookings/pricing">Pricing</a>
+                                                        <a class="dropdown-item" href="/bookings/book">Book a Tutor</a>
+                                                    </div>
+                                                </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdownMenuLink2" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pathways
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                <a class="dropdown-item" href="/pathways/students">Students</a>
+                                <a class="dropdown-item" href="/pathways/immigrants">Immigrants</a>
+                                <a class="dropdown-item" href="/pathways/businesspersons">Businesspersons</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus">About us</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                                                    <a class="nav-link" href="/contactus">Contact us</a>
+                                                </li> -->
+                        <li class="nav-item">
+                            <form action="/login" method="GET">
+                                <button type="submit" class="btn btn-secondary">Log in</button>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <form action="/signup" method="GET">
+                                <button type="submit" class="btn btn-dark">Sign up</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <section id="first" class="container-fluid">
+
+            <!-- <h5 class="logo">Lektore</h5>  -->
+
+            <div class="main">
+                <div class="lektore">
+                    <h1>ARE YOU A BUSINESSPERSON?</h1>
+                    <p>LEKTORE has got you covered. It helps Businesspersons all over the world planning on establishing 
+                        successful businesses in the United Kingdom by offering necessary links to organisations in 
+                        both public and private sectors that welcome partnerships with international entrepreneurs, and It 
+                        also gives every necessary information on how these investors/entrepreneurs can become permanent
+                        residents of the UK in the nearest future. LEKTORE also offers elocution classes for international
+                        entrepreneurs and investors that want to speak the English language better and sound more confident
+                        </p>
+                    <a class="btn btn-secondary"
+                        href="/signup">GET STARTED</a>
+                </div>
+            </div>
+            <div class="lektore-img">
+
+            </div>
+        </section>
+        <section class="supported">
+            <h2>Trusted by</h2>
+            <div id="supported">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <div id="four"></div>
+                <div id="five"></div>
+                <div id="six"></div>
+            </div>
+
+
+        </section>
+        <section id="second" class="container-fluid">
+            <h2>What does LEKTORE do for you?</h2>
+            <div class="mid">
+                <div class="mid1">
+                    <p>LEKTORE aims to make the transitioning smooth and hassle free for immigrants; as in most cases,
+                        economic migrants can get lonely, isolated, and fall into depression; for some of them are
+                        refugees of war seeking safety in an entirely
+                        different country with a different culture.
+                    </p>
+                    <a class="btn btn-secondary" href="/courses">COURSES</a>
+                </div>
+                <div class="mid2">
+                </div>
+            </div>
+        </section>
+        <section id="third" class="container-fluid">
+            <div class="text-wrapper">
+                <div class="text">
+                    <h2>IELTS</h2>
+                    <p>To make sure the English language is not a barrier to migration, LEKTORE offers English language
+                        tutoring and
+                        testing. LEKTORE focuses on the IELTS exam for students, professionals, as well as elocution
+                        classes for
+                        businesspersons
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="cards" class="container-fluid">
+                    <div class="cards">
+                        <i class="fas fa-headphones fa-5x"></i>
+                        <div>
+                            <h5>Listening</h5>
+                            <p>The Listening section has four parts, with ten questions in each part. You will be
+                                required to listen to
+                                a recording and answer the questions as you listen.</p>
+                            <a href="/our-services/listening">Listening</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <i class="fas fa-pencil-alt fa-5x"></i>
+                        <div>
+                            <h5>Writing</h5>
+                            <p>The writing test has two tasks, 1 and 2, and both must be completed in 60 minutes. The
+                                writing test
+                                differs for both modules of the IELTS exam.</p>
+                            <a href="/our-services/writing">Writing</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <i class="fas fa-book-open fa-5x"></i>
+                        <div>
+                            <h5>Reading</h5>
+                            <p>The reading test differs for both modules of the exam; however, they both require you to
+                                answer questions
+                                from passages provided, and last 60 minutes.</p>
+                            <a href="/our-services/reading">Reading</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <i class="fas fa-volume-up fa-5x"></i>
+                        <div>
+                            <h5>Speaking</h5>
+                            <p>The speaking test is a face to face interview ( with 3 parts) between the examiner and
+                                candidate which
+                                lasts for about 11-15 minutes and is recorded</p>
+                            <a href="/our-services/speaking">Speaking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="hr">
+            <hr>
+        </div>
+    <section id="success" class="container-fluid">
+        <h2>Testimonials</h2>
+        <div id="success-carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="success-text">Lektore was of immense help to me as i got my desired band (band 8)
+                            in my first and only attempt.</p>
+                        <img class="success-image" src="/images/asian-863318_1920.jpg" alt="lady-profile">
+                        <em>Chiamaka, Lagos.</em>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="success-text">With the help of a tutor from Lektore, I was able to ace my IELTS
+                            exam in one sitting getting my desired band 8.</p>
+                        <img class="success-image" src="/images/asian-863318_1920.jpg" alt="lady-profile">
+                        <em>Dr. Aderonke, Lagos.</em>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="success-text">I never expected to get a band 8.5 in my IELTS exam; but with the
+                            help of a tutor from Lektore, I got a band 8.5 in writing, and 8.5 overall.</p>
+                        <img class="success-image" src="/images/asian-863318_1920.jpg" alt="lady-profile">
+                        <em>Obehi, Benin city.</em>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="success-text">Lektore helped me get an overall band 8.5 in my first and only
+                            attempt at the IELTS exam</p>
+                        <img class="success-image" src="/images/asian-863318_1920.jpg" alt="lady-profile">
+                        <em>Moni, Egypt.</em>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    
+    </section>
+        <%- include('partials/footer'); -%>
