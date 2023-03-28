@@ -1,8 +1,0 @@
-{
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/12abc6a7-0fc5-4d79-87a6-48a70d4fe3e2/resourceGroups/CoreNetwork/providers/Microsoft.Web/sites/test-lektor",
-    "appService.deploySubpath": "."
-}
